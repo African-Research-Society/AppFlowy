@@ -134,6 +134,14 @@ lto = false
 #strip = "debuginfo"
 incremental = true
 
+# ARS: pull the AppFlowy-Cloud client crates from the African-Research-Society
+# fork's branch `ars/client-api-592f644` (upstream rev 592f644 + the
+# ars-workspace:// desktop callback scheme).
+[patch."https://github.com/AppFlowy-IO/AppFlowy-Cloud"]
+client-api = { git = "https://github.com/African-Research-Society/AppFlowy-Cloud", rev = "6ecedc6b" }
+client-api-entity = { git = "https://github.com/African-Research-Society/AppFlowy-Cloud", rev = "6ecedc6b" }
+workspace-template = { git = "https://github.com/African-Research-Society/AppFlowy-Cloud", rev = "6ecedc6b" }
+
 [patch.crates-io]
 # We're using a specific commit here because rust-rocksdb doesn't publish the latest version that includes the memory alignment fix.
 # For more details, see https://github.com/rust-rocksdb/rust-rocksdb/pull/868

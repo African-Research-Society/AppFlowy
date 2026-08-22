@@ -26,9 +26,9 @@ class SocialMediaSection extends CustomActionCell {
             itemHeight: ActionListSizes.itemHeight,
             onSelected: (action) {
               final url = switch (action.inner) {
-                SocialMedia.reddit => 'https://www.reddit.com/r/AppFlowy/',
-                SocialMedia.twitter => 'https://x.com/appflowy',
-                SocialMedia.forum => 'https://forum.appflowy.com/',
+                SocialMedia.reddit => 'https://github.com/African-Research-Society',
+                SocialMedia.twitter => 'mailto:npo@africanresearchsociety.org',
+                SocialMedia.forum => 'https://africanresearchsociety.org',
               };
 
               afLaunchUrlString(url);
@@ -80,11 +80,11 @@ extension QuestionBubbleExtension on SocialMedia {
   String get name {
     switch (this) {
       case SocialMedia.forum:
-        return 'Community Forum';
+        return 'Website';
       case SocialMedia.twitter:
-        return 'Twitter – @appflowy';
+        return 'Contact us';
       case SocialMedia.reddit:
-        return 'Reddit – r/appflowy';
+        return 'GitHub';
     }
   }
 

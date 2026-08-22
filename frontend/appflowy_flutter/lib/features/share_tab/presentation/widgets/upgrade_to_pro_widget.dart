@@ -23,7 +23,7 @@ class UpgradeToProWidget extends StatelessWidget {
     final theme = AppFlowyTheme.of(context);
     return Container(
       decoration: BoxDecoration(
-        color: Color(0x129327ff),
+        color: Color(0x126d5ae0),
         borderRadius: BorderRadius.circular(theme.borderRadius.m),
       ),
       padding: EdgeInsets.symmetric(

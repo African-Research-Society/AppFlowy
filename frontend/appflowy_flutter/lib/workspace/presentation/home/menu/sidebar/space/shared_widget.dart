@@ -698,7 +698,7 @@ class _SpaceSearchFieldState extends State<SpaceSearchField> {
           side: const BorderSide(
             width: 1.20,
             strokeAlign: BorderSide.strokeAlignOutside,
-            color: Color(0xFF00BCF0),
+            color: Color(0xFFE8B23A),
           ),
           borderRadius: BorderRadius.circular(8),
         ),

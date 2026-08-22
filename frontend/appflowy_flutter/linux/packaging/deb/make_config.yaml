@@ -1,12 +1,12 @@
-display_name: AppFlowy
+display_name: ARS Workspace
 package_name: appflowy
 
 maintainer:
-  name: AppFlowy
-  email: support@appflowy.io
+  name: African Research Society
+  email: npo@africanresearchsociety.org
 
 keywords:
-  - AppFlowy
+  - ARS Workspace
   - Office
   - Document
   - Database
@@ -17,7 +17,7 @@ keywords:
 installed_size: 100000
 icon: linux/packaging/assets/logo.png
 
-generic_name: AppFlowy
+generic_name: ARS Workspace
 
 categories:
   - Office
@@ -29,7 +29,7 @@ essential: false
 section: x11
 priority: optional
 
-supportedMimeType: x-scheme-handler/appflowy-flutter
+supportedMimeType: x-scheme-handler/ars-workspace
 
 dependencies:
   - libnotify-bin

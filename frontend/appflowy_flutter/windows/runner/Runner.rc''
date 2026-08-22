@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "African Research Society NPC" "\0"
-            VALUE "FileDescription", "ARS Workspace" "\0"
+            VALUE "CompanyName", "African Research Society NPC"
+            VALUE "FileDescription", "ARS Workspace"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "ARS Workspace" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2026 African Research Society NPC" "\0"
-            VALUE "OriginalFilename", "ARSWorkspace.exe" "\0"
-            VALUE "ProductName", "ARS Workspace" "\0"
+            VALUE "InternalName", "ARS Workspace"
+            VALUE "LegalCopyright", "Copyright © 2026 African Research Society NPC"
+            VALUE "OriginalFilename", "ARS Workspace.exe"
+            VALUE "ProductName", "AppFlowy" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

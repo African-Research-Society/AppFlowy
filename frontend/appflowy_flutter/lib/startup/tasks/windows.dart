@@ -1,3 +1,4 @@
+import 'package:appflowy/core/branding.dart';
 import 'dart:async';
 import 'dart:ui';
 
@@ -10,7 +11,7 @@ import 'package:window_manager/window_manager.dart';
 import 'package:universal_platform/universal_platform.dart';
 
 class InitAppWindowTask extends LaunchTask with WindowListener {
-  InitAppWindowTask({this.title = 'AppFlowy'});
+  InitAppWindowTask({this.title = kBrandName});
 
   final String title;
   final windowSizeManager = WindowSizeManager();

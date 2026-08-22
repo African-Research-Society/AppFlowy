@@ -12,15 +12,15 @@ class ColorSchemeConstants {
   static const lightShader3 = Color(0xFF828282);
   static const lightShader5 = Color(0xFFe0e0e0);
   static const lightShader6 = Color(0xFFf2f2f2);
-  static const lightMain1 = Color(0xFF00bcf0);
-  static const lightTint9 = Color(0xFFe1fbFF);
+  static const lightMain1 = Color(0xFF7F5A0C);
+  static const lightTint9 = Color(0xFFFBF3D7);
   static const darkShader1 = Color(0xFF131720);
   static const darkShader2 = Color(0xFF1A202C);
   static const darkShader3 = Color(0xFF363D49);
   static const darkShader5 = Color(0xFFBBC3CD);
   static const darkShader6 = Color(0xFFF2F2F2);
-  static const darkMain1 = Color(0xFF00BCF0);
-  static const darkMain2 = Color(0xFF00BCF0);
+  static const darkMain1 = Color(0xFFE8B23A);
+  static const darkMain2 = Color(0xFFF6CF6B);
   static const darkInput = Color(0xFF282E3A);
   static const lightBorderColor = Color(0xFFEDEDEE);
   static const darkBorderColor = Color(0xFF3A3F49);
@@ -32,7 +32,7 @@ class DefaultColorScheme extends FlowyColorScheme {
           surface: ColorSchemeConstants.white,
           hover: ColorSchemeConstants.lightHover,
           selector: ColorSchemeConstants.lightSelector,
-          red: const Color(0xFFfb006d),
+          red: const Color(0xFFA33227),
           yellow: const Color(0xFFFFd667),
           green: const Color(0xFF66cf80),
           shader1: ColorSchemeConstants.lightShader1,
@@ -91,7 +91,7 @@ class DefaultColorScheme extends FlowyColorScheme {
           surface: ColorSchemeConstants.darkShader2,
           hover: ColorSchemeConstants.darkMain1,
           selector: ColorSchemeConstants.darkShader2,
-          red: const Color(0xFFfb006d),
+          red: const Color(0xFFA33227),
           yellow: const Color(0xFFF7CF46),
           green: const Color(0xFF66CF80),
           shader1: ColorSchemeConstants.darkShader1,

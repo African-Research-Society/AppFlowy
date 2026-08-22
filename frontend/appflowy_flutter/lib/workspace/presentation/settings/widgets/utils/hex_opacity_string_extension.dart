@@ -1,10 +1,10 @@
 extension HexOpacityExtension on String {
-  /// Only used in a valid color String like '0xff00bcf0'
+  /// Only used in a valid color String like '0xffe8b23a'
   String extractHex() {
     return substring(4);
   }
 
-  /// Only used in a valid color String like '0xff00bcf0'
+  /// Only used in a valid color String like '0xffe8b23a'
   String extractOpacity() {
     final opacityString = substring(2, 4);
     final opacityInt = int.parse(opacityString, radix: 16) / 2.55;

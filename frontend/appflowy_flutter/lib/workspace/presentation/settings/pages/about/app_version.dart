@@ -124,7 +124,7 @@ class _UpdateAppSection extends StatelessWidget {
           cursor: SystemMouseCursors.click,
           child: GestureDetector(
             onTap: () {
-              afLaunchUrlString('https://www.appflowy.io/what-is-new');
+              afLaunchUrlString('https://africanresearchsociety.org');
             },
             child: FlowyText.regular(
               LocaleKeys.autoUpdate_settingsUpdateWhatsNew.tr(),
@@ -145,7 +145,7 @@ class _UpdateAppSection extends StatelessWidget {
       width: 8,
       height: 8,
       decoration: const BoxDecoration(
-        color: Color(0xFFFB006D),
+        color: Color(0xFFA33227),
         shape: BoxShape.circle,
       ),
     );

@@ -1,16 +1,16 @@
-display_name: AppFlowy
+display_name: ARS Workspace
 icon: linux/packaging/assets/logo.png
 group: Applications/Office
-vendor: AppFlowy
-packager: AppFlowy
-packagerEmail: support@appflowy.io
+vendor: African Research Society
+packager: African Research Society
+packagerEmail: npo@africanresearchsociety.org
 license: APGL-3.0
-url: https://github.com/AppFlowy-IO/appflowy
+url: https://africanresearchsociety.org
 
 build_arch: x86_64
 
 keywords:
-  - AppFlowy
+  - ARS Workspace
   - Office
   - Document
   - Database
@@ -18,7 +18,7 @@ keywords:
   - Kanban
   - Note
 
-generic_name: AppFlowy
+generic_name: ARS Workspace
 
 categories:
   - Office
@@ -26,7 +26,7 @@ categories:
 
 startup_notify: true
 
-supportedMimeType: x-scheme-handler/appflowy-flutter
+supportedMimeType: x-scheme-handler/ars-workspace
 
 requires:
   - libnotify

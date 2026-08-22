@@ -1,3 +1,4 @@
+import 'package:appflowy/core/branding.dart';
 import 'package:appflowy/env/cloud_env.dart';
 import 'package:appflowy/env/env.dart';
 import 'package:appflowy/generated/flowy_svgs.g.dart';
@@ -246,6 +247,6 @@ String titleFromCloudType(AuthenticatorType cloudType) {
     case AuthenticatorType.appflowyCloudSelfHost:
       return LocaleKeys.settings_menu_cloudAppFlowySelfHost.tr();
     case AuthenticatorType.appflowyCloudDevelop:
-      return "AppFlowyCloud Develop";
+      return "$kBrandName Cloud Develop";
   }
 }

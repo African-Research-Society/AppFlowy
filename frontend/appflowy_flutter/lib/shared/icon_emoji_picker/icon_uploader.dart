@@ -197,7 +197,7 @@ class _IconUploaderState extends State<IconUploader> {
             TextSpan(
               text: LocaleKeys.emojiIconPicker_iconUploader_placeholderUpload
                   .tr(),
-              style: style.copyWith(color: Color(0xff00BCF0)),
+              style: style.copyWith(color: Color(0xffE8B23A)),
             ),
             TextSpan(
               text:

@@ -1,11 +1,11 @@
 {
-    "name": "appflowy_flutter",
-    "short_name": "appflowy_flutter",
+    "name": "ARS Workspace",
+    "short_name": "ARS Workspace",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "ARS Workspace",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

@@ -1,3 +1,4 @@
+import 'package:appflowy/core/branding.dart';
 import 'dart:io';
 
 import 'package:appflowy/core/helpers/url_launcher.dart';
@@ -82,8 +83,8 @@ class FlowyErrorPage extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const FlowyText.medium(
-            "AppFlowy Error",
+          FlowyText.medium(
+            "$kBrandName Error",
             fontSize: _titleFontSize,
           ),
           const SizedBox(height: _titleToMessagePadding),
@@ -224,7 +225,7 @@ class GitHubRedirectButton extends StatelessWidget {
   Uri get _gitHubNewBugUri => Uri(
         scheme: 'https',
         host: 'github.com',
-        path: '/AppFlowy-IO/AppFlowy/issues/new',
+        path: '/African-Research-Society/AppFlowy/issues/new',
         query:
             'assignees=&labels=&projects=&template=bug_report.yaml&os=$_platform&title=%5BBug%5D+$title&context=$_contextString',
       );

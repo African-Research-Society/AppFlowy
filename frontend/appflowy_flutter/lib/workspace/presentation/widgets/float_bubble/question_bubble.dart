@@ -121,7 +121,7 @@ class _BubbleActionListState extends State<BubbleActionList> {
         if (action is BubbleActionWrapper) {
           switch (action.inner) {
             case BubbleAction.whatsNews:
-              afLaunchUrlString('https://www.appflowy.io/what-is-new');
+              afLaunchUrlString('https://africanresearchsociety.org');
               break;
             case BubbleAction.getSupport:
               afLaunchUrlString('https://discord.gg/9Q2xaN37tV');
@@ -141,12 +141,12 @@ class _BubbleActionListState extends State<BubbleActionList> {
               break;
             case BubbleAction.github:
               afLaunchUrlString(
-                'https://github.com/AppFlowy-IO/AppFlowy/issues/new/choose',
+                'https://github.com/African-Research-Society/AppFlowy/issues/new/choose',
               );
               break;
             case BubbleAction.helpAndDocumentation:
               afLaunchUrlString(
-                'https://appflowy.com/guide',
+                'https://africanresearchsociety.org',
               );
               break;
           }

@@ -21,6 +21,8 @@
 			<string>it</string>
 			<string>zh</string>
 		</array>
+		<key>CFBundleDisplayName</key>
+		<string>ARS Workspace</string>
 		<key>CFBundleName</key>
 		<string>$(PRODUCT_NAME)</string>
 		<key>CFBundlePackageType</key>
@@ -34,7 +36,7 @@
 				<string></string>
 				<key>CFBundleURLSchemes</key>
 				<array>
-					<string>appflowy-flutter</string>
+					<string>ars-workspace</string>
 				</array>
 			</dict>
 		</array>

@@ -29,7 +29,7 @@ class AILoadingIndicator extends StatelessWidget {
                 color: Theme.of(context).hintColor,
               ),
             ),
-            buildDot(const Color(0xFF9327FF))
+            buildDot(const Color(0xFF6D5AE0))
                 .animate(onPlay: (controller) => controller.repeat())
                 .slideY(duration: slice, begin: 0, end: -1)
                 .then()
@@ -38,7 +38,7 @@ class AILoadingIndicator extends StatelessWidget {
                 .slideY(begin: 1, end: 0)
                 .then()
                 .slideY(duration: slice * 2, begin: 0, end: 0),
-            buildDot(const Color(0xFFFB006D))
+            buildDot(const Color(0xFFA33227))
                 .animate(onPlay: (controller) => controller.repeat())
                 .slideY(duration: slice, begin: 0, end: 0)
                 .then()

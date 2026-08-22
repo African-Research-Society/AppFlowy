@@ -30,7 +30,7 @@ class _SpaceMigrationState extends State<SpaceMigration> {
         shape: RoundedRectangleBorder(
           side: const BorderSide(
             strokeAlign: BorderSide.strokeAlignOutside,
-            color: Color(0x339327FF),
+            color: Color(0x336D5AE0),
           ),
           borderRadius: BorderRadius.circular(10),
         ),
