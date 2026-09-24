@@ -12,8 +12,12 @@ Future<String> generateNameSpace() async {
 // we will truncate the name to ensure the final result is within the limit.
 // The name should only contain alphanumeric characters and hyphens.
 Future<String> generatePublishName(String id, String name) async {
-  if (name.length >= 120 - id.length) {
-    name = name.substring(0, 120 - id.length);
+  final maxNameLength = 119 - id.length;
+  if (maxNameLength < 0) {
+    return replaceInvalidChars(id.substring(0, 120));
+  }
+  if (name.length > maxNameLength) {
+    name = name.substring(0, maxNameLength);
   }
   return replaceInvalidChars('$name-$id');
 }

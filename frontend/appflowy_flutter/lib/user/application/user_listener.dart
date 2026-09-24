@@ -99,6 +99,7 @@ class UserListener {
         result.map(
           (r) => onUserWorkspaceUpdated?.call(UserWorkspacePB.fromBuffer(r)),
         );
+        break;
       case user.UserNotification.DidUpdateWorkspaceSetting:
         result.map(
           (r) => onUserWorkspaceSettingUpdated

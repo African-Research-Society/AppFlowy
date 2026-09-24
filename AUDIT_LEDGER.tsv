@@ -1491,36 +1491,36 @@ frontend/appflowy_flutter/lib/shared/list_extension.dart	reviewed	reported last 
 frontend/appflowy_flutter/lib/shared/loading.dart	reviewed	reported last line matches file length; model unverified
 frontend/appflowy_flutter/lib/shared/markdown_to_document.dart	reviewed	reported last line matches file length; model unverified
 frontend/appflowy_flutter/lib/shared/patterns/common_patterns.dart	reviewed	reported last line matches file length; model unverified
-frontend/appflowy_flutter/lib/shared/patterns/date_time_patterns.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/shared/patterns/file_type_patterns.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/shared/permission/permission_checker.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/shared/popup_menu/appflowy_popup_menu.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/shared/settings/show_settings.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/shared/text_field/text_filed_with_metric_lines.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/shared/time_format.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/shared/version_checker/version_checker.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/shared/window_title_bar.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/startup/deps_resolver.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/startup/entry_point.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/startup/launch_configuration.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/startup/plugin/plugin.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/startup/plugin/src/runner.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/startup/plugin/src/sandbox.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/startup/startup.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/startup/tasks/af_navigator_observer.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/startup/tasks/app_widget.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/startup/tasks/app_window_size_manager.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/startup/tasks/appflowy_cloud_task.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/startup/tasks/auto_update_task.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/startup/tasks/debug_task.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/startup/tasks/deeplink/deeplink_handler.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/startup/tasks/deeplink/expire_login_deeplink_handler.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/startup/tasks/deeplink/invitation_deeplink_handler.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/startup/tasks/deeplink/login_deeplink_handler.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/startup/tasks/deeplink/open_app_deeplink_handler.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/startup/tasks/deeplink/payment_deeplink_handler.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/startup/tasks/device_info_task.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/startup/tasks/feature_flag_task.dart	unreviewed	production-relevant until a pass-3 reviewer records it
+frontend/appflowy_flutter/lib/shared/patterns/date_time_patterns.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/shared/patterns/file_type_patterns.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/shared/permission/permission_checker.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/shared/popup_menu/appflowy_popup_menu.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/shared/settings/show_settings.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/shared/text_field/text_filed_with_metric_lines.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/shared/time_format.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/shared/version_checker/version_checker.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/shared/window_title_bar.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/startup/deps_resolver.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/startup/entry_point.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/startup/launch_configuration.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/startup/plugin/plugin.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/startup/plugin/src/runner.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/startup/plugin/src/sandbox.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/startup/startup.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/startup/tasks/af_navigator_observer.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/startup/tasks/app_widget.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/startup/tasks/app_window_size_manager.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/startup/tasks/appflowy_cloud_task.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/startup/tasks/auto_update_task.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/startup/tasks/debug_task.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/startup/tasks/deeplink/deeplink_handler.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/startup/tasks/deeplink/expire_login_deeplink_handler.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/startup/tasks/deeplink/invitation_deeplink_handler.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/startup/tasks/deeplink/login_deeplink_handler.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/startup/tasks/deeplink/open_app_deeplink_handler.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/startup/tasks/deeplink/payment_deeplink_handler.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/startup/tasks/device_info_task.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/startup/tasks/feature_flag_task.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
 frontend/appflowy_flutter/lib/startup/tasks/file_storage_task.dart	reviewed	reported last line matches file length; model unverified
 frontend/appflowy_flutter/lib/startup/tasks/generate_router.dart	reviewed	reported last line matches file length; model unverified
 frontend/appflowy_flutter/lib/startup/tasks/hot_key.dart	reviewed	reported last line matches file length; model unverified
@@ -1536,96 +1536,96 @@ frontend/appflowy_flutter/lib/startup/tasks/windows.dart	reviewed	reported last 
 frontend/appflowy_flutter/lib/user/application/anon_user_bloc.dart	reviewed	reported last line matches file length; model unverified
 frontend/appflowy_flutter/lib/user/application/auth/af_cloud_auth_service.dart	reviewed	reported last line matches file length; model unverified
 frontend/appflowy_flutter/lib/user/application/auth/af_cloud_mock_auth_service.dart	reviewed	reported last line matches file length; model unverified
-frontend/appflowy_flutter/lib/user/application/auth/auth_error.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/application/auth/auth_service.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/application/auth/backend_auth_service.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/application/auth/device_id.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/application/notification_filter/notification_filter_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/application/password/password_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/application/password/password_http_service.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/application/prelude.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/application/reminder/reminder_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/application/reminder/reminder_extension.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/application/reminder/reminder_listener.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/application/reminder/reminder_service.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/application/sign_in_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/application/sign_up_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/application/splash_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/application/user_auth_listener.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/application/user_listener.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/application/user_service.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/application/user_settings_service.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/application/workspace_error_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/domain/auth_state.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/anon_user.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/helpers/handle_open_workspace_error.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/helpers/helpers.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/presentation.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/router.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/screens.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/desktop_sign_in_screen.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/mobile_loading_screen.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/mobile_sign_in_screen.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/sign_in_screen.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/anonymous_sign_in_button.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/anonymous_sign_in_button/anonymous_sign_in_button.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/back_to_login_in_button.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/continue_with_button.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/continue_with_email.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/continue_with_email_and_password.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/continue_with_magic_link_or_passcode_page.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/continue_with_password.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/continue_with_password_page.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/forgot_password_page.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/reset_password.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/reset_password_page.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/set_new_password.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/title_logo.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/verifying_button.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/logo/logo.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/magic_link_sign_in_buttons.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/sign_in_agreement.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/sign_in_anonymous_button.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/sign_in_or_logout_button.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/switch_sign_in_sign_up_button.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/third_party_sign_in_button/third_party_sign_in_button.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/third_party_sign_in_button/third_party_sign_in_buttons.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/widgets.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/skip_log_in_screen.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/splash_screen.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/workspace_error_screen.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/workspace_start_screen/desktop_workspace_start_screen.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/workspace_start_screen/mobile_workspace_start_screen.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/screens/workspace_start_screen/workspace_start_screen.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/widgets/auth_form_container.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/widgets/flowy_logo_title.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/widgets/folder_widget.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/user/presentation/widgets/widgets.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/util/built_in_svgs.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/util/color_generator/color_generator.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/util/color_to_hex_string.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/util/debounce.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/util/default_extensions.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/util/expand_views.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/util/field_type_extension.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/util/file_extension.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/util/font_family_extension.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/util/int64_extension.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/util/json_print.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/util/levenshtein.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/util/navigator_context_extension.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/util/share_log_files.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/util/string_extension.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/util/theme_extension.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/util/theme_mode_extension.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/util/throttle.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/util/time.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/util/xfile_ext.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/action_navigation/action_navigation_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/action_navigation/navigation_action.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/appearance_defaults.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/command_palette/command_palette_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/command_palette/search_result_ext.dart	unreviewed	production-relevant until a pass-3 reviewer records it
+frontend/appflowy_flutter/lib/user/application/auth/auth_error.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/application/auth/auth_service.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/application/auth/backend_auth_service.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/application/auth/device_id.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/application/notification_filter/notification_filter_bloc.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/application/password/password_bloc.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/application/password/password_http_service.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/application/prelude.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/application/reminder/reminder_bloc.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/application/reminder/reminder_extension.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/application/reminder/reminder_listener.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/application/reminder/reminder_service.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/application/sign_in_bloc.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/application/sign_up_bloc.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/application/splash_bloc.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/application/user_auth_listener.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/application/user_listener.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/application/user_service.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/application/user_settings_service.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/application/workspace_error_bloc.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/domain/auth_state.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/anon_user.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/helpers/handle_open_workspace_error.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/helpers/helpers.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/presentation.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/router.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/screens.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/desktop_sign_in_screen.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/mobile_loading_screen.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/mobile_sign_in_screen.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/sign_in_screen.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/anonymous_sign_in_button.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/anonymous_sign_in_button/anonymous_sign_in_button.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/back_to_login_in_button.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/continue_with_button.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/continue_with_email.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/continue_with_email_and_password.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/continue_with_magic_link_or_passcode_page.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/continue_with_password.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/continue_with_password_page.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/forgot_password_page.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/reset_password.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/reset_password_page.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/set_new_password.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/title_logo.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/verifying_button.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/logo/logo.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/magic_link_sign_in_buttons.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/sign_in_agreement.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/sign_in_anonymous_button.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/sign_in_or_logout_button.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/switch_sign_in_sign_up_button.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/third_party_sign_in_button/third_party_sign_in_button.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/third_party_sign_in_button/third_party_sign_in_buttons.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/widgets.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/skip_log_in_screen.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/splash_screen.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/workspace_error_screen.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/workspace_start_screen/desktop_workspace_start_screen.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/workspace_start_screen/mobile_workspace_start_screen.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/workspace_start_screen/workspace_start_screen.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/widgets/auth_form_container.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/widgets/flowy_logo_title.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/widgets/folder_widget.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/widgets/widgets.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/util/built_in_svgs.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/util/color_generator/color_generator.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/util/color_to_hex_string.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/util/debounce.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/util/default_extensions.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/util/expand_views.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/util/field_type_extension.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/util/file_extension.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/util/font_family_extension.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/util/int64_extension.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/util/json_print.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/util/levenshtein.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/util/navigator_context_extension.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/util/share_log_files.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/util/string_extension.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/util/theme_extension.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/util/theme_mode_extension.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/util/throttle.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/util/time.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/util/xfile_ext.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/workspace/application/action_navigation/action_navigation_bloc.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/workspace/application/action_navigation/navigation_action.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/workspace/application/appearance_defaults.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/workspace/application/command_palette/command_palette_bloc.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/workspace/application/command_palette/search_result_ext.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
 frontend/appflowy_flutter/lib/workspace/application/command_palette/search_result_list_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
 frontend/appflowy_flutter/lib/workspace/application/command_palette/search_service.dart	unreviewed	production-relevant until a pass-3 reviewer records it
 frontend/appflowy_flutter/lib/workspace/application/edit_panel/edit_context.dart	unreviewed	production-relevant until a pass-3 reviewer records it

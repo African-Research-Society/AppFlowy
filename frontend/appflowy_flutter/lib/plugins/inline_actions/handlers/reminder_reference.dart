@@ -178,7 +178,7 @@ class ReminderReferenceService extends InlineActionsDelegate {
         [DateFormat.yMd(_locale).format(tomorrow)],
       );
     } catch (e) {
-      todayItem = _itemFromDate(today);
+      todayItem = _itemFromDate(tomorrow);
     }
 
     try {

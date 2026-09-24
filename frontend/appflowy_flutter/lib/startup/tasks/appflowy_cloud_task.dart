@@ -34,7 +34,9 @@ class AppFlowyCloudDeepLink {
 
     _deepLinkSubscription = _AppLinkWrapper.instance.listen(
       (Uri? uri) async {
-        Log.info('onDeepLink: ${uri.toString()}');
+        Log.info(
+          'onDeepLink: ${uri?.scheme}://${uri?.host}${uri?.path}',
+        );
         await _handleUri(uri);
       },
       onError: (Object err, StackTrace stackTrace) {
