@@ -401,7 +401,8 @@ extension TableContentOperation on EditorState {
         final row = tableNode.children[i];
         for (var j = 0; j < row.children.length; j++) {
           final cell = row.children[j];
-          final node = i + j < cells.length ? cells[i + j] : null;
+          final index = i * row.children.length + j;
+          final node = index < cells.length ? cells[index] : null;
           if (node != null && node.children.isNotEmpty) {
             transaction.insertNodes(
               cell.path.child(0),

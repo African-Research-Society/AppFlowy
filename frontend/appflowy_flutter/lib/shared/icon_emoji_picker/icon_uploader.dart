@@ -248,8 +248,7 @@ class _IconUploaderState extends State<IconUploader> {
     final imageFiles = files
         .where(
           (file) =>
-              file.mimeType?.startsWith('image/') ??
-              false ||
+              (file.mimeType?.startsWith('image/') ?? false) ||
                   imgExtensionRegex.hasMatch(file.name) ||
                   file.name.endsWith(_svgSuffix),
         )

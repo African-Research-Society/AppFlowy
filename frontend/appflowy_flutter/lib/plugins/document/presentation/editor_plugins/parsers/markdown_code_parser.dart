@@ -37,7 +37,9 @@ class MarkdownCodeBlockParser extends CustomMarkdownParser {
         (c) => c.startsWith('language-'),
         orElse: () => '',
       );
-      language = languageClass.substring('language-'.length);
+      if (languageClass.startsWith('language-')) {
+        language = languageClass.substring('language-'.length);
+      }
     }
 
     return [

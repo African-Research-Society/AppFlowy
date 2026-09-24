@@ -10,9 +10,7 @@ extension PasteFromPlainText on EditorState {
     final nodes = plainText
         .split('\n')
         .map(
-          (e) => e
-            ..replaceAll(r'\r', '')
-            ..trimRight(),
+          (e) => e.replaceAll('\r', '').trimRight(),
         )
         .map((e) => Delta()..insert(e))
         .map((e) => paragraphNode(delta: e))

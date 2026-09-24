@@ -644,14 +644,11 @@ extension TableNodeExtension on Node {
     if (previous == null) {
       return null;
     }
-    var children = previous.children;
-    if (children.isEmpty) {
-      return previous;
+    var node = previous;
+    while (node.children.isNotEmpty) {
+      node = node.children.last;
     }
-    while (children.isNotEmpty) {
-      children = children.last.children;
-    }
-    return children.lastWhere((c) => c.delta != null);
+    return node;
   }
 
   /// Get the next focusable sibling.

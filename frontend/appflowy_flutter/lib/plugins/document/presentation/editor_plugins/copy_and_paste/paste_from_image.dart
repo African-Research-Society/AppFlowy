@@ -29,8 +29,8 @@ extension PasteFromImage on EditorState {
   ) async {
     final imageFiles = files.where(
       (file) =>
-          file.mimeType?.startsWith('image/') ??
-          false || imgExtensionRegex.hasMatch(file.name.toLowerCase()),
+          (file.mimeType?.startsWith('image/') ?? false) ||
+          imgExtensionRegex.hasMatch(file.name.toLowerCase()),
     );
 
     for (final file in imageFiles) {
