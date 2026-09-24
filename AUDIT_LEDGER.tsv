@@ -364,16 +364,16 @@ frontend/appflowy_flutter/ios/Flutter/AppFrameworkInfo.plist	reviewed	reported l
 frontend/appflowy_flutter/ios/Flutter/Debug.xcconfig	reviewed	reported last line within 1 of file length; model UNKNOWN
 frontend/appflowy_flutter/ios/Flutter/Release.xcconfig	reviewed	reported last line within 1 of file length; model UNKNOWN
 frontend/appflowy_flutter/ios/Podfile	reviewed	reported last line within 1 of file length; model UNKNOWN
-frontend/appflowy_flutter/ios/Podfile.lock	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/ios/Runner.xcodeproj/project.pbxproj	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/ios/Runner.xcworkspace/contents.xcworkspacedata	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/ios/Runner/AppDelegate.swift	unreviewed	production-relevant until a pass-3 reviewer records it
+frontend/appflowy_flutter/ios/Podfile.lock	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/ios/Runner.xcodeproj/project.pbxproj	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/ios/Runner.xcworkspace/contents.xcworkspacedata	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/ios/Runner/AppDelegate.swift	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
 frontend/appflowy_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/1024.png	asset	binary or font asset, not executable logic
 frontend/appflowy_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/114.png	asset	binary or font asset, not executable logic
 frontend/appflowy_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/120.png	asset	binary or font asset, not executable logic
@@ -385,30 +385,30 @@ frontend/appflowy_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/58.png	a
 frontend/appflowy_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/60.png	asset	binary or font asset, not executable logic
 frontend/appflowy_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/80.png	asset	binary or font asset, not executable logic
 frontend/appflowy_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/87.png	asset	binary or font asset, not executable logic
-frontend/appflowy_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/ios/Runner/Assets.xcassets/Contents.json	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json	unreviewed	production-relevant until a pass-3 reviewer records it
+frontend/appflowy_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/ios/Runner/Assets.xcassets/Contents.json	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
 frontend/appflowy_flutter/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png	asset	binary or font asset, not executable logic
 frontend/appflowy_flutter/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png	asset	binary or font asset, not executable logic
 frontend/appflowy_flutter/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png	asset	binary or font asset, not executable logic
 frontend/appflowy_flutter/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md	doc	readme
-frontend/appflowy_flutter/ios/Runner/Base.lproj/LaunchScreen.storyboard	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/ios/Runner/Base.lproj/Main.storyboard	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/ios/Runner/Info.plist	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/ios/Runner/Runner-Bridging-Header.h	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/ios/Runner/Runner.entitlements	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/ai/ai.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/ai/service/ai_entities.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/ai/service/ai_model_state_notifier.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/ai/service/ai_prompt_database_selector_cubit.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/ai/service/ai_prompt_input_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/ai/service/ai_prompt_selector_cubit.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/ai/service/appflowy_ai_service.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/ai/service/error.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/ai/service/select_model_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/ai/service/view_selector_cubit.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/ai/widgets/ai_prompt_modal/ai_prompt_category_list.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/ai/widgets/ai_prompt_modal/ai_prompt_database_modal.dart	unreviewed	production-relevant until a pass-3 reviewer records it
+frontend/appflowy_flutter/ios/Runner/Base.lproj/LaunchScreen.storyboard	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/ios/Runner/Base.lproj/Main.storyboard	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/ios/Runner/Info.plist	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/ios/Runner/Runner-Bridging-Header.h	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/ios/Runner/Runner.entitlements	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/lib/ai/ai.dart	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/lib/ai/service/ai_entities.dart	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/lib/ai/service/ai_model_state_notifier.dart	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/lib/ai/service/ai_prompt_database_selector_cubit.dart	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/lib/ai/service/ai_prompt_input_bloc.dart	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/lib/ai/service/ai_prompt_selector_cubit.dart	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/lib/ai/service/appflowy_ai_service.dart	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/lib/ai/service/error.dart	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/lib/ai/service/select_model_bloc.dart	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/lib/ai/service/view_selector_cubit.dart	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/lib/ai/widgets/ai_prompt_modal/ai_prompt_category_list.dart	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
+frontend/appflowy_flutter/lib/ai/widgets/ai_prompt_modal/ai_prompt_database_modal.dart	reviewed	reported last line within 1 of file length; ATS and AI send path re-read
 frontend/appflowy_flutter/lib/ai/widgets/ai_prompt_modal/ai_prompt_modal.dart	unreviewed	production-relevant until a pass-3 reviewer records it
 frontend/appflowy_flutter/lib/ai/widgets/ai_prompt_modal/ai_prompt_onboarding.dart	unreviewed	production-relevant until a pass-3 reviewer records it
 frontend/appflowy_flutter/lib/ai/widgets/ai_prompt_modal/ai_prompt_preview.dart	unreviewed	production-relevant until a pass-3 reviewer records it
