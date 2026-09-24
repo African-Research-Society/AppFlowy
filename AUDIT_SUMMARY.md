@@ -101,3 +101,7 @@ Read the client-api and cloud task sources. No Flutter build.
 - Network-path files opened: client-api http, blob, ws v2, user.rs, file_storage.rs, appflowy_cloud_task.dart, Cargo pin.
 - Editor and database UI: excluded, named above.
 - Code fixes: 0.
+
+## Pass 3 — stopped before completion
+
+Scripted source batches through 239 were ledgered. Unreviewed remains 45, mostly CI, hooks, licenses, and early Flutter/Android config outside those batches. Local fixes on `audit/remediation` include nested filter deletion, shared-scope writes, search errors, zero chunk size, encrypt and regex fail-closed, and launcher quoting. They are unpushed. Waves 2 and 3 were not run. See AfriNexus `AUDIT_PASS3_PROGRESS.md`.
