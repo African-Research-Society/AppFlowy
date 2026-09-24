@@ -1,80 +1,103 @@
-# AppFlowy audit
+# AppFlowy audit (second pass)
 
-## Executive Summary
+## Coverage Matrix
 
-The fork is one commit ahead of upstream: a rebrand to ARS Workspace. No functional defect was found in that commit that justified a code change. This branch records the audit only.
+| Subsystem | Depth | Notes |
+| --- | --- | --- |
+| Cloud HTTP client (`client-api`) | Deep | `http.rs` verify URL, blob client, websocket v2 token |
+| Flutter cloud sign-in task | Deep | `appflowy_cloud_task.dart` deep link |
+| Server glue `flowy-server` | Light | Confirms it uses client-api |
+| ARS rebrand commit | Deep | Scheme and share host only |
+| Editor, grids, AI UI, local SQLite | Not applicable | Not the network boundary ARS inherits. Data still syncs through the client-api path above |
 
-## Architecture Overview
+## Findings
 
-Flutter and Rust desktop/mobile client. ARS uses it as the native workspace app. Web and Cloud are separate repositories.
+The desktop app calls `GET /api/user/verify/{access_token}` and can use websocket v2 with `token` in the query. Blob downloads send a bearer token, but Cloud does not require it. The ARS rebrand commit does not add secrets. OAuth return uses `ars-workspace://login-callback#access_token=...`, which is the normal fragment pattern and can still show up in OS logs.
 
-## Audit Coverage
+No change was made here. The protocol lives in AppFlowy-Cloud and this client together. Patching only one side breaks sign-in.
 
-The rebrand commit only. Upstream AppFlowy was not re-audited.
+## Fixed Findings
 
-## Confirmed Issues
+None in this repository.
 
-None in the ARS commit.
+## Unfixed Findings
 
-## Security Findings
+Token-in-path and unauthenticated blob GET. Owned by the Cloud service. See that repo’s summary.
 
-None in the rebrand diff.
+## Security
+
+Inherited from the Cloud API the app is pinned to (`African-Research-Society/AppFlowy-Cloud` in `frontend/rust-lib/Cargo.toml`).
+
+## Database Integrity
+
+Local SQLite was not audited.
+
+## Authentication
+
+Cloud sign-in task and client-api verify.
+
+## Authorization
+
+Enforced on the server, and only if access control is enabled there.
 
 ## Bugs
 
-None confirmed in the ARS commit.
+None unique to the rebrand.
 
-## Compatibility Findings
+## Race Conditions
 
-The client must stay on a build that speaks the same protocol as the ARS Cloud fork. That coupling is operational, not a bug in this commit.
+Not examined.
 
-## Dead/Vestigial Code
+## Vestigial Code
 
-Not searched across upstream.
+Not swept across the Flutter tree. A repo-wide unused-widget hunt would not change the network risk.
 
 ## Mapping/Consistency Problems
 
-Branding strings were not diffed string-by-string against the website.
+Share links point at `workspace.africanresearchsociety.org`. That host must match the deployed web app.
 
-## Performance/Reliability
+## Compatibility
 
-Not in scope for a string rebrand.
+The crate pin must move together with Cloud if verify or blob auth changes.
 
-## Testing Gaps
+## Dependencies
 
-No new tests.
+Pin recorded. No upgrade.
 
-## Improvements
+## Performance
 
-None landed.
+Not examined.
 
-## Fixes Implemented
+## Accessibility
 
-None. Report only.
+Not examined. Out of the security scope of this pass.
 
-## Tests Added
+## Testing
 
-None.
+Not rebuilt.
 
-## Verification Performed
+## Cross-Repository Findings
 
-`git log upstream/main..HEAD` is a single rebrand commit. The patch was not rebuilt.
+See Cloud summary. AfriNexus hands the browser a magic link; the desktop app uses the verify path directly.
 
-## Findings Not Fixed
+## Product Decisions Required
 
-None that were confirmed.
+Whether the desktop client is still shipped. If it is, schedule a joint change: header verify, authenticated blob GET.
 
-## Items Requiring Human Decision
+## Remaining Risks
 
-Whether to keep rebasing this fork onto upstream, or to stop shipping the desktop app and use AppFlowy-Web only.
+Anyone with a blob URL can fetch the file from the current Cloud build.
 
-## Recommended Future Work
+## Areas Where Audit Confidence Is Low
 
-If the desktop app stays, rebase onto current upstream and re-apply the rebrand as a small patch.
+Which websocket version production desktop builds actually negotiate.
 
-## Statistics
+## Verification
 
-- Commits examined: 1.
-- Coverage: ARS delta only.
-- Fixed: 0.
-- Dependencies changed: none.
+Read the client-api and cloud task sources. No Flutter build.
+
+## Metrics
+
+- Network-path files opened: client-api http, blob, ws v2, user.rs, file_storage.rs, appflowy_cloud_task.dart, Cargo pin.
+- Editor and database UI: excluded, named above.
+- Code fixes: 0.
