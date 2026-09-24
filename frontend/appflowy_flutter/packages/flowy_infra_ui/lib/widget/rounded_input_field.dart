@@ -72,9 +72,13 @@ class _RoundedInputFieldState extends State<RoundedInputField> {
         : widget.initialValue ?? "";
   }
 
-  String? _suffixText() => widget.maxLength != null
-      ? ' ${widget.controller!.text.length}/${widget.maxLength}'
-      : null;
+  String? _suffixText() {
+    if (widget.maxLength == null) {
+      return null;
+    }
+    final length = widget.controller?.text.length ?? inputText.length;
+    return ' $length/${widget.maxLength}';
+  }
 
   @override
   Widget build(BuildContext context) {

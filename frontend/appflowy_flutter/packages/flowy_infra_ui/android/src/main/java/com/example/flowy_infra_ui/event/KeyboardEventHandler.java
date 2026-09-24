@@ -31,6 +31,9 @@ public class KeyboardEventHandler implements EventChannel.StreamHandler {
     @RequiresApi(Build.VERSION_CODES.R)
     public void observeKeyboardAction(Activity activity) {
         rootView = activity.findViewById(android.R.id.content);
+        if (rootView == null) {
+            return;
+        }
 
         ViewCompat.setOnApplyWindowInsetsListener(rootView, new OnApplyWindowInsetsListener() {
             @Override

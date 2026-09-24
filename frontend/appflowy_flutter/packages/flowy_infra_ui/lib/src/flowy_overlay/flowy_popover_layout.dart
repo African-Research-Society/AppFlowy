@@ -241,7 +241,7 @@ class PopoverLayoutDelegate extends SingleChildLayoutDelegate {
         );
         break;
       default:
-        throw UnimplementedError();
+        position = Offset.zero;
     }
     return Offset(
       math.max(0.0, math.min(size.width - childSize.width, position.dx)),
