@@ -4577,28 +4577,28 @@ frontend/scripts/makefile/desktop.toml	reviewed	batch 237 last-line length match
 frontend/scripts/makefile/docker.toml	reviewed	batch 237 last-line length matched; model self-reported composer, not tool-verified grok
 frontend/scripts/makefile/env.toml	reviewed	batch 237 last-line length matched; model self-reported composer, not tool-verified grok
 frontend/scripts/makefile/flutter.toml	reviewed	batch 237 last-line length matched; model self-reported composer, not tool-verified grok
-frontend/scripts/makefile/mobile.toml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/makefile/protobuf.toml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/makefile/tauri.toml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/makefile/tests.toml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/makefile/tool.toml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/makefile/web.toml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/tool/update_client_api_rev.sh	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/tool/update_collab_rev.sh	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/tool/update_collab_source.sh	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/tool/update_local_ai_rev.sh	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/white_label/code_white_label.sh	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/white_label/font_white_label.sh	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/white_label/i18n_white_label.sh	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/white_label/icon_white_label.sh	unreviewed	production-relevant until a pass-3 reviewer records it
+frontend/scripts/makefile/mobile.toml	reviewed	batch 238 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/scripts/makefile/protobuf.toml	reviewed	batch 238 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/scripts/makefile/tauri.toml	reviewed	batch 238 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/scripts/makefile/tests.toml	reviewed	batch 238 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/scripts/makefile/tool.toml	reviewed	batch 238 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/scripts/makefile/web.toml	reviewed	batch 238 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/scripts/tool/update_client_api_rev.sh	reviewed	batch 238 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/scripts/tool/update_collab_rev.sh	reviewed	batch 238 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/scripts/tool/update_collab_source.sh	reviewed	batch 238 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/scripts/tool/update_local_ai_rev.sh	reviewed	batch 238 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/scripts/white_label/code_white_label.sh	reviewed	batch 238 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/scripts/white_label/font_white_label.sh	reviewed	batch 238 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/scripts/white_label/i18n_white_label.sh	reviewed	batch 238 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/scripts/white_label/icon_white_label.sh	reviewed	batch 238 last-line length matched; model self-reported composer, not tool-verified grok
 frontend/scripts/white_label/resources/my_company_logo.ico	asset	binary or font asset, not executable logic
 frontend/scripts/white_label/resources/my_company_logo.png	asset	binary or font asset, not executable logic
 frontend/scripts/white_label/resources/my_company_logo.svg	asset	binary or font asset, not executable logic
-frontend/scripts/white_label/white_label.sh	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/white_label/windows_white_label.sh	unreviewed	production-relevant until a pass-3 reviewer records it
+frontend/scripts/white_label/white_label.sh	reviewed	batch 238 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/scripts/white_label/windows_white_label.sh	reviewed	batch 239 last-line length matched; model self-reported Composer, not tool-verified grok
 frontend/scripts/windows_installer/flowy_logo.ico	asset	binary or font asset, not executable logic
-frontend/scripts/windows_installer/inno_setup_config.iss	unreviewed	production-relevant until a pass-3 reviewer records it
-install.sh	unreviewed	production-relevant until a pass-3 reviewer records it
-project.inlang.json	unreviewed	production-relevant until a pass-3 reviewer records it
-project.inlang/project_id	unreviewed	production-relevant until a pass-3 reviewer records it
-project.inlang/settings.json	unreviewed	production-relevant until a pass-3 reviewer records it
+frontend/scripts/windows_installer/inno_setup_config.iss	reviewed	batch 239 last-line length matched; model self-reported Composer, not tool-verified grok
+install.sh	reviewed	batch 239 last-line length matched; model self-reported Composer, not tool-verified grok
+project.inlang.json	reviewed	batch 239 last-line length matched; model self-reported Composer, not tool-verified grok
+project.inlang/project_id	reviewed	batch 239 last-line length matched; model self-reported Composer, not tool-verified grok
+project.inlang/settings.json	reviewed	batch 239 last-line length matched; model self-reported Composer, not tool-verified grok
