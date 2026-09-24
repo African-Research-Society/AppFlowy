@@ -11,7 +11,7 @@ use crate::entities::{
   ResultIconPB, ResultIconTypePB, SearchResponsePB,
 };
 use crate::services::manager::{SearchHandler, SearchType};
-use flowy_error::FlowyResult;
+use flowy_error::{FlowyError, FlowyResult};
 use flowy_search_pub::entities::TanvitySearchResponseItem;
 use flowy_search_pub::tantivy_state::DocumentTantivyState;
 use lib_infra::async_trait::async_trait;
@@ -71,7 +71,10 @@ impl SearchHandler for DocumentLocalSearchHandler {
                 );
               }
             },
-            Err(err) => error!("[Tantivy] Failed to search documents, {:?}", err),
+            Err(err) => {
+              error!("[Tantivy] Failed to search documents, {:?}", err);
+              yield Err(FlowyError::internal().with_context(format!("Failed to search documents: {err}")));
+            },
           }
         }
       }

@@ -4245,38 +4245,38 @@ frontend/rust-lib/flowy-search-pub/src/entities.rs	reviewed	reported last line m
 frontend/rust-lib/flowy-search-pub/src/lib.rs	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
 frontend/rust-lib/flowy-search-pub/src/schema.rs	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
 frontend/rust-lib/flowy-search-pub/src/tantivy_state.rs	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
-frontend/rust-lib/flowy-search-pub/src/tantivy_state_init.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-search/Cargo.toml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-search/Flowy.toml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-search/build.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-search/src/document/cloud_search_handler.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-search/src/document/local_search_handler.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-search/src/document/mod.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-search/src/entities/mod.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-search/src/entities/notification.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-search/src/entities/query.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-search/src/entities/result.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-search/src/entities/search_filter.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-search/src/event_handler.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-search/src/event_map.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-search/src/lib.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-search/src/services/manager.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-search/src/services/mod.rs	unreviewed	production-relevant until a pass-3 reviewer records it
+frontend/rust-lib/flowy-search-pub/src/tantivy_state_init.rs	reviewed	batch 217 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
+frontend/rust-lib/flowy-search/Cargo.toml	reviewed	batch 217 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
+frontend/rust-lib/flowy-search/Flowy.toml	reviewed	batch 217 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
+frontend/rust-lib/flowy-search/build.rs	reviewed	batch 217 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
+frontend/rust-lib/flowy-search/src/document/cloud_search_handler.rs	reviewed	batch 217 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok; main-session re-read cited lines before patch
+frontend/rust-lib/flowy-search/src/document/local_search_handler.rs	reviewed	batch 217 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok; main-session re-read cited lines before patch
+frontend/rust-lib/flowy-search/src/document/mod.rs	reviewed	batch 217 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
+frontend/rust-lib/flowy-search/src/entities/mod.rs	reviewed	batch 217 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
+frontend/rust-lib/flowy-search/src/entities/notification.rs	reviewed	batch 217 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
+frontend/rust-lib/flowy-search/src/entities/query.rs	reviewed	batch 217 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
+frontend/rust-lib/flowy-search/src/entities/result.rs	reviewed	batch 217 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
+frontend/rust-lib/flowy-search/src/entities/search_filter.rs	reviewed	batch 217 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
+frontend/rust-lib/flowy-search/src/event_handler.rs	reviewed	batch 217 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
+frontend/rust-lib/flowy-search/src/event_map.rs	reviewed	batch 217 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
+frontend/rust-lib/flowy-search/src/lib.rs	reviewed	batch 217 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
+frontend/rust-lib/flowy-search/src/services/manager.rs	reviewed	batch 218 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-search/src/services/mod.rs	reviewed	batch 218 last-line length matched; model self-reported composer, not tool-verified grok
 frontend/rust-lib/flowy-search/tests/main.rs	test-fixture	test or fixture path
 frontend/rust-lib/flowy-search/tests/tantivy_test.rs	test-fixture	test or fixture path
-frontend/rust-lib/flowy-server-pub/Cargo.toml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-server-pub/src/af_cloud_config.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-server-pub/src/lib.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-server-pub/src/native/af_cloud_config.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-server-pub/src/native/mod.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-server-pub/src/wasm/af_cloud_config.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-server-pub/src/wasm/mod.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-server/Cargo.toml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-server/src/af_cloud/define.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-server/src/af_cloud/impls/chat.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-server/src/af_cloud/impls/database.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-server/src/af_cloud/impls/document.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-server/src/af_cloud/impls/file_storage.rs	unreviewed	production-relevant until a pass-3 reviewer records it
+frontend/rust-lib/flowy-server-pub/Cargo.toml	reviewed	batch 218 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-server-pub/src/af_cloud_config.rs	reviewed	batch 218 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-server-pub/src/lib.rs	reviewed	batch 218 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-server-pub/src/native/af_cloud_config.rs	reviewed	batch 218 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-server-pub/src/native/mod.rs	reviewed	batch 218 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-server-pub/src/wasm/af_cloud_config.rs	reviewed	batch 218 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-server-pub/src/wasm/mod.rs	reviewed	batch 218 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-server/Cargo.toml	reviewed	batch 218 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-server/src/af_cloud/define.rs	reviewed	batch 218 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-server/src/af_cloud/impls/chat.rs	reviewed	batch 218 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-server/src/af_cloud/impls/database.rs	reviewed	batch 218 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-server/src/af_cloud/impls/document.rs	reviewed	batch 218 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-server/src/af_cloud/impls/file_storage.rs	reviewed	batch 218 last-line length matched; model self-reported composer, not tool-verified grok
 frontend/rust-lib/flowy-server/src/af_cloud/impls/folder.rs	unreviewed	production-relevant until a pass-3 reviewer records it
 frontend/rust-lib/flowy-server/src/af_cloud/impls/mod.rs	unreviewed	production-relevant until a pass-3 reviewer records it
 frontend/rust-lib/flowy-server/src/af_cloud/impls/search.rs	unreviewed	production-relevant until a pass-3 reviewer records it
@@ -4292,52 +4292,52 @@ frontend/rust-lib/flowy-server/src/local_server/impls/chat.rs	unreviewed	product
 frontend/rust-lib/flowy-server/src/local_server/impls/database.rs	unreviewed	production-relevant until a pass-3 reviewer records it
 frontend/rust-lib/flowy-server/src/local_server/impls/document.rs	unreviewed	production-relevant until a pass-3 reviewer records it
 frontend/rust-lib/flowy-server/src/local_server/impls/folder.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-server/src/local_server/impls/mod.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-server/src/local_server/impls/search.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-server/src/local_server/impls/user.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-server/src/local_server/mod.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-server/src/local_server/server.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-server/src/local_server/template/create_workspace.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-server/src/local_server/template/mod.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-server/src/local_server/uid.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-server/src/local_server/util.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-server/src/response.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-server/src/server.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-server/src/util.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite-vec/Cargo.toml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite-vec/migrations/001-init/up.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite-vec/src/db.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite-vec/src/entities.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite-vec/src/lib.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite-vec/src/migration.rs	unreviewed	production-relevant until a pass-3 reviewer records it
+frontend/rust-lib/flowy-server/src/local_server/impls/mod.rs	reviewed	batch 220 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-server/src/local_server/impls/search.rs	reviewed	batch 220 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-server/src/local_server/impls/user.rs	reviewed	batch 220 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-server/src/local_server/mod.rs	reviewed	batch 220 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-server/src/local_server/server.rs	reviewed	batch 220 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-server/src/local_server/template/create_workspace.rs	reviewed	batch 220 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-server/src/local_server/template/mod.rs	reviewed	batch 220 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-server/src/local_server/uid.rs	reviewed	batch 220 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-server/src/local_server/util.rs	reviewed	batch 220 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-server/src/response.rs	reviewed	batch 220 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-server/src/server.rs	reviewed	batch 220 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-server/src/util.rs	reviewed	batch 220 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-sqlite-vec/Cargo.toml	reviewed	batch 220 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-sqlite-vec/migrations/001-init/up.sql	reviewed	batch 220 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/rust-lib/flowy-sqlite-vec/src/db.rs	reviewed	batch 220 last-line length matched; model self-reported composer, not tool-verified grok; main-session re-read cited lines before patch
+frontend/rust-lib/flowy-sqlite-vec/src/entities.rs	reviewed	batch 221 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite-vec/src/lib.rs	reviewed	batch 221 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite-vec/src/migration.rs	reviewed	batch 221 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
 frontend/rust-lib/flowy-sqlite-vec/tests/main.rs	test-fixture	test or fixture path
-frontend/rust-lib/flowy-sqlite/.env	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/Cargo.toml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/diesel.toml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2023-06-05-023648_user/down.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2023-06-05-023648_user/up.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2023-06-05-135652_collab_snapshot/down.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2023-06-05-135652_collab_snapshot/up.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2023-07-12-135810_user_auth_type/down.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2023-07-12-135810_user_auth_type/up.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2023-07-21-081348_user_workspace/down.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2023-07-21-081348_user_workspace/up.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2023-08-02-083250_user_migration/down.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2023-08-02-083250_user_migration/up.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2023-08-14-162155_user_encrypt/down.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2023-08-14-162155_user_encrypt/up.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2023-10-09-094834_user_stability_ai_key/down.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2023-10-09-094834_user_stability_ai_key/up.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2023-10-24-074032_user_updated_at/down.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2023-10-24-074032_user_updated_at/up.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2023-11-19-040403_rocksdb_backup/down.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2023-11-19-040403_rocksdb_backup/up.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2024-01-07-041005_recreate_snapshot_table/down.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2024-01-07-041005_recreate_snapshot_table/up.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2024-03-09-031208_user_workspace_icon/down.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2024-03-09-031208_user_workspace_icon/up.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2024-05-23-061639_chat_message/down.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2024-05-23-061639_chat_message/up.sql	unreviewed	production-relevant until a pass-3 reviewer records it
+frontend/rust-lib/flowy-sqlite/.env	reviewed	batch 221 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/Cargo.toml	reviewed	batch 221 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/diesel.toml	reviewed	batch 221 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2023-06-05-023648_user/down.sql	reviewed	batch 221 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2023-06-05-023648_user/up.sql	reviewed	batch 221 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2023-06-05-135652_collab_snapshot/down.sql	reviewed	batch 221 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2023-06-05-135652_collab_snapshot/up.sql	reviewed	batch 221 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2023-07-12-135810_user_auth_type/down.sql	reviewed	batch 221 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2023-07-12-135810_user_auth_type/up.sql	reviewed	batch 221 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2023-07-21-081348_user_workspace/down.sql	reviewed	batch 221 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2023-07-21-081348_user_workspace/up.sql	reviewed	batch 221 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2023-08-02-083250_user_migration/down.sql	reviewed	batch 221 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2023-08-02-083250_user_migration/up.sql	reviewed	batch 222 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2023-08-14-162155_user_encrypt/down.sql	reviewed	batch 222 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2023-08-14-162155_user_encrypt/up.sql	reviewed	batch 222 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2023-10-09-094834_user_stability_ai_key/down.sql	reviewed	batch 222 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2023-10-09-094834_user_stability_ai_key/up.sql	reviewed	batch 222 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2023-10-24-074032_user_updated_at/down.sql	reviewed	batch 222 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2023-10-24-074032_user_updated_at/up.sql	reviewed	batch 222 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2023-11-19-040403_rocksdb_backup/down.sql	reviewed	batch 222 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2023-11-19-040403_rocksdb_backup/up.sql	reviewed	batch 222 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2024-01-07-041005_recreate_snapshot_table/down.sql	reviewed	batch 222 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2024-01-07-041005_recreate_snapshot_table/up.sql	reviewed	batch 222 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2024-03-09-031208_user_workspace_icon/down.sql	reviewed	batch 222 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2024-03-09-031208_user_workspace_icon/up.sql	reviewed	batch 222 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2024-05-23-061639_chat_message/down.sql	reviewed	batch 222 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2024-05-23-061639_chat_message/up.sql	reviewed	batch 222 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
 frontend/rust-lib/flowy-sqlite/migrations/2024-06-14-020242_workspace_member/down.sql	unreviewed	production-relevant until a pass-3 reviewer records it
 frontend/rust-lib/flowy-sqlite/migrations/2024-06-14-020242_workspace_member/up.sql	unreviewed	production-relevant until a pass-3 reviewer records it
 frontend/rust-lib/flowy-sqlite/migrations/2024-06-16-131359_file_upload/down.sql	unreviewed	production-relevant until a pass-3 reviewer records it
@@ -4353,21 +4353,21 @@ frontend/rust-lib/flowy-sqlite/migrations/2024-08-07-093650_chat_metadata/up.sql
 frontend/rust-lib/flowy-sqlite/migrations/2024-08-20-061727_file_upload_finish/down.sql	unreviewed	production-relevant until a pass-3 reviewer records it
 frontend/rust-lib/flowy-sqlite/migrations/2024-08-20-061727_file_upload_finish/up.sql	unreviewed	production-relevant until a pass-3 reviewer records it
 frontend/rust-lib/flowy-sqlite/migrations/2024-11-08-102351_workspace_member_count/down.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2024-11-08-102351_workspace_member_count/up.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2024-12-12-102351_workspace_role/down.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2024-12-12-102351_workspace_role/up.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2024-12-29-061706_collab_metadata/down.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2024-12-29-061706_collab_metadata/up.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2025-04-17-042326_chat_metadata/down.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2025-04-17-042326_chat_metadata/up.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2025-04-17-142713_offline_chat_message/down.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2025-04-17-142713_offline_chat_message/up.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2025-04-18-132232_user_workspace_auth_type/down.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2025-04-18-132232_user_workspace_auth_type/up.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2025-04-22-150142_workspace_member_joined_at/down.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2025-04-22-150142_workspace_member_joined_at/up.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2025-04-25-071459_local_ai_model/down.sql	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/flowy-sqlite/migrations/2025-04-25-071459_local_ai_model/up.sql	unreviewed	production-relevant until a pass-3 reviewer records it
+frontend/rust-lib/flowy-sqlite/migrations/2024-11-08-102351_workspace_member_count/up.sql	reviewed	batch 224 last-line length matched; model self-reported Composer, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2024-12-12-102351_workspace_role/down.sql	reviewed	batch 224 last-line length matched; model self-reported Composer, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2024-12-12-102351_workspace_role/up.sql	reviewed	batch 224 last-line length matched; model self-reported Composer, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2024-12-29-061706_collab_metadata/down.sql	reviewed	batch 224 last-line length matched; model self-reported Composer, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2024-12-29-061706_collab_metadata/up.sql	reviewed	batch 224 last-line length matched; model self-reported Composer, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2025-04-17-042326_chat_metadata/down.sql	reviewed	batch 224 last-line length matched; model self-reported Composer, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2025-04-17-042326_chat_metadata/up.sql	reviewed	batch 224 last-line length matched; model self-reported Composer, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2025-04-17-142713_offline_chat_message/down.sql	reviewed	batch 224 last-line length matched; model self-reported Composer, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2025-04-17-142713_offline_chat_message/up.sql	reviewed	batch 224 last-line length matched; model self-reported Composer, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2025-04-18-132232_user_workspace_auth_type/down.sql	reviewed	batch 224 last-line length matched; model self-reported Composer, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2025-04-18-132232_user_workspace_auth_type/up.sql	reviewed	batch 224 last-line length matched; model self-reported Composer, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2025-04-22-150142_workspace_member_joined_at/down.sql	reviewed	batch 224 last-line length matched; model self-reported Composer, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2025-04-22-150142_workspace_member_joined_at/up.sql	reviewed	batch 224 last-line length matched; model self-reported Composer, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2025-04-25-071459_local_ai_model/down.sql	reviewed	batch 224 last-line length matched; model self-reported Composer, not tool-verified grok
+frontend/rust-lib/flowy-sqlite/migrations/2025-04-25-071459_local_ai_model/up.sql	reviewed	batch 224 last-line length matched; model self-reported Composer, not tool-verified grok
 frontend/rust-lib/flowy-sqlite/migrations/2025-04-28-070644_collab_table/down.sql	unreviewed	production-relevant until a pass-3 reviewer records it
 frontend/rust-lib/flowy-sqlite/migrations/2025-04-28-070644_collab_table/up.sql	unreviewed	production-relevant until a pass-3 reviewer records it
 frontend/rust-lib/flowy-sqlite/migrations/2025-05-06-131915_chat_summary/down.sql	unreviewed	production-relevant until a pass-3 reviewer records it
