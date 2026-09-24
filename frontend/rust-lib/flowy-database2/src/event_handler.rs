@@ -965,10 +965,10 @@ pub(crate) async fn get_no_date_calendar_events_handler(
   let database_editor = manager
     .get_database_editor_with_view_id(&params.view_id)
     .await?;
-  let _events = database_editor
+  let events = database_editor
     .get_all_no_date_calendar_events(&params.view_id)
-    .await;
-  todo!()
+    .await?;
+  data_result_ok(RepeatedNoDateCalendarEventPB { items: events })
 }
 
 #[tracing::instrument(level = "debug", skip(data, manager), err)]
@@ -1021,8 +1021,7 @@ pub(crate) async fn create_database_view(
   _data: AFPluginData<CreateDatabaseViewPayloadPB>,
   _manager: AFPluginState<Weak<DatabaseManager>>,
 ) -> FlowyResult<()> {
-  // let data: CreateDatabaseViewParams = data.into_inner().try_into()?;
-  Ok(())
+  Err(FlowyError::not_support())
 }
 
 #[tracing::instrument(level = "debug", skip_all, err)]
@@ -1176,7 +1175,9 @@ pub(crate) async fn get_related_database_ids_handler(
   _data: AFPluginData<DatabaseViewIdPB>,
   _manager: AFPluginState<Weak<DatabaseManager>>,
 ) -> FlowyResult<()> {
-  Ok(())
+  let _data = _data;
+  let _manager = _manager;
+  Err(FlowyError::not_support())
 }
 
 #[tracing::instrument(level = "debug", skip_all, err)]
