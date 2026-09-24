@@ -25,6 +25,7 @@ pub fn create_text_field(grid_id: &str) -> (CreateFieldParams, Field) {
     type_option_data: Some(type_option_data),
     field_name: None,
     position: OrderObjectPosition::default(),
+    field_icon: None,
   };
   (params, text_field)
 }
@@ -45,6 +46,7 @@ pub fn create_single_select_field(grid_id: &str) -> (CreateFieldParams, Field) {
     type_option_data: Some(type_option_data),
     field_name: None,
     position: OrderObjectPosition::default(),
+    field_icon: None,
   };
   (params, single_select_field)
 }
@@ -68,6 +70,7 @@ pub fn create_date_field(grid_id: &str) -> (CreateFieldParams, Field) {
     type_option_data: Some(type_option_data),
     field_name: None,
     position: OrderObjectPosition::default(),
+    field_icon: None,
   };
   (params, field)
 }
@@ -99,6 +102,7 @@ pub fn create_timestamp_field(grid_id: &str, field_type: FieldType) -> (CreateFi
     type_option_data: Some(type_option_data),
     field_name: None,
     position: OrderObjectPosition::default(),
+    field_icon: None,
   };
   (params, field)
 }
@@ -117,6 +121,7 @@ pub fn create_time_field(grid_id: &str) -> (CreateFieldParams, Field) {
     type_option_data: Some(type_option_data),
     field_name: None,
     position: OrderObjectPosition::default(),
+    field_icon: None,
   };
   (params, text_field)
 }

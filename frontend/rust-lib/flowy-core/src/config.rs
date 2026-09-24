@@ -110,7 +110,6 @@ fn make_user_data_folder(root: &str, url: &str) -> String {
   // If a URL is provided, try to parse it and extract the domain name.
   // This isolates the user data folder by the domain, which prevents data sharing
   // between different AppFlowy cloud instances.
-  print!("Creating user data folder for URL: {}, root:{}", url, root);
   let mut storage_path = if url.is_empty() {
     PathBuf::from(root)
   } else {
