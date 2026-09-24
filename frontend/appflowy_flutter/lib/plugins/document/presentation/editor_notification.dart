@@ -31,12 +31,21 @@ class EditorNotification {
 
   void post() => _notifier.value = type;
 
+  static final Map<ValueChanged<EditorNotificationType>, VoidCallback>
+      _listeners = {};
+
   static void addListener(ValueChanged<EditorNotificationType> listener) {
-    _notifier.addListener(() => listener(_notifier.value));
+    removeListener(listener);
+    void callback() => listener(_notifier.value);
+    _listeners[listener] = callback;
+    _notifier.addListener(callback);
   }
 
   static void removeListener(ValueChanged<EditorNotificationType> listener) {
-    _notifier.removeListener(() => listener(_notifier.value));
+    final callback = _listeners.remove(listener);
+    if (callback != null) {
+      _notifier.removeListener(callback);
+    }
   }
 
   static void dispose() => _notifier.dispose();

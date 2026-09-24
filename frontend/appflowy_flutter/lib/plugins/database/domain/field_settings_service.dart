@@ -20,6 +20,11 @@ class FieldSettingsBackendService {
     return DatabaseEventGetFieldSettings(payload).send().then((result) {
       return result.fold(
         (repeatedFieldSettings) {
+          if (repeatedFieldSettings.items.isEmpty) {
+            return FlowyResult.failure(
+              FlowyError(msg: 'Field settings not found'),
+            );
+          }
           final fieldSetting = repeatedFieldSettings.items.first;
           if (!fieldSetting.hasVisibility()) {
             fieldSetting.visibility = FieldVisibility.AlwaysShown;

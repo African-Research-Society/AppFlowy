@@ -10,7 +10,7 @@ ViewLayoutPB viewLayoutFromDatabaseLayout(DatabaseLayoutPB databaseLayout) {
     case DatabaseLayoutPB.Grid:
       return ViewLayoutPB.Grid;
     default:
-      throw UnimplementedError;
+      throw UnimplementedError();
   }
 }
 
@@ -23,6 +23,6 @@ DatabaseLayoutPB databaseLayoutFromViewLayout(ViewLayoutPB viewLayout) {
     case ViewLayoutPB.Grid:
       return DatabaseLayoutPB.Grid;
     default:
-      throw UnimplementedError;
+      throw UnimplementedError();
   }
 }

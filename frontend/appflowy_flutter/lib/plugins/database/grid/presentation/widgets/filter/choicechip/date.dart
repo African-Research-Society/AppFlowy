@@ -82,7 +82,7 @@ class _DateFilterEditorState extends State<DateFilterEditor> {
             DateFilterConditionPB.DateStartIsEmpty,
             DateFilterConditionPB.DateStartIsNotEmpty,
             DateFilterConditionPB.DateEndIsEmpty,
-            DateFilterConditionPB.DateStartIsNotEmpty,
+            DateFilterConditionPB.DateEndIsNotEmpty,
           ].contains(filter.condition)) ...[
             const VSpace(4),
             _buildFilterContentField(filter),

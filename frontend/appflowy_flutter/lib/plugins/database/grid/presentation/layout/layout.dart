@@ -7,14 +7,19 @@ class GridLayout {
   static double headerWidth(double padding, List<FieldInfo> fields) {
     if (fields.isEmpty) return 0;
 
-    final fieldsWidth = fields
+    final visibleWidths = fields
         .where(
           (element) =>
               element.visibility != null &&
               element.visibility != FieldVisibility.AlwaysHidden,
         )
-        .map((fieldInfo) => fieldInfo.width!.toDouble())
-        .reduce((value, element) => value + element);
+        .map((fieldInfo) => fieldInfo.width ?? 150)
+        .toList();
+    if (visibleWidths.isEmpty) {
+      return padding + GridSize.newPropertyButtonWidth;
+    }
+
+    final fieldsWidth = visibleWidths.reduce((value, element) => value + element);
 
     return fieldsWidth + padding + GridSize.newPropertyButtonWidth;
   }
