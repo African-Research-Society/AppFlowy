@@ -91,6 +91,7 @@ class DatePickerMenu extends DatePickerService {
   final BuildContext context;
   final EditorState editorState;
   PopoverMutex? popoverMutex;
+  final FocusNode _escapeFocusNode = FocusNode();
 
   OverlayEntry? _menuEntry;
 
@@ -98,6 +99,7 @@ class DatePickerMenu extends DatePickerService {
   void dismiss() {
     _menuEntry?.remove();
     _menuEntry = null;
+    _escapeFocusNode.unfocus();
     popoverMutex?.close();
     popoverMutex?.dispose();
     popoverMutex = null;
@@ -110,7 +112,11 @@ class DatePickerMenu extends DatePickerService {
   void _show(Offset offset, {required DatePickerOptions options}) {
     dismiss();
 
-    final editorSize = editorState.renderBox!.size;
+    final renderBox = editorState.renderBox;
+    if (renderBox == null) {
+      return;
+    }
+    final editorSize = renderBox.size;
 
     double offsetX = offset.dx;
     double offsetY = offset.dy;
@@ -139,7 +145,7 @@ class DatePickerMenu extends DatePickerService {
           height: editorSize.height,
           width: editorSize.width,
           child: KeyboardListener(
-            focusNode: FocusNode()..requestFocus(),
+            focusNode: _escapeFocusNode..requestFocus(),
             onKeyEvent: (event) {
               if (event.logicalKey == LogicalKeyboardKey.escape) {
                 dismiss();

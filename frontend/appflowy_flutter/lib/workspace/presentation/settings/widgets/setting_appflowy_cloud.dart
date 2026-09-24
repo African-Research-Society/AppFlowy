@@ -233,11 +233,25 @@ class AppFlowyCloudURLs extends StatelessWidget {
   }
 }
 
-class AppFlowySelfHostTip extends StatelessWidget {
+class AppFlowySelfHostTip extends StatefulWidget {
   const AppFlowySelfHostTip({super.key});
 
-  final url =
+  @override
+  State<AppFlowySelfHostTip> createState() => _AppFlowySelfHostTipState();
+}
+
+class _AppFlowySelfHostTipState extends State<AppFlowySelfHostTip> {
+  static const url =
       "https://docs.appflowy.io/docs/guides/appflowy/self-hosting-appflowy#build-appflowy-with-a-self-hosted-server";
+
+  late final TapGestureRecognizer _linkRecognizer = TapGestureRecognizer()
+    ..onTap = () => afLaunchUrlString(url);
+
+  @override
+  void dispose() {
+    _linkRecognizer.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -257,8 +271,7 @@ class AppFlowySelfHostTip extends StatelessWidget {
                     color: Theme.of(context).colorScheme.primary,
                     decoration: TextDecoration.underline,
                   ),
-              recognizer: TapGestureRecognizer()
-                ..onTap = () => afLaunchUrlString(url),
+              recognizer: _linkRecognizer,
             ),
             TextSpan(
               text: LocaleKeys.settings_menu_selfHostEnd.tr(),
