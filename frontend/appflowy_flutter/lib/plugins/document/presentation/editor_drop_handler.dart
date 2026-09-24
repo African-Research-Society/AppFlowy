@@ -143,8 +143,8 @@ class EditorDropHandler extends StatelessWidget {
 
         for (final file in details.files) {
           final fileName = file.name.toLowerCase();
-          if (file.mimeType?.startsWith('image/') ??
-              false || imgExtensionRegex.hasMatch(fileName)) {
+          if ((file.mimeType?.startsWith('image/') ?? false) ||
+              imgExtensionRegex.hasMatch(fileName)) {
             await editorState.dropImages(dropPath, [file], viewId, isLocalMode);
           } else {
             await editorState.dropFiles(dropPath, [file], viewId, isLocalMode);

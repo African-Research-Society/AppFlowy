@@ -314,7 +314,8 @@ class _DatabaseTabBarViewState extends State<DatabaseTabBarView> {
     BuildContext context,
     DatabaseTabBarState state,
   ) {
-    if (state.tabBars.length < state.selectedIndex) {
+    if (state.selectedIndex < 0 ||
+        state.selectedIndex >= state.tabBars.length) {
       return const SizedBox.shrink();
     }
     final tabBar = state.tabBars[state.selectedIndex];

@@ -149,7 +149,7 @@ extension DateFormatExtension on DateFormatPB {
       case DateFormatPB.FriendlyFull:
         return LocaleKeys.grid_field_dateFormatFriendly.tr();
       default:
-        throw UnimplementedError;
+        throw UnimplementedError();
     }
   }
 }
@@ -231,7 +231,7 @@ extension TimeFormatExtension on TimeFormatPB {
       case TimeFormatPB.TwentyFourHour:
         return LocaleKeys.grid_field_timeFormatTwentyFourHour.tr();
       default:
-        throw UnimplementedError;
+        throw UnimplementedError();
     }
   }
 }
