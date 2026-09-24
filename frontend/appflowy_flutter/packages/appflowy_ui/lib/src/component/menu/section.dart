@@ -47,14 +47,17 @@ class AFMenuSection extends StatelessWidget {
             ),
           ),
         ],
-        Container(
-          constraints: constraints,
-          child: SingleChildScrollView(
-            child: Column(
-              children: children,
+        if (constraints == null)
+          Column(children: children)
+        else
+          Container(
+            constraints: constraints,
+            child: SingleChildScrollView(
+              child: Column(
+                children: children,
+              ),
             ),
           ),
-        ),
       ],
     );
   }
