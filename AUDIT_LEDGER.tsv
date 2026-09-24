@@ -3902,7 +3902,7 @@ frontend/rust-lib/flowy-database2/src/event_handler.rs	reviewed	reported last li
 frontend/rust-lib/flowy-database2/src/event_map.rs	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
 frontend/rust-lib/flowy-database2/src/lib.rs	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
 frontend/rust-lib/flowy-database2/src/manager.rs	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
-frontend/rust-lib/flowy-database2/src/notification.rs	unreviewed	production-relevant until a pass-3 reviewer records it
+frontend/rust-lib/flowy-database2/src/notification.rs	reviewed	main-session re-read cited lines before patch; model UNKNOWN
 frontend/rust-lib/flowy-database2/src/services/calculations/cache.rs	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
 frontend/rust-lib/flowy-database2/src/services/calculations/controller.rs	unreviewed	production-relevant until a pass-3 reviewer records it
 frontend/rust-lib/flowy-database2/src/services/calculations/entities.rs	unreviewed	production-relevant until a pass-3 reviewer records it

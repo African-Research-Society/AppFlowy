@@ -1175,8 +1175,6 @@ pub(crate) async fn get_related_database_ids_handler(
   _data: AFPluginData<DatabaseViewIdPB>,
   _manager: AFPluginState<Weak<DatabaseManager>>,
 ) -> FlowyResult<()> {
-  let _data = _data;
-  let _manager = _manager;
   Err(FlowyError::not_support())
 }
 
