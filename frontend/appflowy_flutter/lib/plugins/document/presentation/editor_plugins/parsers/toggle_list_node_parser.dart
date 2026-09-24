@@ -18,8 +18,7 @@ class ToggleListNodeParser extends NodeParser {
 
   @override
   String transform(Node node, DocumentMarkdownEncoder? encoder) {
-    final delta = node.delta ?? Delta()
-      ..insert('');
+    final delta = node.delta ?? (Delta()..insert(''));
     String markdown = DeltaMarkdownEncoder().convert(delta);
     final details = encoder?.convertNodes(
       node.children,
