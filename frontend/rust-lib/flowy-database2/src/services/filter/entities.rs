@@ -67,15 +67,20 @@ impl Filter {
     if self.id == filter_id {
       return None;
     }
+    let is_direct_parent = match &self.inner {
+      FilterInner::And { children } | FilterInner::Or { children } => {
+        children.iter().any(|child| child.id == filter_id)
+      },
+      FilterInner::Data { .. } => false,
+    };
+    if is_direct_parent {
+      return Some(self);
+    }
     match &mut self.inner {
       FilterInner::And { children } | FilterInner::Or { children } => {
         for child_filter in children.iter_mut() {
-          if child_filter.id == filter_id {
-            return Some(child_filter);
-          }
-          let result = child_filter.find_parent_of_filter(filter_id);
-          if result.is_some() {
-            return result;
+          if let Some(parent) = child_filter.find_parent_of_filter(filter_id) {
+            return Some(parent);
           }
         }
         None

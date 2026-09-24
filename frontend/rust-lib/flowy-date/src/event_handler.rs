@@ -22,8 +22,10 @@ pub(crate) async fn query_date_handler(
 
   match date {
     Some(naive_date) => {
-      let year_match = year_regex().find(&query).unwrap();
-      let formatted = year_match
+      let formatted = year_regex()
+        .find(&query)
+        .ok()
+        .flatten()
         .and_then(|capture| capture.as_str().parse::<i32>().ok())
         .and_then(|year| NaiveDate::from_ymd_opt(year, naive_date.month0(), naive_date.day0()))
         .map(|date| date.to_string())

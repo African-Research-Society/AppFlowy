@@ -171,7 +171,10 @@ pub fn new_select_option_color(options: &[SelectOption]) -> SelectOptionColor {
   let mut freq: Vec<usize> = vec![0; 9];
 
   for option in options {
-    freq[option.color.to_owned() as usize] += 1;
+    let color_index = option.color as usize;
+    if color_index < freq.len() {
+      freq[color_index] += 1;
+    }
   }
 
   match freq
