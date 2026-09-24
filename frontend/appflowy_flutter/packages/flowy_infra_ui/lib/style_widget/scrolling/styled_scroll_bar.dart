@@ -49,12 +49,15 @@ class ScrollbarState extends State<StyledScrollbar> {
   void initState() {
     super.initState();
     widget.controller.addListener(_onScrollChanged);
-    widget.controller.position.isScrollingNotifier
-        .addListener(_hideScrollbarInTime);
+    if (widget.controller.hasClients) {
+      widget.controller.position.isScrollingNotifier
+          .addListener(_hideScrollbarInTime);
+    }
   }
 
   @override
   void dispose() {
+    _hideScrollbarOperation?.cancel();
     if (widget.controller.hasClients) {
       widget.controller.removeListener(_onScrollChanged);
       widget.controller.position.isScrollingNotifier

@@ -35,6 +35,10 @@ class KeyboardEventHandler: NSObject, FlutterStreamHandler {
             object: nil)
     }
 
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+
     func onListen(withArguments arguments: Any?, eventSink events: @escaping FlutterEventSink) -> FlutterError? {
         eventSink = events
         return nil
