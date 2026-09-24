@@ -241,21 +241,21 @@ frontend/appflowy_flutter/integration_test/desktop/document/document_codeblock_p
 frontend/appflowy_flutter/integration_test/desktop/document/document_copy_and_paste_test.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
 frontend/appflowy_flutter/integration_test/desktop/document/document_create_and_delete_test.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
 frontend/appflowy_flutter/integration_test/desktop/document/document_customer_test.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
-frontend/appflowy_flutter/integration_test/desktop/document/document_deletion_test.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
-frontend/appflowy_flutter/integration_test/desktop/document/document_find_menu_test.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
-frontend/appflowy_flutter/integration_test/desktop/document/document_inline_page_reference_test.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
-frontend/appflowy_flutter/integration_test/desktop/document/document_inline_sub_page_test.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
-frontend/appflowy_flutter/integration_test/desktop/document/document_link_preview_test.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
-frontend/appflowy_flutter/integration_test/desktop/document/document_more_actions_test.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
-frontend/appflowy_flutter/integration_test/desktop/document/document_option_action_test.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
-frontend/appflowy_flutter/integration_test/desktop/document/document_selection_test.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
-frontend/appflowy_flutter/integration_test/desktop/document/document_shortcuts_test.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
-frontend/appflowy_flutter/integration_test/desktop/document/document_sub_page_test.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
-frontend/appflowy_flutter/integration_test/desktop/document/document_test_runner_1.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
-frontend/appflowy_flutter/integration_test/desktop/document/document_test_runner_2.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
-frontend/appflowy_flutter/integration_test/desktop/document/document_test_runner_3.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
-frontend/appflowy_flutter/integration_test/desktop/document/document_test_runner_4.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
-frontend/appflowy_flutter/integration_test/desktop/document/document_text_direction_test.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/integration_test/desktop/document/document_deletion_test.dart	reviewed	batch 32 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/appflowy_flutter/integration_test/desktop/document/document_find_menu_test.dart	reviewed	batch 32 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/appflowy_flutter/integration_test/desktop/document/document_inline_page_reference_test.dart	reviewed	batch 32 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/appflowy_flutter/integration_test/desktop/document/document_inline_sub_page_test.dart	reviewed	batch 32 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/appflowy_flutter/integration_test/desktop/document/document_link_preview_test.dart	reviewed	batch 32 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/appflowy_flutter/integration_test/desktop/document/document_more_actions_test.dart	reviewed	batch 32 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/appflowy_flutter/integration_test/desktop/document/document_option_action_test.dart	reviewed	batch 32 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/appflowy_flutter/integration_test/desktop/document/document_selection_test.dart	reviewed	batch 32 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/appflowy_flutter/integration_test/desktop/document/document_shortcuts_test.dart	reviewed	batch 32 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/appflowy_flutter/integration_test/desktop/document/document_sub_page_test.dart	reviewed	batch 32 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/appflowy_flutter/integration_test/desktop/document/document_test_runner_1.dart	reviewed	batch 32 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/appflowy_flutter/integration_test/desktop/document/document_test_runner_2.dart	reviewed	batch 32 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/appflowy_flutter/integration_test/desktop/document/document_test_runner_3.dart	reviewed	batch 32 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/appflowy_flutter/integration_test/desktop/document/document_test_runner_4.dart	reviewed	batch 32 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/appflowy_flutter/integration_test/desktop/document/document_text_direction_test.dart	reviewed	batch 32 last-line length matched; model self-reported composer, not tool-verified grok
 frontend/appflowy_flutter/integration_test/desktop/document/document_title_test.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
 frontend/appflowy_flutter/integration_test/desktop/document/document_toolbar_test.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
 frontend/appflowy_flutter/integration_test/desktop/document/document_with_cover_image_test.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
@@ -4489,94 +4489,94 @@ frontend/rust-lib/lib-dispatch/src/response/response.rs	reviewed	batch 232 last-
 frontend/rust-lib/lib-dispatch/src/runtime.rs	reviewed	batch 232 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
 frontend/rust-lib/lib-dispatch/src/service/boxed.rs	reviewed	batch 232 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
 frontend/rust-lib/lib-dispatch/src/service/handler.rs	reviewed	batch 232 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
-frontend/rust-lib/lib-dispatch/src/service/mod.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/lib-dispatch/src/service/service.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/lib-dispatch/src/util/mod.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/lib-dispatch/src/util/ready.rs	unreviewed	production-relevant until a pass-3 reviewer records it
+frontend/rust-lib/lib-dispatch/src/service/mod.rs	reviewed	batch 233 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
+frontend/rust-lib/lib-dispatch/src/service/service.rs	reviewed	batch 233 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
+frontend/rust-lib/lib-dispatch/src/util/mod.rs	reviewed	batch 233 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
+frontend/rust-lib/lib-dispatch/src/util/ready.rs	reviewed	batch 233 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
 frontend/rust-lib/lib-dispatch/tests/api/main.rs	test-fixture	test or fixture path
 frontend/rust-lib/lib-dispatch/tests/api/module.rs	test-fixture	test or fixture path
-frontend/rust-lib/lib-infra/Cargo.toml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/lib-infra/src/box_any.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/lib-infra/src/compression.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/lib-infra/src/encryption/mod.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/lib-infra/src/file_util.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/lib-infra/src/isolate_stream.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/lib-infra/src/lib.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/lib-infra/src/native/future.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/lib-infra/src/native/mod.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/lib-infra/src/priority_task/mod.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/lib-infra/src/priority_task/queue.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/lib-infra/src/priority_task/scheduler.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/lib-infra/src/priority_task/store.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/lib-infra/src/priority_task/task.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/lib-infra/src/ref_map.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/lib-infra/src/stream_util.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/lib-infra/src/util.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/lib-infra/src/validator_fn.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/lib-infra/src/wasm/future.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/lib-infra/src/wasm/mod.rs	unreviewed	production-relevant until a pass-3 reviewer records it
+frontend/rust-lib/lib-infra/Cargo.toml	reviewed	batch 233 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
+frontend/rust-lib/lib-infra/src/box_any.rs	reviewed	batch 233 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
+frontend/rust-lib/lib-infra/src/compression.rs	reviewed	batch 233 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
+frontend/rust-lib/lib-infra/src/encryption/mod.rs	reviewed	batch 233 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok; main-session re-read cited lines before patch
+frontend/rust-lib/lib-infra/src/file_util.rs	reviewed	batch 233 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
+frontend/rust-lib/lib-infra/src/isolate_stream.rs	reviewed	batch 233 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
+frontend/rust-lib/lib-infra/src/lib.rs	reviewed	batch 233 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
+frontend/rust-lib/lib-infra/src/native/future.rs	reviewed	batch 233 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
+frontend/rust-lib/lib-infra/src/native/mod.rs	reviewed	batch 233 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
+frontend/rust-lib/lib-infra/src/priority_task/mod.rs	reviewed	batch 233 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok
+frontend/rust-lib/lib-infra/src/priority_task/queue.rs	reviewed	batch 233 last-line length matched; model self-reported composer-2.5-fast, not tool-verified grok; main-session re-read cited lines before patch
+frontend/rust-lib/lib-infra/src/priority_task/scheduler.rs	reviewed	batch 234 last-line length matched; model self-reported MODEL: Composer (Cursor agent router), not tool-verified grok
+frontend/rust-lib/lib-infra/src/priority_task/store.rs	reviewed	batch 234 last-line length matched; model self-reported MODEL: Composer (Cursor agent router), not tool-verified grok
+frontend/rust-lib/lib-infra/src/priority_task/task.rs	reviewed	batch 234 last-line length matched; model self-reported MODEL: Composer (Cursor agent router), not tool-verified grok
+frontend/rust-lib/lib-infra/src/ref_map.rs	reviewed	batch 234 last-line length matched; model self-reported MODEL: Composer (Cursor agent router), not tool-verified grok
+frontend/rust-lib/lib-infra/src/stream_util.rs	reviewed	batch 234 last-line length matched; model self-reported MODEL: Composer (Cursor agent router), not tool-verified grok
+frontend/rust-lib/lib-infra/src/util.rs	reviewed	batch 234 last-line length matched; model self-reported MODEL: Composer (Cursor agent router), not tool-verified grok
+frontend/rust-lib/lib-infra/src/validator_fn.rs	reviewed	batch 234 last-line length matched; model self-reported MODEL: Composer (Cursor agent router), not tool-verified grok; main-session re-read cited lines before patch
+frontend/rust-lib/lib-infra/src/wasm/future.rs	reviewed	batch 234 last-line length matched; model self-reported MODEL: Composer (Cursor agent router), not tool-verified grok
+frontend/rust-lib/lib-infra/src/wasm/mod.rs	reviewed	batch 234 last-line length matched; model self-reported MODEL: Composer (Cursor agent router), not tool-verified grok
 frontend/rust-lib/lib-infra/tests/main.rs	test-fixture	test or fixture path
 frontend/rust-lib/lib-infra/tests/task_test/mod.rs	test-fixture	test or fixture path
 frontend/rust-lib/lib-infra/tests/task_test/script.rs	test-fixture	test or fixture path
 frontend/rust-lib/lib-infra/tests/task_test/task_cancel_test.rs	test-fixture	test or fixture path
 frontend/rust-lib/lib-infra/tests/task_test/task_order_test.rs	test-fixture	test or fixture path
-frontend/rust-lib/lib-log/Cargo.toml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/lib-log/src/layer.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/lib-log/src/lib.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/lib-log/src/stream_log.rs	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/rust-toolchain.toml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-lib/rustfmt.toml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/rust-toolchain.toml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/code_generation/flowy_icons/generate_flowy_icons.cmd	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/code_generation/flowy_icons/generate_flowy_icons.sh	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/code_generation/freezed/generate_freezed.cmd	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/code_generation/freezed/generate_freezed.sh	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/code_generation/generate.cmd	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/code_generation/generate.sh	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/code_generation/language_files/generate_language_files.cmd	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/code_generation/language_files/generate_language_files.sh	unreviewed	production-relevant until a pass-3 reviewer records it
+frontend/rust-lib/lib-log/Cargo.toml	reviewed	batch 234 last-line length matched; model self-reported MODEL: Composer (Cursor agent router), not tool-verified grok
+frontend/rust-lib/lib-log/src/layer.rs	reviewed	batch 234 last-line length matched; model self-reported MODEL: Composer (Cursor agent router), not tool-verified grok
+frontend/rust-lib/lib-log/src/lib.rs	reviewed	batch 234 last-line length matched; model self-reported MODEL: Composer (Cursor agent router), not tool-verified grok
+frontend/rust-lib/lib-log/src/stream_log.rs	reviewed	batch 234 last-line length matched; model self-reported MODEL: Composer (Cursor agent router), not tool-verified grok
+frontend/rust-lib/rust-toolchain.toml	reviewed	batch 234 last-line length matched; model self-reported MODEL: Composer (Cursor agent router), not tool-verified grok
+frontend/rust-lib/rustfmt.toml	reviewed	batch 234 last-line length matched; model self-reported MODEL: Composer (Cursor agent router), not tool-verified grok
+frontend/rust-toolchain.toml	reviewed	batch 235 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/code_generation/flowy_icons/generate_flowy_icons.cmd	reviewed	batch 235 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/code_generation/flowy_icons/generate_flowy_icons.sh	reviewed	batch 235 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/code_generation/freezed/generate_freezed.cmd	reviewed	batch 235 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/code_generation/freezed/generate_freezed.sh	reviewed	batch 235 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/code_generation/generate.cmd	reviewed	batch 235 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/code_generation/generate.sh	reviewed	batch 235 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/code_generation/language_files/generate_language_files.cmd	reviewed	batch 235 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/code_generation/language_files/generate_language_files.sh	reviewed	batch 235 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
 frontend/scripts/dmg_assets/AppFlowyInstallerBackground.jpg	asset	binary or font asset, not executable logic
-frontend/scripts/docker-buildfiles/Dockerfile	unreviewed	production-relevant until a pass-3 reviewer records it
+frontend/scripts/docker-buildfiles/Dockerfile	reviewed	batch 235 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
 frontend/scripts/docker-buildfiles/README.md	doc	readme
-frontend/scripts/docker-buildfiles/docker-compose.yml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/flatpack-buildfiles/.gitignore	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/flatpack-buildfiles/dbus-interface.xml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/flatpack-buildfiles/io.appflowy.AppFlowy.desktop	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/flatpack-buildfiles/io.appflowy.AppFlowy.launcher.desktop	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/flatpack-buildfiles/io.appflowy.AppFlowy.metainfo.xml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/flatpack-buildfiles/io.appflowy.AppFlowy.service	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/flatpack-buildfiles/io.appflowy.AppFlowy.yml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/flatpack-buildfiles/launcher.sh	unreviewed	production-relevant until a pass-3 reviewer records it
+frontend/scripts/docker-buildfiles/docker-compose.yml	reviewed	batch 235 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/flatpack-buildfiles/.gitignore	reviewed	batch 235 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/flatpack-buildfiles/dbus-interface.xml	reviewed	batch 235 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/flatpack-buildfiles/io.appflowy.AppFlowy.desktop	reviewed	batch 235 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/flatpack-buildfiles/io.appflowy.AppFlowy.launcher.desktop	reviewed	batch 235 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/flatpack-buildfiles/io.appflowy.AppFlowy.metainfo.xml	reviewed	batch 236 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/flatpack-buildfiles/io.appflowy.AppFlowy.service	reviewed	batch 236 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/flatpack-buildfiles/io.appflowy.AppFlowy.yml	reviewed	batch 236 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/flatpack-buildfiles/launcher.sh	reviewed	batch 236 last-line length matched; model self-reported UNKNOWN, not tool-verified grok; main-session re-read cited lines before patch
 frontend/scripts/flatpack-buildfiles/logo.svg	asset	binary or font asset, not executable logic
-frontend/scripts/flutter_release_build/build_flowy.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/flutter_release_build/build_universal_package_for_macos.sh	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/flutter_release_build/tool.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/install_dev_env/install_ios.sh	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/install_dev_env/install_linux.sh	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/install_dev_env/install_macos.sh	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/install_dev_env/install_windows.sh	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/linux_distribution/appimage/AppImageBuilder.yml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/linux_distribution/appimage/build_appimage.sh	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/linux_distribution/appimage/io.appflowy.AppFlowy.desktop	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/linux_distribution/deb/AppFlowy.desktop	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/linux_distribution/deb/DEBIAN/control	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/linux_distribution/deb/DEBIAN/postinst	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/linux_distribution/deb/DEBIAN/postrm	unreviewed	production-relevant until a pass-3 reviewer records it
+frontend/scripts/flutter_release_build/build_flowy.dart	reviewed	batch 236 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/flutter_release_build/build_universal_package_for_macos.sh	reviewed	batch 236 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/flutter_release_build/tool.dart	reviewed	batch 236 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/install_dev_env/install_ios.sh	reviewed	batch 236 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/install_dev_env/install_linux.sh	reviewed	batch 236 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/install_dev_env/install_macos.sh	reviewed	batch 236 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/install_dev_env/install_windows.sh	reviewed	batch 236 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/linux_distribution/appimage/AppImageBuilder.yml	reviewed	batch 236 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/linux_distribution/appimage/build_appimage.sh	reviewed	batch 236 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/linux_distribution/appimage/io.appflowy.AppFlowy.desktop	reviewed	batch 236 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/linux_distribution/deb/AppFlowy.desktop	reviewed	batch 236 last-line length matched; model self-reported UNKNOWN, not tool-verified grok
+frontend/scripts/linux_distribution/deb/DEBIAN/control	reviewed	batch 237 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/scripts/linux_distribution/deb/DEBIAN/postinst	reviewed	batch 237 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/scripts/linux_distribution/deb/DEBIAN/postrm	reviewed	batch 237 last-line length matched; model self-reported composer, not tool-verified grok
 frontend/scripts/linux_distribution/deb/README.md	doc	readme
-frontend/scripts/linux_distribution/deb/build_deb.sh	unreviewed	production-relevant until a pass-3 reviewer records it
+frontend/scripts/linux_distribution/deb/build_deb.sh	reviewed	batch 237 last-line length matched; model self-reported composer, not tool-verified grok
 frontend/scripts/linux_distribution/flatpak/README.md	doc	readme
 frontend/scripts/linux_distribution/packaging/appflowy.svg	asset	binary or font asset, not executable logic
-frontend/scripts/linux_distribution/packaging/io.appflowy.AppFlowy.launcher.desktop	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/linux_distribution/packaging/io.appflowy.AppFlowy.metainfo.xml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/linux_distribution/packaging/io.appflowy.AppFlowy.service	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/linux_distribution/packaging/launcher.sh	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/linux_installer/control	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/linux_installer/postinst	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/linux_installer/postrm	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/makefile/desktop.toml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/makefile/docker.toml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/makefile/env.toml	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/scripts/makefile/flutter.toml	unreviewed	production-relevant until a pass-3 reviewer records it
+frontend/scripts/linux_distribution/packaging/io.appflowy.AppFlowy.launcher.desktop	reviewed	batch 237 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/scripts/linux_distribution/packaging/io.appflowy.AppFlowy.metainfo.xml	reviewed	batch 237 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/scripts/linux_distribution/packaging/io.appflowy.AppFlowy.service	reviewed	batch 237 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/scripts/linux_distribution/packaging/launcher.sh	reviewed	batch 237 last-line length matched; model self-reported composer, not tool-verified grok; main-session re-read cited lines before patch
+frontend/scripts/linux_installer/control	reviewed	batch 237 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/scripts/linux_installer/postinst	reviewed	batch 237 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/scripts/linux_installer/postrm	reviewed	batch 237 last-line length matched; model self-reported composer, not tool-verified grok; main-session re-read cited lines before patch
+frontend/scripts/makefile/desktop.toml	reviewed	batch 237 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/scripts/makefile/docker.toml	reviewed	batch 237 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/scripts/makefile/env.toml	reviewed	batch 237 last-line length matched; model self-reported composer, not tool-verified grok
+frontend/scripts/makefile/flutter.toml	reviewed	batch 237 last-line length matched; model self-reported composer, not tool-verified grok
 frontend/scripts/makefile/mobile.toml	unreviewed	production-relevant until a pass-3 reviewer records it
 frontend/scripts/makefile/protobuf.toml	unreviewed	production-relevant until a pass-3 reviewer records it
 frontend/scripts/makefile/tauri.toml	unreviewed	production-relevant until a pass-3 reviewer records it

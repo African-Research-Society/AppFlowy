@@ -30,7 +30,10 @@ pub fn required_valid_path(s: &str) -> Result<(), ValidationError> {
 macro_rules! impl_regex_validator {
   ($validator: ident, $regex: expr, $error: expr) => {
     pub(crate) fn $validator(arg: &str) -> Result<(), ValidationError> {
-      let check = $regex.is_match(arg).unwrap();
+      let check = match $regex.is_match(arg) {
+        Ok(matched) => matched,
+        Err(_) => return Err(ValidationError::new($error)),
+      };
 
       if check {
         Ok(())

@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+if [ -e /usr/local/bin/AppFlowy ]; then
+  rm /usr/local/bin/AppFlowy
+fi
 if [ -e /usr/local/bin/appflowy ]; then
-rm /usr/local/bin/appflowy
+  rm /usr/local/bin/appflowy
 fi
