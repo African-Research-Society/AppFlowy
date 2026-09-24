@@ -24,7 +24,7 @@ class RustSettingsRepositoryImpl implements SettingsRepository {
         final userDirectory = settings.userFolder;
         return UserDataLocation(
           path: userDirectory,
-          isCustom: userDirectory.contains(defaultDirectory),
+          isCustom: userDirectory != defaultDirectory,
         );
       },
     );
@@ -54,7 +54,7 @@ class RustSettingsRepositoryImpl implements SettingsRepository {
     return FlowyResult.success(
       UserDataLocation(
         path: path,
-        isCustom: path.contains(defaultDirectory),
+        isCustom: path != defaultDirectory,
       ),
     );
   }
