@@ -65,6 +65,7 @@ class SearchResponseStream {
   Future<void> dispose() async {
     await _subscription.cancel();
     _port.close();
+    await _controller.close();
   }
 
   void _onResultsChanged(Uint8List data) {

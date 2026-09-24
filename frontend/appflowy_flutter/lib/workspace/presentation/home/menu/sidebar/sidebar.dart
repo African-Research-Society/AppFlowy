@@ -236,17 +236,21 @@ class HomeSideBar extends StatelessWidget {
           );
         }
 
+        final spaceBloc = context.read<SpaceBloc>();
         checkForSpace(
-          context.read<SpaceBloc>(),
+          spaceBloc,
           view,
           () => openView(action, context, view, arguments),
-        );
-        openView(action, context, view, arguments);
+        ).then((switched) {
+          if (!switched) {
+            openView(action, context, view, arguments);
+          }
+        });
       }
     }
   }
 
-  Future<void> checkForSpace(
+  Future<bool> checkForSpace(
     SpaceBloc spaceBloc,
     ViewPB view,
     VoidCallback afterOpen,
@@ -254,7 +258,7 @@ class HomeSideBar extends StatelessWidget {
     /// open space
     final acestorCache = getIt<ViewAncestorCache>();
     final ancestor = await acestorCache.getAncestor(view.id);
-    if (ancestor?.ancestors.isEmpty ?? true) return;
+    if (ancestor?.ancestors.isEmpty ?? true) return false;
     final firstAncestor = ancestor!.ancestors.first;
     if (firstAncestor.id != spaceBloc.state.currentSpace?.id) {
       final space =
@@ -264,8 +268,10 @@ class HomeSideBar extends StatelessWidget {
           'Switching space from (${firstAncestor.name}-${firstAncestor.id}) to (${space.name}-${space.id})',
         );
         spaceBloc.add(SpaceEvent.open(space: space, afterOpen: afterOpen));
+        return true;
       }
     }
+    return false;
   }
 
   void openView(

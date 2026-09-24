@@ -35,7 +35,11 @@ class CachedRecentService {
   bool isDisposed = false;
 
   Future<List<SectionViewPB>> recentViews() async {
-    if (_isInitialized || _completer.isCompleted) return _recentViews;
+    if (_completer.isCompleted) return _recentViews;
+    if (_isInitialized) {
+      await _completer.future;
+      return _recentViews;
+    }
 
     _isInitialized = true;
 

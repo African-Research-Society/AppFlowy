@@ -1496,7 +1496,7 @@ frontend/appflowy_flutter/lib/shared/patterns/file_type_patterns.dart	reviewed	r
 frontend/appflowy_flutter/lib/shared/permission/permission_checker.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
 frontend/appflowy_flutter/lib/shared/popup_menu/appflowy_popup_menu.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
 frontend/appflowy_flutter/lib/shared/settings/show_settings.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
-frontend/appflowy_flutter/lib/shared/text_field/text_filed_with_metric_lines.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/shared/text_field/text_filed_with_metric_lines.dart	reviewed	main-session re-read cited lines before patch; model UNKNOWN
 frontend/appflowy_flutter/lib/shared/time_format.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
 frontend/appflowy_flutter/lib/shared/version_checker/version_checker.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
 frontend/appflowy_flutter/lib/shared/window_title_bar.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
@@ -1578,7 +1578,7 @@ frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/c
 frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/continue_with_password_page.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
 frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/forgot_password_page.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
 frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/reset_password.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
-frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/reset_password_page.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/reset_password_page.dart	reviewed	main-session re-read cited lines before patch; model UNKNOWN
 frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/set_new_password.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
 frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/title_logo.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
 frontend/appflowy_flutter/lib/user/presentation/screens/sign_in_screen/widgets/continue_with/verifying_button.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
@@ -1620,252 +1620,252 @@ frontend/appflowy_flutter/lib/util/theme_extension.dart	reviewed	reported last l
 frontend/appflowy_flutter/lib/util/theme_mode_extension.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
 frontend/appflowy_flutter/lib/util/throttle.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
 frontend/appflowy_flutter/lib/util/time.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
-frontend/appflowy_flutter/lib/util/xfile_ext.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
+frontend/appflowy_flutter/lib/util/xfile_ext.dart	reviewed	main-session re-read cited lines before patch; model UNKNOWN
 frontend/appflowy_flutter/lib/workspace/application/action_navigation/action_navigation_bloc.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
 frontend/appflowy_flutter/lib/workspace/application/action_navigation/navigation_action.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
 frontend/appflowy_flutter/lib/workspace/application/appearance_defaults.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
 frontend/appflowy_flutter/lib/workspace/application/command_palette/command_palette_bloc.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
 frontend/appflowy_flutter/lib/workspace/application/command_palette/search_result_ext.dart	reviewed	reported last line matches file length; model unverified; main session re-read high findings
-frontend/appflowy_flutter/lib/workspace/application/command_palette/search_result_list_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/command_palette/search_service.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/edit_panel/edit_context.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/edit_panel/edit_panel_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/export/document_exporter.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/favorite/favorite_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/favorite/favorite_listener.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/favorite/favorite_service.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/favorite/prelude.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/home/home_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/home/home_setting_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/home/prelude.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/menu/menu_user_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/menu/prelude.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/menu/sidebar_sections_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/notification/notification_service.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/notification/notification_service.dart''	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/recent/cached_recent_service.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/recent/prelude.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/recent/recent_listener.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/recent/recent_views_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/ai/local_ai_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/ai/local_ai_on_boarding_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/ai/local_llm_listener.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/ai/ollama_setting_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/ai/settings_ai_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/appearance/appearance_cubit.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/appearance/base_appearance.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/appearance/desktop_appearance.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/appearance/mobile_appearance.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/appflowy_cloud_setting_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/appflowy_cloud_urls_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/application_data_storage.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/billing/settings_billing_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/cloud_setting_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/cloud_setting_listener.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/create_file_settings_cubit.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/date_time/date_format_ext.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/date_time/time_format_ext.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/file_storage/file_storage_listener.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/notifications/notification_settings_cubit.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/plan/settings_plan_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/plan/workspace_subscription_ext.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/plan/workspace_usage_ext.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/prelude.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/setting_file_importer_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/settings_dialog_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/settings_file_exporter_cubit.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/share/export_service.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/share/import_service.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/shortcuts/settings_shortcuts_cubit.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/shortcuts/settings_shortcuts_service.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/shortcuts/shortcuts_model.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/settings/workspace/workspace_settings_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/sidebar/billing/sidebar_plan_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/sidebar/folder/folder_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/sidebar/rename_view/rename_view_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/sidebar/space/space_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/sidebar/space/space_search_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/subscription_success_listenable/subscription_success_listenable.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/tabs/tabs_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/user/prelude.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/user/settings_user_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/user/user_workspace_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/view/prelude.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/view/view_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/view/view_ext.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/view/view_listener.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/view/view_service.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/view_info/view_info_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/view_title/view_title_bar_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/view_title/view_title_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/workspace/prelude.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/workspace/workspace_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/workspace/workspace_listener.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/workspace/workspace_sections_listener.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/application/workspace/workspace_service.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/command_palette/command_palette.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/command_palette/navigation_bloc_extension.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/command_palette/widgets/page_preview.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/command_palette/widgets/recent_views_list.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/command_palette/widgets/search_ask_ai_entrance.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/command_palette/widgets/search_field.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/command_palette/widgets/search_icon.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/command_palette/widgets/search_recent_view_cell.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/command_palette/widgets/search_result_cell.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/command_palette/widgets/search_results_list.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/command_palette/widgets/search_summary_cell.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/af_focus_manager.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/desktop_home_screen.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/errors/workspace_failed_screen.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/home_layout.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/home_sizes.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/home_stack.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/hotkeys.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/menu_shared_state.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/favorites/favorite_folder.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/favorites/favorite_menu.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/favorites/favorite_menu_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/favorites/favorite_more_actions.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/favorites/favorite_pin_action.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/favorites/favorite_pin_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/folder/_folder_header.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/folder/_section_folder.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/footer/sidebar_footer.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/footer/sidebar_footer_button.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/footer/sidebar_toast.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/footer/sidebar_upgrade_application_button.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/header/sidebar_top_menu.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/header/sidebar_user.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/import/import_panel.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/import/import_type.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/move_to/move_page_menu.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/shared/sidebar_folder.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/shared/sidebar_new_page_button.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/shared/sidebar_setting.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/sidebar.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/slider_menu_hover_trigger.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/space/_extension.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/space/create_space_popup.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/space/manage_space_popup.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/space/shared_widget.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/space/sidebar_space.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/space/sidebar_space_header.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/space/sidebar_space_menu.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/space/space_action_type.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/space/space_icon.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/space/space_icon_popup.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/space/space_migration.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/space/space_more_popup.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/workspace/_sidebar_import_notion.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/workspace/_sidebar_workspace_actions.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/workspace/_sidebar_workspace_icon.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/workspace/_sidebar_workspace_menu.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/workspace/sidebar_workspace.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/workspace/workspace_notifier.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/view/draggable_view_item.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/view/view_action_type.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/view/view_add_button.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/view/view_item.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/menu/view/view_more_action_button.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/navigation.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/tabs/flowy_tab.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/tabs/tabs_manager.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/home/toast.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/notifications/notification_panel.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/notifications/number_red_dot.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/notifications/reminder_extension.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/notifications/widgets/flowy_tab.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/notifications/widgets/inbox_action_bar.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/notifications/widgets/notification_button.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/notifications/widgets/notification_content_v2.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/notifications/widgets/notification_hub_title.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/notifications/widgets/notification_item.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/notifications/widgets/notification_item_v2.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/notifications/widgets/notification_tab.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/notifications/widgets/notification_tab_bar.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/notifications/widgets/notification_view.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/notifications/widgets/notifications_hub_empty.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/about/app_version.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/account/account.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/account/account_deletion.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/account/account_sign_in_out.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/account/account_user_profile.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/account/email/email_section.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/account/password/change_password.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/account/password/error_extensions.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/account/password/password_suffix_icon.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/account/password/setup_password.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/fix_data_widget.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/setting_ai_view/local_ai_setting.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/setting_ai_view/local_settings_ai_view.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/setting_ai_view/model_selection.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/setting_ai_view/ollama_setting.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/setting_ai_view/plugin_status_indicator.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/setting_ai_view/settings_ai_view.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/settings_account_view.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/settings_billing_view.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/settings_manage_data_view.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/settings_plan_comparison_dialog.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/settings_plan_view.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/settings_shortcuts_view.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/settings_workspace_view.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/constants.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/domain/domain_header.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/domain/domain_item.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/domain/domain_more_action.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/domain/domain_settings_dialog.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/domain/home_page_menu.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/publish_info_view_item.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/published_page/published_view_item.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/published_page/published_view_item_header.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/published_page/published_view_more_action.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/published_page/published_view_settings_dialog.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/settings_sites_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/settings_sites_view.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/settings_dialog.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/af_dropdown_menu_entry.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/document_color_setting_button.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/flowy_gradient_button.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/setting_action.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/setting_list_tile.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/setting_value_dropdown.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/settings_actionable_input.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/settings_alert_dialog.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/settings_body.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/settings_category.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/settings_category_spacer.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/settings_dashed_divider.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/settings_dropdown.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/settings_header.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/settings_input_field.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/settings_radio_select.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/settings_subcategory.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/single_setting_action.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/_restart_app_button.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/cancel_plan_survey_dialog.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/emoji_picker/emoji_picker.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/emoji_picker/emoji_shortcut_event.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/emoji_picker/src/default_emoji_picker_view.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/emoji_picker/src/emji_picker_config.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/emoji_picker/src/emoji_lists.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/emoji_picker/src/emoji_picker.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/emoji_picker/src/emoji_picker_builder.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/emoji_picker/src/emoji_view_state.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/emoji_picker/src/flowy_emoji_picker_config.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/emoji_picker/src/models/emoji_category_models.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/emoji_picker/src/models/emoji_model.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/emoji_picker/src/models/recent_emoji_model.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/feature_flags/feature_flag_page.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/feature_flags/mobile_feature_flag_screen.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/files/settings_export_file_widget.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/files/settings_file_exporter_widget.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/members/invitation/invite_member_by_email.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/members/invitation/invite_member_by_link.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/members/invitation/m_invite_member_by_email.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/members/invitation/m_invite_member_by_link.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/members/invitation/member_http_service.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/members/workspace_member_bloc.dart	unreviewed	production-relevant until a pass-3 reviewer records it
-frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/members/workspace_member_page.dart	unreviewed	production-relevant until a pass-3 reviewer records it
+frontend/appflowy_flutter/lib/workspace/application/command_palette/search_result_list_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/command_palette/search_service.dart	reviewed	main-session re-read cited lines before patch; model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/edit_panel/edit_context.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/edit_panel/edit_panel_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/export/document_exporter.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/favorite/favorite_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/favorite/favorite_listener.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/favorite/favorite_service.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/favorite/prelude.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/home/home_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/home/home_setting_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/home/prelude.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/menu/menu_user_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/menu/prelude.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/menu/sidebar_sections_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/notification/notification_service.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/notification/notification_service.dart''	excluded	deleted stray duplicate of notification_service.dart; AppFlowy brand leftover
+frontend/appflowy_flutter/lib/workspace/application/recent/cached_recent_service.dart	reviewed	main-session re-read before patch; model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/recent/prelude.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/recent/recent_listener.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/recent/recent_views_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/ai/local_ai_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/ai/local_ai_on_boarding_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/ai/local_llm_listener.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/ai/ollama_setting_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/ai/settings_ai_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/appearance/appearance_cubit.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/appearance/base_appearance.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/appearance/desktop_appearance.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/appearance/mobile_appearance.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/appflowy_cloud_setting_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/appflowy_cloud_urls_bloc.dart	reviewed	main-session re-read before patch; model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/application_data_storage.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/billing/settings_billing_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/cloud_setting_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/cloud_setting_listener.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/create_file_settings_cubit.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/date_time/date_format_ext.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/date_time/time_format_ext.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/file_storage/file_storage_listener.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/notifications/notification_settings_cubit.dart	reviewed	main-session re-read cited lines before patch; model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/plan/settings_plan_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/plan/workspace_subscription_ext.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/plan/workspace_usage_ext.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/prelude.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/setting_file_importer_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/settings_dialog_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/settings_file_exporter_cubit.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/share/export_service.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/share/import_service.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/shortcuts/settings_shortcuts_cubit.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/shortcuts/settings_shortcuts_service.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/shortcuts/shortcuts_model.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/settings/workspace/workspace_settings_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/sidebar/billing/sidebar_plan_bloc.dart	reviewed	main-session re-read cited lines before patch; model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/sidebar/folder/folder_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/sidebar/rename_view/rename_view_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/sidebar/space/space_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/sidebar/space/space_search_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/subscription_success_listenable/subscription_success_listenable.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/tabs/tabs_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/user/prelude.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/user/settings_user_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/user/user_workspace_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/view/prelude.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/view/view_bloc.dart	reviewed	main-session re-read before patch; model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/view/view_ext.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/view/view_listener.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/view/view_service.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/view_info/view_info_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/view_title/view_title_bar_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/view_title/view_title_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/workspace/prelude.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/workspace/workspace_bloc.dart	reviewed	main-session re-read before patch; model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/workspace/workspace_listener.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/workspace/workspace_sections_listener.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/application/workspace/workspace_service.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/command_palette/command_palette.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/command_palette/navigation_bloc_extension.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/command_palette/widgets/page_preview.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/command_palette/widgets/recent_views_list.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/command_palette/widgets/search_ask_ai_entrance.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/command_palette/widgets/search_field.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/command_palette/widgets/search_icon.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/command_palette/widgets/search_recent_view_cell.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/command_palette/widgets/search_result_cell.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/command_palette/widgets/search_results_list.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/command_palette/widgets/search_summary_cell.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/af_focus_manager.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/desktop_home_screen.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/errors/workspace_failed_screen.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/home_layout.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/home_sizes.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/home_stack.dart	reviewed	main-session re-read cited lines before patch; model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/hotkeys.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/menu_shared_state.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/favorites/favorite_folder.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/favorites/favorite_menu.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/favorites/favorite_menu_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/favorites/favorite_more_actions.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/favorites/favorite_pin_action.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/favorites/favorite_pin_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/folder/_folder_header.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/folder/_section_folder.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/footer/sidebar_footer.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/footer/sidebar_footer_button.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/footer/sidebar_toast.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/footer/sidebar_upgrade_application_button.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/header/sidebar_top_menu.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/header/sidebar_user.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/import/import_panel.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/import/import_type.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/move_to/move_page_menu.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/shared/sidebar_folder.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/shared/sidebar_new_page_button.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/shared/sidebar_setting.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/sidebar.dart	reviewed	main-session re-read cited lines before patch; model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/slider_menu_hover_trigger.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/space/_extension.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/space/create_space_popup.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/space/manage_space_popup.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/space/shared_widget.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/space/sidebar_space.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/space/sidebar_space_header.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/space/sidebar_space_menu.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/space/space_action_type.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/space/space_icon.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/space/space_icon_popup.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/space/space_migration.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/space/space_more_popup.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/workspace/_sidebar_import_notion.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/workspace/_sidebar_workspace_actions.dart	reviewed	main-session re-read cited lines before patch; model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/workspace/_sidebar_workspace_icon.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/workspace/_sidebar_workspace_menu.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/workspace/sidebar_workspace.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/sidebar/workspace/workspace_notifier.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/view/draggable_view_item.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/view/view_action_type.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/view/view_add_button.dart	reviewed	main-session re-read cited lines before patch; model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/view/view_item.dart	reviewed	main-session re-read cited lines before patch; model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/menu/view/view_more_action_button.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/navigation.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/tabs/flowy_tab.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/tabs/tabs_manager.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/home/toast.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/notifications/notification_panel.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/notifications/number_red_dot.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/notifications/reminder_extension.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/notifications/widgets/flowy_tab.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/notifications/widgets/inbox_action_bar.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/notifications/widgets/notification_button.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/notifications/widgets/notification_content_v2.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/notifications/widgets/notification_hub_title.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/notifications/widgets/notification_item.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/notifications/widgets/notification_item_v2.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/notifications/widgets/notification_tab.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/notifications/widgets/notification_tab_bar.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/notifications/widgets/notification_view.dart	reviewed	main-session re-read cited lines before patch; model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/notifications/widgets/notifications_hub_empty.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/about/app_version.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/account/account.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/account/account_deletion.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/account/account_sign_in_out.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/account/account_user_profile.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/account/email/email_section.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/account/password/change_password.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/account/password/error_extensions.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/account/password/password_suffix_icon.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/account/password/setup_password.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/fix_data_widget.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/setting_ai_view/local_ai_setting.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/setting_ai_view/local_settings_ai_view.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/setting_ai_view/model_selection.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/setting_ai_view/ollama_setting.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/setting_ai_view/plugin_status_indicator.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/setting_ai_view/settings_ai_view.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/settings_account_view.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/settings_billing_view.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/settings_manage_data_view.dart	reviewed	main-session re-read cited lines before patch; model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/settings_plan_comparison_dialog.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/settings_plan_view.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/settings_shortcuts_view.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/settings_workspace_view.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/constants.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/domain/domain_header.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/domain/domain_item.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/domain/domain_more_action.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/domain/domain_settings_dialog.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/domain/home_page_menu.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/publish_info_view_item.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/published_page/published_view_item.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/published_page/published_view_item_header.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/published_page/published_view_more_action.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/published_page/published_view_settings_dialog.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/settings_sites_bloc.dart	reviewed	main-session re-read cited lines before patch; model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/pages/sites/settings_sites_view.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/settings_dialog.dart	reviewed	main-session re-read cited lines before patch; model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/af_dropdown_menu_entry.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/document_color_setting_button.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/flowy_gradient_button.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/setting_action.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/setting_list_tile.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/setting_value_dropdown.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/settings_actionable_input.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/settings_alert_dialog.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/settings_body.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/settings_category.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/settings_category_spacer.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/settings_dashed_divider.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/settings_dropdown.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/settings_header.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/settings_input_field.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/settings_radio_select.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/settings_subcategory.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/shared/single_setting_action.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/_restart_app_button.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/cancel_plan_survey_dialog.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/emoji_picker/emoji_picker.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/emoji_picker/emoji_shortcut_event.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/emoji_picker/src/default_emoji_picker_view.dart	reviewed	main-session re-read cited lines before patch; model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/emoji_picker/src/emji_picker_config.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/emoji_picker/src/emoji_lists.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/emoji_picker/src/emoji_picker.dart	reviewed	main-session re-read cited lines before patch; model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/emoji_picker/src/emoji_picker_builder.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/emoji_picker/src/emoji_view_state.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/emoji_picker/src/flowy_emoji_picker_config.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/emoji_picker/src/models/emoji_category_models.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/emoji_picker/src/models/emoji_model.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/emoji_picker/src/models/recent_emoji_model.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/feature_flags/feature_flag_page.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/feature_flags/mobile_feature_flag_screen.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/files/settings_export_file_widget.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/files/settings_file_exporter_widget.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/members/invitation/invite_member_by_email.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/members/invitation/invite_member_by_link.dart	reviewed	main-session re-read cited lines before patch; model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/members/invitation/m_invite_member_by_email.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/members/invitation/m_invite_member_by_link.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/members/invitation/member_http_service.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/members/workspace_member_bloc.dart	reviewed	reported last line matches file length (or off by a trailing blank); model UNKNOWN
+frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/members/workspace_member_page.dart	reviewed	main-session re-read cited lines before patch; model UNKNOWN
 frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/setting_appflowy_cloud.dart	unreviewed	production-relevant until a pass-3 reviewer records it
 frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/setting_cloud.dart	unreviewed	production-relevant until a pass-3 reviewer records it
 frontend/appflowy_flutter/lib/workspace/presentation/settings/widgets/setting_local_cloud.dart	unreviewed	production-relevant until a pass-3 reviewer records it

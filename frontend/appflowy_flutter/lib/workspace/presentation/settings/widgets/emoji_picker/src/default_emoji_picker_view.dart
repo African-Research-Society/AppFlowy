@@ -23,6 +23,7 @@ class DefaultEmojiPickerViewState extends State<DefaultEmojiPickerView>
     with TickerProviderStateMixin {
   PageController? _pageController;
   TabController? _tabController;
+  late final TabController _searchTabController;
   final TextEditingController _emojiController = TextEditingController();
   final FocusNode _emojiFocusNode = FocusNode();
   EmojiCategoryGroup searchEmojiList =
@@ -44,6 +45,7 @@ class DefaultEmojiPickerViewState extends State<DefaultEmojiPickerView>
       length: widget.state.emojiCategoryGroupList.length,
       vsync: this,
     );
+    _searchTabController = TabController(length: 1, vsync: this);
     _pageController = PageController(initialPage: initCategory);
     _emojiFocusNode.requestFocus();
     _emojiController.addListener(_onEmojiChanged);
@@ -56,6 +58,7 @@ class DefaultEmojiPickerViewState extends State<DefaultEmojiPickerView>
     _emojiFocusNode.dispose();
     _pageController?.dispose();
     _tabController?.dispose();
+    _searchTabController.dispose();
     scrollController.dispose();
     super.dispose();
   }
@@ -135,7 +138,7 @@ class DefaultEmojiPickerViewState extends State<DefaultEmojiPickerView>
                       labelColor: widget.config.selectedCategoryIconColor,
                       unselectedLabelColor: widget.config.categoryIconColor,
                       controller: isEmojiSearching()
-                          ? TabController(length: 1, vsync: this)
+                          ? _searchTabController
                           : _tabController,
                       labelPadding: EdgeInsets.zero,
                       indicatorColor:

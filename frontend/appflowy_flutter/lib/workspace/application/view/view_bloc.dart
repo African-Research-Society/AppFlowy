@@ -233,6 +233,7 @@ class ViewBloc extends Bloc<ViewEvent, ViewState> {
               ext: {},
               openAfterCreate: e.openAfterCreated,
               section: e.section,
+              initialDataBytes: e.initialDataBytes,
             );
             emit(
               result.fold(
@@ -260,10 +261,13 @@ class ViewBloc extends Bloc<ViewEvent, ViewState> {
               value.isPublic,
             );
           },
-          updateIcon: (value) async {
+          updateIcon: (icon) async {
+            final viewIcon = icon == null || icon.isEmpty
+                ? EmojiIconData.none()
+                : EmojiIconData.emoji(icon);
             await ViewBackendService.updateViewIcon(
               view: view,
-              viewIcon: view.icon.toEmojiIconData(),
+              viewIcon: viewIcon,
             );
           },
           collapseAllPages: (value) async {
@@ -482,6 +486,7 @@ class ViewEvent with _$ViewEvent {
     /// open the view after created
     @Default(true) bool openAfterCreated,
     ViewSectionPB? section,
+    List<int>? initialDataBytes,
   }) = CreateView;
 
   const factory ViewEvent.viewDidUpdate(

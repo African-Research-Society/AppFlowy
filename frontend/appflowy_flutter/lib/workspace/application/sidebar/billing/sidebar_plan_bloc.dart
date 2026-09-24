@@ -81,13 +81,15 @@ class SidebarPlanBloc extends Bloc<SidebarPlanEvent, SidebarPlanState> {
     }
   }
 
-  Future<void> dispose() async {
+  @override
+  Future<void> close() async {
     if (_globalErrorListener != null) {
       GlobalErrorCodeNotifier.remove(_globalErrorListener!);
     }
     _subscriptionListener.removeListener(_onPaymentSuccessful);
     await _storageListener?.stop();
     _storageListener = null;
+    return super.close();
   }
 
   ErrorListener? _globalErrorListener;
