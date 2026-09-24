@@ -127,11 +127,11 @@ class ChatAnimatedListReversedState extends State<ChatAnimatedListReversed>
 
   @override
   void dispose() {
-    super.dispose();
     _scrollToBottomShowTimer?.cancel();
     _scrollToBottomController.dispose();
     _operationsSubscription.cancel();
     widget.scrollController.removeListener(_handleLoadPreviousMessages);
+    super.dispose();
   }
 
   @override

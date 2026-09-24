@@ -402,7 +402,10 @@ class _CalendarPageState extends State<CalendarPage> {
 
   WeekDays _weekdayFromInt(int dayOfWeek) {
     // dayOfWeek starts from Sunday, WeekDays starts from Monday
-    return WeekDays.values[(dayOfWeek - 1) % 7];
+    // Dart's % keeps the sign of the dividend, so Sunday (0) must not
+    // index WeekDays at -1.
+    final index = ((dayOfWeek - 1) % 7 + 7) % 7;
+    return WeekDays.values[index];
   }
 }
 

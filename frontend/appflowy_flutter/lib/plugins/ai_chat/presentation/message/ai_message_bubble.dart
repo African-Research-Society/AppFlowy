@@ -292,7 +292,7 @@ class _ChatAIMessageHoverState extends State<ChatAIMessageHover> {
 
   @override
   void dispose() {
-    scrollPosition?.isScrollingNotifier.removeListener(handleScroll);
+    scrollPosition?.removeListener(handleScroll);
     super.dispose();
   }
 }
