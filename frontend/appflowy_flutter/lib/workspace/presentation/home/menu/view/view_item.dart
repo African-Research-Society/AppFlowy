@@ -736,7 +736,9 @@ class _SingleInnerViewItemState extends State<SingleInnerViewItem> {
     bool openAfterCreated,
     bool createNewView,
   ) {
-    if (!createNewView && name == null && initialDataBytes == null) {
+    // createNewView is false after an import: the import panel has already
+    // created the pages, so creating another view here would add a blank one.
+    if (!createNewView) {
       return;
     }
     final viewBloc = context.read<ViewBloc>();

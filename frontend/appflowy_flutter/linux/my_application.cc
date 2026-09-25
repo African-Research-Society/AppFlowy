@@ -63,15 +63,7 @@ static gboolean my_application_local_command_line(GApplication *application, gch
   g_application_activate(application);
   *exit_status = 0;
 
-  return TRUE;
-}
-
-static void my_application_open(GApplication *application, GFile **files, gint n_files, const gchar *hint)
-{
-  (void)files;
-  (void)n_files;
-  (void)hint;
-  g_application_activate(application);
+  return FALSE;
 }
 
 // Implements GObject::dispose.
@@ -85,7 +77,6 @@ static void my_application_dispose(GObject *object)
 static void my_application_class_init(MyApplicationClass *klass)
 {
   G_APPLICATION_CLASS(klass)->activate = my_application_activate;
-  G_APPLICATION_CLASS(klass)->open = my_application_open;
   G_APPLICATION_CLASS(klass)->local_command_line = my_application_local_command_line;
   G_OBJECT_CLASS(klass)->dispose = my_application_dispose;
 }

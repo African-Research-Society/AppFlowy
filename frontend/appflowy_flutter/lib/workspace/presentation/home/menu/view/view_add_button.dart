@@ -98,13 +98,7 @@ class ViewAddButton extends StatelessWidget {
       parentViewId,
       context,
       (type, name, initialDataBytes) {
-        onSelected(
-          action.pluginBuilder,
-          name,
-          initialDataBytes,
-          true,
-          false,
-        );
+        onSelected(action.pluginBuilder, null, null, true, false);
       },
     );
   }

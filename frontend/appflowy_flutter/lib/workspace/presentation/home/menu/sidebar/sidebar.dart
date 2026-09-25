@@ -242,7 +242,7 @@ class HomeSideBar extends StatelessWidget {
           view,
           () => openView(action, context, view, arguments),
         ).then((switched) {
-          if (!switched) {
+          if (!switched && context.mounted) {
             openView(action, context, view, arguments);
           }
         });

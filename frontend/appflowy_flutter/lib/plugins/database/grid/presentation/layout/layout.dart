@@ -13,13 +13,14 @@ class GridLayout {
               element.visibility != null &&
               element.visibility != FieldVisibility.AlwaysHidden,
         )
-        .map((fieldInfo) => fieldInfo.width ?? 150)
+        .map((fieldInfo) => fieldInfo.width ?? 150.0)
         .toList();
     if (visibleWidths.isEmpty) {
       return padding + GridSize.newPropertyButtonWidth;
     }
 
-    final fieldsWidth = visibleWidths.reduce((value, element) => value + element);
+    final fieldsWidth =
+        visibleWidths.reduce((value, element) => value + element);
 
     return fieldsWidth + padding + GridSize.newPropertyButtonWidth;
   }

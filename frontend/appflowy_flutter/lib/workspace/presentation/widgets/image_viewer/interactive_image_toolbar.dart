@@ -251,22 +251,16 @@ class InteractiveImageToolbar extends StatelessWidget {
       if (savePath != null) {
         final uri = Uri.parse(currentImage.url);
 
-        final String? token;
-      try {
-        final decoded = jsonDecode(userProfile!.token);
-        token = decoded is Map ? decoded['access_token'] as String? : null;
-      } catch (_) {
-        token = null;
-      }
-      if (token == null || token.isEmpty) {
-        if (context.mounted) {
-          showSnapBar(
-            context,
-            LocaleKeys.document_plugins_image_imageDownloadFailedToken.tr(),
-          );
+        final token = _accessTokenFrom(userProfile!.token);
+        if (token == null || token.isEmpty) {
+          if (context.mounted) {
+            showSnapBar(
+              context,
+              LocaleKeys.document_plugins_image_imageDownloadFailedToken.tr(),
+            );
+          }
+          return;
         }
-        return;
-      }
         final response = await http.get(
           uri,
           headers: {'Authorization': 'Bearer $token'},
@@ -282,6 +276,17 @@ class InteractiveImageToolbar extends StatelessWidget {
         }
       }
     }
+  }
+}
+
+/// Reads `access_token` from the serialized auth token. Returns null when the
+/// token is missing or not in the expected JSON shape.
+String? _accessTokenFrom(String rawToken) {
+  try {
+    final decoded = jsonDecode(rawToken);
+    return decoded is Map ? decoded['access_token'] as String? : null;
+  } catch (_) {
+    return null;
   }
 }
 

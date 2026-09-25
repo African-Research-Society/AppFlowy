@@ -119,6 +119,11 @@ class _Description extends StatelessWidget {
             .settings_appearance_members_resetInviteLinkDescription
             .tr(),
         confirmLabel: LocaleKeys.settings_appearance_members_reset.tr(),
+        onConfirm: (_) {
+          context.read<WorkspaceMemberBloc>().add(
+                const WorkspaceMemberEvent.generateInviteLink(),
+              );
+        },
         confirmButtonBuilder: (_) => AFFilledTextButton.destructive(
           text: LocaleKeys.settings_appearance_members_reset.tr(),
           onTap: () {

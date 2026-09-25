@@ -43,7 +43,7 @@ class _ChecklistProgressBarState extends State<ChecklistProgressBar> {
                           decoration: BoxDecoration(
                             borderRadius:
                                 const BorderRadius.all(Radius.circular(2)),
-                            color: widget.tasks[index].isSelected
+                            color: index < numFinishedTasks
                                 ? completedTaskColor
                                 : AFThemeExtension.of(context)
                                     .progressBarBGColor,

@@ -44,13 +44,17 @@ class AppFlowyCloudURLsBloc
               ),
             );
           } else {
+            // Validate both URLs before saving either, so a bad web domain
+            // does not leave a half-applied configuration. An empty web
+            // domain keeps the stored value, as before.
             final server = validateUrl(state.updatedServerUrl);
-            final web = validateUrl(state.updatedBaseWebDomain);
+            final webDomain = state.updatedBaseWebDomain;
+            final web = webDomain.isEmpty ? null : validateUrl(webDomain);
             final serverUrl = server.fold<String?>((url) => url, (_) => null);
-            final webUrl = web.fold<String?>((url) => url, (_) => null);
-            if (serverUrl == null || webUrl == null) {
-              final err = server.fold<String?>((_) => null, (error) => error) ??
-                  web.fold((_) => '', (error) => error);
+            final webUrl = web?.fold<String?>((url) => url, (_) => null);
+            if (serverUrl == null || (web != null && webUrl == null)) {
+              final err = server.fold<String?>((_) => null, (e) => e) ??
+                  web?.fold<String?>((_) => null, (e) => e);
               emit(
                 state.copyWith(
                   urlError: err,
@@ -60,7 +64,9 @@ class AppFlowyCloudURLsBloc
               return;
             }
             await useSelfHostedAppFlowyCloud(serverUrl);
-            await useBaseWebDomain(webUrl);
+            if (webUrl != null) {
+              await useBaseWebDomain(webUrl);
+            }
             add(const AppFlowyCloudURLsEvent.didSaveConfig());
           }
         },
