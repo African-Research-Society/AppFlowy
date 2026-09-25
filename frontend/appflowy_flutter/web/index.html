@@ -57,6 +57,10 @@
         navigator.serviceWorker.register(serviceWorkerUrl)
           .then((reg) => {
             function waitForActivation(serviceWorker) {
+              if (!serviceWorker) {
+                loadMainDartJs();
+                return;
+              }
               serviceWorker.addEventListener('statechange', () => {
                 if (serviceWorker.state == 'activated') {
                   console.log('Installed new service worker.');
@@ -67,13 +71,14 @@
             if (!reg.active && (reg.installing || reg.waiting)) {
               // No active web worker and we have installed or are installing
               // one for the first time. Simply wait for it to activate.
-              waitForActivation(reg.installing ?? reg.waiting);
-            } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
+              waitForActivation(reg.installing || reg.waiting);
+            } else if (reg.active && !reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
               // When the app updates the serviceWorkerVersion changes, so we
               // need to ask the service worker to update.
               console.log('New service worker available.');
-              reg.update();
-              waitForActivation(reg.installing);
+              reg.update().then(() => {
+                waitForActivation(reg.installing || reg.waiting);
+              });
             } else {
               // Existing service worker is still good.
               console.log('Loading app from service worker.');

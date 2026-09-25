@@ -28,7 +28,7 @@ class DatabaseShareBloc extends Bloc<DatabaseShareEvent, DatabaseShareState> {
 
     final result = await BackendExportService.exportDatabaseAsCSV(view.id);
     result.fold(
-      (l) => _saveCSVToPath(l.data, event.path),
+      (_) {},
       (r) => Log.error(r),
     );
 

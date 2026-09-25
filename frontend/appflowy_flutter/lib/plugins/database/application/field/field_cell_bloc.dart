@@ -59,7 +59,7 @@ class FieldCellState with _$FieldCellState {
   factory FieldCellState.initial(FieldInfo fieldInfo) => FieldCellState(
         fieldInfo: fieldInfo,
         isResizing: false,
-        width: fieldInfo.width!.toDouble(),
+        width: fieldInfo.width ?? 150,
         resizeStart: 0,
       );
 

@@ -13,7 +13,7 @@ class MethodChannelFlowyInfraUI extends FlowyInfraUIPlatform {
       const EventChannel(INFRA_UI_KEYBOARD_EVENT_CHANNEL_NAME);
 
   late final Stream<bool> _onKeyboardVisibilityChange =
-      _keyboardChannel.receiveBroadcastStream().map((event) => event as bool);
+      _keyboardChannel.receiveBroadcastStream().map((event) => event is bool ? event : false);
 
   @override
   Stream<bool> get onKeyboardVisibilityChange => _onKeyboardVisibilityChange;

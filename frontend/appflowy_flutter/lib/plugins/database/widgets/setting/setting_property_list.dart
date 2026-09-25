@@ -44,6 +44,7 @@ class _DatabasePropertyListState extends State<DatabasePropertyList> {
 
   @override
   void dispose() {
+    _bloc.close();
     _popoverMutex.dispose();
     super.dispose();
   }

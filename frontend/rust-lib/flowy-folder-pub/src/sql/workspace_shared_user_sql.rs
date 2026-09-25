@@ -104,12 +104,14 @@ pub fn select_all_workspace_shared_users_by_workspace(
 
 pub fn upsert_workspace_shared_users<T: Into<WorkspaceSharedUserTable> + Clone>(
   conn: &mut SqliteConnection,
-  _workspace_id: &str,
-  _view_id: &str,
+  workspace_id: &str,
+  view_id: &str,
   shared_users: &[T],
 ) -> FlowyResult<()> {
   for shared_user in shared_users.iter().cloned() {
-    let shared_user: WorkspaceSharedUserTable = shared_user.into();
+    let mut shared_user: WorkspaceSharedUserTable = shared_user.into();
+    shared_user.workspace_id = workspace_id.to_string();
+    shared_user.view_id = view_id.to_string();
     insert_into(workspace_shared_user::table)
       .values(&shared_user)
       .on_conflict((

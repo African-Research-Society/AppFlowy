@@ -29,7 +29,7 @@ runs:
       id: rust_toolchain
       uses: actions-rs/toolchain@v1
       with:
-        toolchain: ${{ inputs.RUST_TOOLCHAIN }}
+        toolchain: ${{ inputs.rust_toolchain }}
         target: ${{ inputs.rust_target }}
         override: true
         profile: minimal

@@ -1077,7 +1077,7 @@ impl DatabaseCollabPersistenceService for DatabasePersistenceImpl {
       let write_txn = collab_db.write_txn();
       write_txn
         .delete_doc(uid, workspace_id.as_str(), object_id)
-        .unwrap();
+        .map_err(|err| DatabaseError::Internal(anyhow!("failed to delete document: {}", err)))?;
       write_txn
         .commit_transaction()
         .map_err(|err| DatabaseError::Internal(anyhow!("failed to commit transaction: {}", err)))?;

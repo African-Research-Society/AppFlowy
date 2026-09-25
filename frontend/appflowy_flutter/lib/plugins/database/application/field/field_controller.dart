@@ -112,6 +112,7 @@ class FieldController {
 
   // Field callbacks
   final Map<OnReceiveFields, VoidCallback> _fieldCallbacks = {};
+  final Map<OnReceiveField, VoidCallback> _singleFieldCallbacks = {};
   final _GridFieldNotifier _fieldNotifier = _GridFieldNotifier();
 
   // Field updated callbacks
@@ -645,7 +646,10 @@ class FieldController {
     required OnReceiveField onFieldChanged,
     bool Function()? listenWhen,
   }) {
-    void key(List<FieldInfo> fieldInfos) {
+    void callback() {
+      if (listenWhen != null && listenWhen() == false) {
+        return;
+      }
       final fieldInfo = fieldInfos.firstWhereOrNull(
         (fieldInfo) => fieldInfo.id == fieldId,
       );
@@ -654,14 +658,11 @@ class FieldController {
       }
     }
 
-    void callback() {
-      if (listenWhen != null && listenWhen() == false) {
-        return;
-      }
-      key(fieldInfos);
+    final previous = _singleFieldCallbacks.remove(onFieldChanged);
+    if (previous != null) {
+      _fieldNotifier.removeListener(previous);
     }
-
-    _fieldCallbacks[key] = callback;
+    _singleFieldCallbacks[onFieldChanged] = callback;
     _fieldNotifier.addListener(callback);
   }
 
@@ -696,16 +697,7 @@ class FieldController {
     required String fieldId,
     required OnReceiveField onFieldChanged,
   }) {
-    void key(List<FieldInfo> fieldInfos) {
-      final fieldInfo = fieldInfos.firstWhereOrNull(
-        (fieldInfo) => fieldInfo.id == fieldId,
-      );
-      if (fieldInfo != null) {
-        onFieldChanged(fieldInfo);
-      }
-    }
-
-    final callback = _fieldCallbacks.remove(key);
+    final callback = _singleFieldCallbacks.remove(onFieldChanged);
     if (callback != null) {
       _fieldNotifier.removeListener(callback);
     }
@@ -725,6 +717,9 @@ class FieldController {
     await _fieldSettingsListener.stop();
 
     for (final callback in _fieldCallbacks.values) {
+      _fieldNotifier.removeListener(callback);
+    }
+    for (final callback in _singleFieldCallbacks.values) {
       _fieldNotifier.removeListener(callback);
     }
     _fieldNotifier.dispose();

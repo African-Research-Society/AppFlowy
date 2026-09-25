@@ -72,7 +72,7 @@ extension NumberFormatExtension on NumberFormatPB {
       case NumberFormatPB.Franc:
         return "Franc";
       case NumberFormatPB.HongKongDollar:
-        return "Hone Kong dollar";
+        return "Hong Kong dollar";
       case NumberFormatPB.Koruna:
         return "Koruna";
       case NumberFormatPB.Krona:
@@ -112,7 +112,7 @@ extension NumberFormatExtension on NumberFormatPB {
       case NumberFormatPB.Rupiah:
         return "Rupiah";
       case NumberFormatPB.Shekel:
-        return "Skekel";
+        return "Shekel";
       case NumberFormatPB.USD:
         return "US dollar";
       case NumberFormatPB.UruguayanPeso:

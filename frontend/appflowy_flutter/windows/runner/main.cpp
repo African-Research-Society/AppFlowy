@@ -19,13 +19,20 @@ int APIENTRY wWinMain(_In_ HINSTANCE instance, _In_opt_ HINSTANCE prev,
     FlutterWindow window(project);
     if (window.SendAppLinkToInstance(L"ARS Workspace"))
     {
-      return false;
+      ReleaseMutex(hMutexInstance);
+      CloseHandle(hMutexInstance);
+      return EXIT_SUCCESS;
     }
 
-    WINDOWPLACEMENT place = {sizeof(WINDOWPLACEMENT)};
-    GetWindowPlacement(handle, &place);
-    ShowWindow(handle, SW_NORMAL);
-    return 0;
+    if (handle != nullptr)
+    {
+      WINDOWPLACEMENT place = {sizeof(WINDOWPLACEMENT)};
+      GetWindowPlacement(handle, &place);
+      ShowWindow(handle, SW_NORMAL);
+    }
+    ReleaseMutex(hMutexInstance);
+    CloseHandle(hMutexInstance);
+    return EXIT_SUCCESS;
   }
 
   // Attach to console when present (e.g., 'flutter run') or create a
@@ -51,6 +58,9 @@ int APIENTRY wWinMain(_In_ HINSTANCE instance, _In_opt_ HINSTANCE prev,
 
   if (!window.Create(L"ARS Workspace", origin, size))
   {
+    ::CoUninitialize();
+    ReleaseMutex(hMutexInstance);
+    CloseHandle(hMutexInstance);
     return EXIT_FAILURE;
   }
 
@@ -66,5 +76,6 @@ int APIENTRY wWinMain(_In_ HINSTANCE instance, _In_opt_ HINSTANCE prev,
 
   ::CoUninitialize();
   ReleaseMutex(hMutexInstance);
+  CloseHandle(hMutexInstance);
   return EXIT_SUCCESS;
 }

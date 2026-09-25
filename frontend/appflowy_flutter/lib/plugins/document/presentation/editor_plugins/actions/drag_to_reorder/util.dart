@@ -226,7 +226,8 @@ Future<void> dragToMoveNode(
   // 88px is a hardcoded value, it can be changed based on the project's design
   if (dragOffset.dx < globalBlockRect.left + 88) {
     horizontalPosition = HorizontalPosition.left;
-  } else if (dragOffset.dx > globalBlockRect.right * 4.0 / 5.0) {
+  } else if (dragOffset.dx >
+      globalBlockRect.left + globalBlockRect.width * 4.0 / 5.0) {
     horizontalPosition = HorizontalPosition.right;
   } else if (nodeTypesThatCanContainChildNode.contains(dragTargetNode.type)) {
     horizontalPosition = HorizontalPosition.center;

@@ -403,7 +403,7 @@ class BoardBloc extends Bloc<BoardEvent, BoardState> {
         final index = groupList.indexWhere((element) => element.isDefault);
         if (index != -1) {
           if (layoutSettings.board.hideUngroupedColumn) {
-            boardController.removeGroup(groupList[index].fieldId);
+            boardController.removeGroup(groupList[index].groupId);
           } else {
             final newGroup = _initializeGroupData(groupList[index]);
             final visibleGroups = [...groupList]

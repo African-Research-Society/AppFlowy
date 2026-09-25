@@ -64,7 +64,9 @@ class _FlowyHoverState extends State<FlowyHover> {
         style: widget.style ??
             HoverStyle(hoverColor: Theme.of(context).colorScheme.secondary),
         applyStyle: _onHover || (widget.isSelected?.call() ?? false),
-        child: widget.child ?? widget.builder!(context, _onHover),
+        child: widget.child ??
+            widget.builder?.call(context, _onHover) ??
+            const SizedBox.shrink(),
       ),
     );
   }

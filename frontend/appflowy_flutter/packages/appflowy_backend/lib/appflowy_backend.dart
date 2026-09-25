@@ -48,7 +48,9 @@ class FlowySDK {
     // // Create a SendPort that accepts only one message.
     // final sendPort = singleCompletePort(completer);
 
-    final code = ffi.init_sdk(0, configuration.toNativeUtf8());
+    final nativeConfig = configuration.toNativeUtf8();
+    final code = ffi.init_sdk(0, nativeConfig);
+    malloc.free(nativeConfig);
     if (code != 0) {
       throw Exception('Failed to initialize the SDK');
     }

@@ -99,12 +99,16 @@ class SettingsDialog extends StatelessWidget {
                   ),
                   BlocBuilder<UserWorkspaceBloc, UserWorkspaceState>(
                     builder: (context, state) {
+                      final workspace = state.currentWorkspace;
+                      if (workspace == null) {
+                        return const Expanded(child: SizedBox.shrink());
+                      }
                       return Expanded(
                         child: getSettingsView(
-                          state.currentWorkspace!,
+                          workspace,
                           context.read<SettingsDialogBloc>().state.page,
                           state.userProfile,
-                          state.currentWorkspace?.role,
+                          workspace.role,
                         ),
                       );
                     },

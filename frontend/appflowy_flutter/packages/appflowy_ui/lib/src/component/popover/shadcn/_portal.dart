@@ -164,6 +164,9 @@ class _ShadPortalState extends State<ShadPortal> {
     final shouldShow = widget.visible;
 
     WidgetsBinding.instance.addPostFrameCallback((timer) {
+      if (!mounted) {
+        return;
+      }
       shouldShow ? show() : hide();
     });
   }
@@ -236,7 +239,9 @@ class _ShadPortalState extends State<ShadPortal> {
 
     if (overlay == null) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
-        setState(() {});
+        if (mounted) {
+          setState(() {});
+        }
       });
     }
     return CustomSingleChildLayout(

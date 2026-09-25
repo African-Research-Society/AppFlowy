@@ -58,6 +58,7 @@ class _TextCellState extends State<TextCardCell> {
   );
   late final TextEditingController _textEditingController;
   final focusNode = SingleListenerFocusNode();
+  void Function()? _onEditingChanged;
 
   @override
   void initState() {
@@ -88,7 +89,7 @@ class _TextCellState extends State<TextCardCell> {
   }
 
   void _bindEditableNotifier() {
-    widget.editableNotifier?.isCellEditing.addListener(() {
+    _onEditingChanged = () {
       if (!mounted) {
         return;
       }
@@ -99,12 +100,23 @@ class _TextCellState extends State<TextCardCell> {
             .addPostFrameCallback((_) => focusNode.requestFocus());
       }
       cellBloc.add(TextCellEvent.enableEdit(isEditing));
-    });
+    };
+    widget.editableNotifier?.isCellEditing.addListener(_onEditingChanged!);
+  }
+
+  void _unbindEditableNotifier(EditableCardNotifier? notifier) {
+    final listener = _onEditingChanged;
+    if (listener == null) {
+      return;
+    }
+    notifier?.isCellEditing.removeListener(listener);
+    _onEditingChanged = null;
   }
 
   @override
   void didUpdateWidget(covariant oldWidget) {
     if (oldWidget.editableNotifier != widget.editableNotifier) {
+      _unbindEditableNotifier(oldWidget.editableNotifier);
       _bindEditableNotifier();
     }
     super.didUpdateWidget(oldWidget);
@@ -128,8 +140,7 @@ class _TextCellState extends State<TextCardCell> {
   @override
   void dispose() {
     _textEditingController.dispose();
-    widget.editableNotifier?.isCellEditing
-        .removeListener(_bindEditableNotifier);
+    _unbindEditableNotifier(widget.editableNotifier);
     focusNode.dispose();
     cellBloc.close();
     super.dispose();

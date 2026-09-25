@@ -80,15 +80,19 @@ class FlowyDynamicPlugin {
 
     final lightThemeFileName = '$name.$lightExtension';
     directory.childFile(lightThemeFileName).createSync();
+    final currentTheme = theme;
+    if (currentTheme == null) {
+      throw PluginCompilationException('The theme plugin has no theme.');
+    }
     directory
         .childFile(lightThemeFileName)
-        .writeAsStringSync(jsonEncode(theme!.lightTheme.toJson()));
+        .writeAsStringSync(jsonEncode(currentTheme.lightTheme.toJson()));
 
     final darkThemeFileName = '$name.$darkExtension';
     directory.childFile(darkThemeFileName).createSync();
     directory
         .childFile(darkThemeFileName)
-        .writeAsStringSync(jsonEncode(theme!.darkTheme.toJson()));
+        .writeAsStringSync(jsonEncode(currentTheme.darkTheme.toJson()));
 
     return directory;
   }
@@ -109,17 +113,25 @@ class FlowyDynamicPlugin {
       );
     }
 
-    final light = src
+    final lightCandidates = src
         .listSync()
         .where((event) =>
             event is File && p.basename(event.path).contains(lightExtension))
-        .first as File;
+        .toList();
+    if (lightCandidates.isEmpty) {
+      throw PluginCompilationException('The light theme file is missing.');
+    }
+    final light = lightCandidates.first as File;
 
-    final dark = src
+    final darkCandidates = src
         .listSync()
         .where((event) =>
             event is File && p.basename(event.path).contains(darkExtension))
-        .first as File;
+        .toList();
+    if (darkCandidates.isEmpty) {
+      throw PluginCompilationException('The dark theme file is missing.');
+    }
+    final dark = darkCandidates.first as File;
 
     late final FlowyColorScheme lightTheme;
     late final FlowyColorScheme darkTheme;

@@ -64,7 +64,7 @@ final customLinkItem = ToolbarItem(
     if (tooltipBuilder != null) {
       return tooltipBuilder(
         context,
-        ToolbarId.highlightColor.id,
+        ToolbarId.link.id,
         AppFlowyEditorL10n.current.link,
         child,
       );

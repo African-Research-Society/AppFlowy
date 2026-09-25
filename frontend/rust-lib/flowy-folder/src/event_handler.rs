@@ -24,7 +24,7 @@ pub(crate) async fn get_all_workspace_handler(
   _data: AFPluginData<CreateWorkspacePayloadPB>,
   _folder: AFPluginState<Weak<FolderManager>>,
 ) -> DataResult<RepeatedWorkspacePB, FlowyError> {
-  todo!()
+  Err(FlowyError::not_support())
 }
 
 #[tracing::instrument(level = "debug", skip(folder), err)]

@@ -290,7 +290,10 @@ class FlowyOverlayState extends State<FlowyOverlay> {
       Offset targetAnchorPosition = anchorPosition ?? Offset.zero;
       Size targetAnchorSize = anchorSize ?? Size.zero;
       if (anchorContext != null) {
-        RenderObject renderObject = anchorContext.findRenderObject()!;
+        final renderObject = anchorContext.findRenderObject();
+        if (renderObject is! RenderBox) {
+          return;
+        }
         assert(
           renderObject is RenderBox,
           'Unexpecteded non-RenderBox render object caught.',

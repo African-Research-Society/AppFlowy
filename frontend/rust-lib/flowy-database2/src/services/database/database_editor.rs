@@ -723,6 +723,9 @@ impl DatabaseEditor {
       params.field_type.into(),
       &params.position,
       |field| {
+        if let Some(icon) = params.field_icon.clone() {
+          field.icon = icon;
+        }
         field
           .type_options
           .insert(params.field_type.to_string(), type_option_data);

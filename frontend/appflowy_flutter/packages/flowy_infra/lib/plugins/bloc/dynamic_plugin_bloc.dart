@@ -9,10 +9,13 @@ import 'dynamic_plugin_state.dart';
 
 class DynamicPluginBloc extends Bloc<DynamicPluginEvent, DynamicPluginState> {
   DynamicPluginBloc({FilePicker? filePicker})
-      : super(const DynamicPluginState.uninitialized()) {
+      : _filePicker = filePicker,
+        super(const DynamicPluginState.uninitialized()) {
     on<DynamicPluginEvent>(dispatch);
     add(DynamicPluginEvent.load());
   }
+
+  final FilePicker? _filePicker;
 
   Future<void> dispatch(
       DynamicPluginEvent event, Emitter<DynamicPluginState> emit) async {
@@ -34,7 +37,7 @@ class DynamicPluginBloc extends Bloc<DynamicPluginEvent, DynamicPluginState> {
   Future<void> addPlugin(Emitter<DynamicPluginState> emit) async {
     emit(const DynamicPluginState.processing());
     try {
-      final plugin = await FlowyPluginService.pick();
+      final plugin = await FlowyPluginService.pick(service: _filePicker);
       if (plugin == null) {
         return emit(
           DynamicPluginState.ready(
@@ -46,6 +49,10 @@ class DynamicPluginBloc extends Bloc<DynamicPluginEvent, DynamicPluginState> {
     } on PluginCompilationException catch (exception) {
       return emit(
         DynamicPluginState.compilationFailure(errorMessage: exception.message),
+      );
+    } catch (exception) {
+      return emit(
+        DynamicPluginState.compilationFailure(errorMessage: '$exception'),
       );
     }
 

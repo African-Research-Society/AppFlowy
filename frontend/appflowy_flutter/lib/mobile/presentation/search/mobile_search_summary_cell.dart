@@ -124,7 +124,7 @@ class _MobileSearchSummaryCellState extends State<MobileSearchSummaryCell> {
         gradient: LinearGradient(
           colors: [
             fillColor.withValues(alpha: 0),
-            fillColor.withValues(alpha: 0.6 * 255),
+            fillColor.withValues(alpha: 0.6),
             fillColor,
           ],
           begin: Alignment.topCenter,

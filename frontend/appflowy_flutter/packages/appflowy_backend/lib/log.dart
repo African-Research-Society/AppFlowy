@@ -37,7 +37,9 @@ class Log {
       shared._logger.log(msg, logLevel: level, stackTrace: stackTrace);
     } else {
       String formattedMessage = _formatMessageWithStackTrace(msg, stackTrace);
-      rust_log(rustLevel, toNativeUtf8(formattedMessage));
+      final nativeMessage = toNativeUtf8(formattedMessage);
+      rust_log(rustLevel, nativeMessage);
+      ffi.malloc.free(nativeMessage);
     }
   }
 

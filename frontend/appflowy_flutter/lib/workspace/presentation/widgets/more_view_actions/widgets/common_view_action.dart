@@ -15,7 +15,7 @@ import 'package:flowy_infra_ui/flowy_infra_ui.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class ViewAction extends StatelessWidget {
+class ViewAction extends StatefulWidget {
   const ViewAction({
     super.key,
     required this.type,
@@ -28,13 +28,20 @@ class ViewAction extends StatelessWidget {
   final PopoverMutex? mutex;
 
   @override
+  State<ViewAction> createState() => _ViewActionState();
+}
+
+class _ViewActionState extends State<ViewAction> {
+  final PopoverController _controller = PopoverController();
+
+  @override
   Widget build(BuildContext context) {
     final wrapper = ViewMoreActionTypeWrapper(
-      type,
-      view,
+      widget.type,
+      widget.view,
       (controller, data) async {
         await _onAction(context, data);
-        mutex?.close();
+        widget.mutex?.close();
       },
       moveActionDirection: PopoverDirection.leftWithTopAligned,
       moveActionOffset: const Offset(-10, 0),
@@ -42,7 +49,7 @@ class ViewAction extends StatelessWidget {
     return wrapper.buildWithContext(
       context,
       // this is a dummy controller, we don't need to control the popover here.
-      PopoverController(),
+      _controller,
       null,
     );
   }
@@ -51,15 +58,15 @@ class ViewAction extends StatelessWidget {
     BuildContext context,
     dynamic data,
   ) async {
-    switch (type) {
+    switch (widget.type) {
       case ViewMoreActionType.delete:
         final (containPublishedPage, _) =
-            await ViewBackendService.containPublishedPage(view);
+            await ViewBackendService.containPublishedPage(widget.view);
 
         if (containPublishedPage && context.mounted) {
           await showConfirmDeletionDialog(
             context: context,
-            name: view.nameOrDefault,
+            name: widget.view.nameOrDefault,
             description: LocaleKeys.publish_containsPublishedPage.tr(),
             onConfirm: () {
               context.read<ViewBloc>().add(const ViewEvent.delete());
@@ -68,8 +75,10 @@ class ViewAction extends StatelessWidget {
         } else if (context.mounted) {
           context.read<ViewBloc>().add(const ViewEvent.delete());
         }
+        break;
       case ViewMoreActionType.duplicate:
         context.read<ViewBloc>().add(const ViewEvent.duplicate());
+        break;
       case ViewMoreActionType.moveTo:
         final value = data;
         if (value is! (ViewPB, ViewPB)) {
@@ -77,15 +86,15 @@ class ViewAction extends StatelessWidget {
         }
         final space = value.$1;
         final target = value.$2;
-        final result = await ViewBackendService.getView(view.parentViewId);
+        final result = await ViewBackendService.getView(widget.view.parentViewId);
         result.fold(
           (parentView) => moveViewCrossSpace(
             context,
             space,
-            view,
+            widget.view,
             parentView,
             FolderSpaceType.public,
-            view,
+            widget.view,
             target.id,
           ),
           (f) => Log.error(f),

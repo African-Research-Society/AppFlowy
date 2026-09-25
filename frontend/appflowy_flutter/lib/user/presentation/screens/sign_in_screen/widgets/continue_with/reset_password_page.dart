@@ -39,6 +39,9 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
           backToLogin: widget.backToLogin,
           baseUrl: widget.baseUrl,
           onValidateResetPasswordToken: (isValid) {
+            if (!isValid) {
+              return;
+            }
             setState(() {
               state = ResetPasswordPageState.setNewPassword;
             });

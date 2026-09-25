@@ -88,7 +88,10 @@ fn update_cell_data_with_changeset(
       cell_data.selected_option_ids.push(option.id.clone())
     }
     match new_task.index {
-      Some(index) => cell_data.options.insert(index as usize, option),
+      Some(index) => {
+        let index = (index as usize).min(cell_data.options.len());
+        cell_data.options.insert(index, option);
+      },
       None => cell_data.options.push(option),
     };
   });
@@ -134,6 +137,7 @@ fn update_cell_data_with_changeset(
       cell_data.options.iter().position(|option| option.id == to),
     ) {
       let option = cell_data.options.remove(from_index);
+      let to_index = to_index.min(cell_data.options.len());
       cell_data.options.insert(to_index, option);
     }
   }

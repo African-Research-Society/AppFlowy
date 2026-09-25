@@ -451,7 +451,7 @@ class _TimePicker extends StatelessWidget {
               fontColor: Theme.of(context).colorScheme.onPrimary,
               fillColor: Theme.of(context).primaryColor,
               onPressed: () {
-                Navigator.of(context).pop(result);
+                Navigator.of(context).pop(result ?? dateTime);
               },
             ),
           ),

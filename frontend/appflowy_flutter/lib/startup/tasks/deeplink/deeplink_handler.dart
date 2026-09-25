@@ -47,7 +47,7 @@ class DeepLinkHandlerRegistry {
     required DeepLinkResultHandler onResult,
     required DeepLinkErrorHandler onError,
   }) async {
-    Log.info('Processing DeepLink: ${uri.toString()}');
+    Log.info('Processing DeepLink: ${uri.scheme}://${uri.host}${uri.path}');
 
     bool handled = false;
 

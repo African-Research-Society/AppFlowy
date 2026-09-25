@@ -64,12 +64,14 @@ pub fn select_all_workspace_shared_views(
 
 pub fn upsert_workspace_shared_views<T: Into<WorkspaceSharedViewTable> + Clone>(
   conn: &mut SqliteConnection,
-  _workspace_id: &str,
-  _uid: i64,
+  workspace_id: &str,
+  uid: i64,
   shared_views: &[T],
 ) -> FlowyResult<()> {
   for shared_view in shared_views.iter().cloned() {
-    let shared_view: WorkspaceSharedViewTable = shared_view.into();
+    let mut shared_view: WorkspaceSharedViewTable = shared_view.into();
+    shared_view.workspace_id = workspace_id.to_string();
+    shared_view.uid = uid;
     insert_into(workspace_shared_view::table)
       .values(&shared_view)
       .on_conflict((

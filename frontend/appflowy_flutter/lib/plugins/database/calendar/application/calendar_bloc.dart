@@ -415,7 +415,11 @@ class CalendarBloc extends Bloc<CalendarEvent, CalendarState> {
     if (index == -1) {
       return false;
     }
-    return state.allEvents[index].date.day != event.date.day;
+    final previous = state.allEvents[index].date;
+    final next = event.date;
+    return previous.year != next.year ||
+        previous.month != next.month ||
+        previous.day != next.day;
   }
 
   bool _containsEvent(String rowId) {

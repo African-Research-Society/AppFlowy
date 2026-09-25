@@ -736,19 +736,26 @@ class _SingleInnerViewItemState extends State<SingleInnerViewItem> {
     bool openAfterCreated,
     bool createNewView,
   ) {
+    // createNewView is false after an import: the import panel has already
+    // created the pages, so creating another view here would add a blank one.
+    if (!createNewView) {
+      return;
+    }
     final viewBloc = context.read<ViewBloc>();
 
     // the name of new document should be empty
-    final viewName = ![ViewLayoutPB.Document, ViewLayoutPB.Chat]
-            .contains(pluginBuilder.layoutType)
-        ? LocaleKeys.menuAppHeader_defaultNewPageName.tr()
-        : '';
+    final viewName = name ??
+        (![ViewLayoutPB.Document, ViewLayoutPB.Chat]
+                .contains(pluginBuilder.layoutType)
+            ? LocaleKeys.menuAppHeader_defaultNewPageName.tr()
+            : '');
     viewBloc.add(
       ViewEvent.createView(
         viewName,
         pluginBuilder.layoutType!,
         openAfterCreated: openAfterCreated,
         section: widget.spaceType.toViewSectionPB,
+        initialDataBytes: initialDataBytes,
       ),
     );
 
@@ -845,6 +852,7 @@ class _SingleInnerViewItemState extends State<SingleInnerViewItem> {
                 widget.view,
                 target.id,
               );
+              break;
             default:
               throw UnsupportedError('$action is not supported');
           }

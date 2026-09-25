@@ -18,7 +18,7 @@ import 'package:flutter/material.dart';
 ///
 /// Optimized for both Mobile & Desktop use
 ///
-class NotificationsView extends StatelessWidget {
+class NotificationsView extends StatefulWidget {
   const NotificationsView({
     super.key,
     required this.shownReminders,
@@ -39,11 +39,27 @@ class NotificationsView extends StatelessWidget {
   final Widget? actionBar;
 
   @override
+  State<NotificationsView> createState() => _NotificationsViewState();
+}
+
+class _NotificationsViewState extends State<NotificationsView> {
+  final DocumentService _documentService = DocumentService();
+  final Map<String, Future<FlowyResult<DocumentDataPB, FlowyError>>>
+      _documentFutures = {};
+
+  Future<FlowyResult<DocumentDataPB, FlowyError>> _openDocument(String id) {
+    return _documentFutures.putIfAbsent(
+      id,
+      () => _documentService.openDocument(documentId: id),
+    );
+  }
+
+  @override
   Widget build(BuildContext context) {
-    if (shownReminders.isEmpty) {
+    if (widget.shownReminders.isEmpty) {
       return Column(
         children: [
-          if (actionBar != null) actionBar!,
+          if (widget.actionBar != null) widget.actionBar!,
           const Expanded(child: NotificationsHubEmpty()),
         ],
       );
@@ -52,19 +68,15 @@ class NotificationsView extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        if (actionBar != null) actionBar!,
+        if (widget.actionBar != null) widget.actionBar!,
         Expanded(
           child: SingleChildScrollView(
             child: Column(
               children: [
-                ...shownReminders.map(
+                ...widget.shownReminders.map(
                   (ReminderPB reminder) {
                     final blockId = reminder.meta[ReminderMetaKeys.blockId];
-
-                    final documentService = DocumentService();
-                    final documentFuture = documentService.openDocument(
-                      documentId: reminder.objectId,
-                    );
+                    final documentFuture = _openDocument(reminder.objectId);
 
                     Future<Node?>? nodeBuilder;
                     if (blockId != null) {
@@ -72,7 +84,7 @@ class NotificationsView extends StatelessWidget {
                           _getNodeFromDocument(documentFuture, blockId);
                     }
 
-                    final view = views.findView(reminder.objectId);
+                    final view = widget.views.findView(reminder.objectId);
                     return NotificationItem(
                       reminder: reminder,
                       key: ValueKey(reminder.id),
@@ -82,10 +94,11 @@ class NotificationsView extends StatelessWidget {
                       block: nodeBuilder,
                       isRead: reminder.isRead,
                       includeTime: reminder.includeTime ?? false,
-                      readOnly: isUpcoming,
+                      readOnly: widget.isUpcoming,
                       onReadChanged: (isRead) =>
-                          onReadChanged?.call(reminder, isRead),
-                      onAction: (path) => onAction?.call(reminder, path, view),
+                          widget.onReadChanged?.call(reminder, isRead),
+                      onAction: (path) =>
+                          widget.onAction?.call(reminder, path, view),
                       view: view,
                     );
                   },

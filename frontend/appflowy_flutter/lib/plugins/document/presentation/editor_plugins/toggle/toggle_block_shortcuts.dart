@@ -182,7 +182,7 @@ CommandShortcutEventHandler _toggleToggleListCommandHandler = (editorState) {
     return KeyEventResult.ignored;
   }
 
-  final collapsed = node.attributes[ToggleListBlockKeys.collapsed] as bool;
+  final collapsed = node.attributes[ToggleListBlockKeys.collapsed] == true;
   final transaction = editorState.transaction;
   transaction.updateNode(node, {
     ToggleListBlockKeys.collapsed: !collapsed,

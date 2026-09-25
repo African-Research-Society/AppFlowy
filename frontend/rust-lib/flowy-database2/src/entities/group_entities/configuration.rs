@@ -130,11 +130,11 @@ pub fn group_config_pb_to_json_str<T: Into<Bytes>>(
 
 pub fn group_config_json_to_pb(setting_content: String, field_type: &FieldType) -> Bytes {
   match field_type {
-    FieldType::DateTime => {
-      let date_group_config = DateGroupConfiguration::from_json(setting_content.as_ref()).unwrap();
-      DateGroupConfigurationPB::from(date_group_config)
+    FieldType::DateTime => match DateGroupConfiguration::from_json(setting_content.as_ref()) {
+      Ok(date_group_config) => DateGroupConfigurationPB::from(date_group_config)
         .try_into()
-        .unwrap()
+        .unwrap_or_else(|_| Bytes::new()),
+      Err(_) => Bytes::new(),
     },
     _ => Bytes::new(),
   }

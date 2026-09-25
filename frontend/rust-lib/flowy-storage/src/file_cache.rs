@@ -23,7 +23,12 @@ impl FileTempStorage {
 
   /// Generates a temporary file path using the given file name.
   fn generate_temp_file_path_with_name(&self, file_name: &str) -> PathBuf {
-    self.storage_dir.join(file_name)
+    let safe_name = Path::new(file_name)
+      .file_name()
+      .and_then(|name| name.to_str())
+      .filter(|name| !name.is_empty() && *name != "." && *name != "..")
+      .unwrap_or("upload.bin");
+    self.storage_dir.join(safe_name)
   }
 
   /// Creates a temporary file from an existing local file path.

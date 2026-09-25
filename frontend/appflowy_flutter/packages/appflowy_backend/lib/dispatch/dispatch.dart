@@ -87,7 +87,7 @@ FlowyResult<Uint8List, Uint8List> _extractPayload(
         case FFIStatusCode.Internal:
           final error = utf8.decode(response.payload);
           Log.error("Dispatch internal error: $error");
-          return FlowyFailure(emptyBytes());
+          return FlowyFailure(Uint8List.fromList(response.payload));
         default:
           Log.error("Impossible to here");
           return FlowyFailure(emptyBytes());

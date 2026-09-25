@@ -114,7 +114,7 @@ impl SearchHandler for DocumentCloudSearchHandler {
         CreateSearchResultPBArgs::default()
           .searching(false)
           .search_result(Some(search_result))
-          .generating_ai_summary(!result_items.is_empty())
+          .generating_ai_summary(!summary_input.is_empty())
           .build()
           .unwrap(),
       );

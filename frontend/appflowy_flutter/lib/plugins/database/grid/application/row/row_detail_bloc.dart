@@ -36,9 +36,14 @@ class RowDetailBloc extends Bloc<RowDetailEvent, RowDetailState> {
   final RowMetaListener _metaListener;
   final RowBackendService _rowService;
   final List<CellContext> allCells = [];
+  void Function(List<FieldInfo>)? _onFieldsChanged;
 
   @override
   Future<void> close() async {
+    final onFieldsChanged = _onFieldsChanged;
+    if (onFieldsChanged != null) {
+      fieldController.removeListener(onFieldsListener: onFieldsChanged);
+    }
     await rowController.dispose();
     await _metaListener.stop();
     return super.close();
@@ -152,8 +157,10 @@ class RowDetailBloc extends Bloc<RowDetailEvent, RowDetailState> {
         );
       },
     );
+    _onFieldsChanged =
+        (fields) => add(RowDetailEvent.didUpdateFields(fields));
     fieldController.addListener(
-      onReceiveFields: (fields) => add(RowDetailEvent.didUpdateFields(fields)),
+      onReceiveFields: _onFieldsChanged,
       listenWhen: () => !isClosed,
     );
   }

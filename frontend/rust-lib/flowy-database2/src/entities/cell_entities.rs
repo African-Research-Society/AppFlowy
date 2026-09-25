@@ -71,10 +71,11 @@ impl TryInto<CellIdParams> for CellIdPB {
   fn try_into(self) -> Result<CellIdParams, Self::Error> {
     let view_id = NotEmptyStr::parse(self.view_id).map_err(|_| ErrorCode::DatabaseIdIsEmpty)?;
     let field_id = NotEmptyStr::parse(self.field_id).map_err(|_| ErrorCode::FieldIdIsEmpty)?;
+    let row_id = NotEmptyStr::parse(self.row_id).map_err(|_| ErrorCode::RowIdIsEmpty)?;
     Ok(CellIdParams {
       view_id: view_id.0,
       field_id: field_id.0,
-      row_id: RowId::from(self.row_id),
+      row_id: RowId::from(row_id.0),
     })
   }
 }

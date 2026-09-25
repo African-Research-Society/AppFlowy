@@ -25,7 +25,6 @@ jobs:
         uses: actions-rs/toolchain@v1
         with:
           toolchain: ${{ env.RUST_TOOLCHAIN }}
-          target: ${{ matrix.job.target }}
           override: true
           profile: minimal
 
@@ -45,7 +44,7 @@ jobs:
 
       - uses: Swatinem/rust-cache@v2
         with:
-          prefix-key: ${{ matrix.job.os }}
+          prefix-key: ubuntu-latest
 
       - name: Install code-coverage tools
         working-directory: frontend

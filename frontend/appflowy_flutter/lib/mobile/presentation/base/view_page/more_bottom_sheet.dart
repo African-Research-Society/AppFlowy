@@ -116,6 +116,7 @@ class MobileViewPageMoreBottomSheet extends StatelessWidget {
         break;
       case MobileViewBottomSheetBodyAction.updatePathName:
         _updatePathName(context);
+        break;
       case MobileViewBottomSheetBodyAction.lockPage:
         final isLocked =
             arguments?[MobileViewBottomSheetBodyActionArguments.isLockedKey] ??
