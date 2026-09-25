@@ -177,10 +177,12 @@ class QuestionStream {
           final indexName = event.substring(17);
           _onFileIndexStart?.call(indexName);
         } else if (event.startsWith("end_index_file:")) {
-          final indexName = event.substring(10);
+          const prefix = "end_index_file:";
+          final indexName = event.substring(prefix.length);
           _onFileIndexEnd?.call(indexName);
         } else if (event.startsWith("index_file_error:")) {
-          final indexName = event.substring(16);
+          const prefix = "index_file_error:";
+          final indexName = event.substring(prefix.length);
           _onFileIndexError?.call(indexName);
         } else if (event.startsWith("index_start:")) {
           _onIndexStart?.call();

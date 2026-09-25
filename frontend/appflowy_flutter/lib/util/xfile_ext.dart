@@ -32,7 +32,8 @@ extension TypeRecognizer on XFile {
       }
       if (mimeType!.contains('application')) {
         if (mimeType!.contains('pdf') ||
-            mimeType!.contains('doc') ||
+            mimeType!.contains('msword') ||
+            mimeType!.contains('wordprocessingml') ||
             mimeType!.contains('docx')) {
           return FileType.document;
         }

@@ -41,7 +41,7 @@ pub fn init(ai_manager: Weak<AIManager>) -> AFPlugin {
       update_local_ai_setting_handler,
     )
     .event(AIEvent::CreateChatContext, create_chat_context_handler)
-    .event(AIEvent::GetChatInfo, create_chat_context_handler)
+    .event(AIEvent::GetChatInfo, get_chat_info_handler)
     .event(AIEvent::GetChatSettings, get_chat_settings_handler)
     .event(AIEvent::UpdateChatSettings, update_chat_settings_handler)
     .event(AIEvent::RegenerateResponse, regenerate_response_handler)

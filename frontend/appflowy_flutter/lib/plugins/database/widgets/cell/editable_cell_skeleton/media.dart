@@ -69,7 +69,7 @@ class _EditableMediaCellState extends GridEditableTextCell<EditableMediaCell> {
       widget.databaseController,
       widget.cellContext,
     ).as(),
-  );
+  )..add(const MediaCellEvent.initial());
 
   @override
   void dispose() {
@@ -81,7 +81,7 @@ class _EditableMediaCellState extends GridEditableTextCell<EditableMediaCell> {
   @override
   Widget build(BuildContext context) {
     return BlocProvider.value(
-      value: cellBloc..add(const MediaCellEvent.initial()),
+      value: cellBloc,
       child: Builder(
         builder: (context) => widget.skin.build(
           context,

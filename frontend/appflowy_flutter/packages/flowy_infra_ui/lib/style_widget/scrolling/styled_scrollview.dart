@@ -96,6 +96,14 @@ class StyledCustomScrollViewState extends State<StyledCustomScrollView> {
       widget.verticalController ?? ScrollController();
 
   @override
+  void dispose() {
+    if (widget.verticalController == null) {
+      controller.dispose();
+    }
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     var child = ScrollConfiguration(
       behavior: const ScrollBehavior().copyWith(scrollbars: false),

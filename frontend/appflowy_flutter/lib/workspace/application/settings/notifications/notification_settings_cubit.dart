@@ -59,6 +59,7 @@ class NotificationSettingsCubit extends Cubit<NotificationSettingsState> {
         isShowNotificationsIconEnabled: !state.isShowNotificationsIconEnabled,
       ),
     );
+    await _saveNotificationSettings();
   }
 
   Future<void> _saveNotificationSettings() async {

@@ -571,7 +571,7 @@ impl VectorSqliteDB {
       .collect::<Vec<_>>()
       .join(", ");
     let sql = format!(
-      "DELETE FROM af_pending_index_collab WHERE workspace_id = ?1 AND object_id IN ({})",
+      "DELETE FROM af_pending_index_collab WHERE workspace_id = ?1 AND oid IN ({})",
       placeholders
     );
 
@@ -614,7 +614,7 @@ impl VectorSqliteDB {
     // prepare INSERT only once
     let mut stmt = tx.prepare(
       "INSERT INTO af_pending_index_collab
-               (workspace_id, object_id, collab_type, content)
+               (workspace_id, oid, collab_type, content)
              VALUES (?1, ?2, ?3, ?4)",
     )?;
 

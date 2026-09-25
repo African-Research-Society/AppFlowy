@@ -257,7 +257,7 @@ class SignInBloc extends Bloc<SignInEvent, SignInState> {
       return;
     }
 
-    Log.info('Sign in with passcode: $email, $passcode');
+    Log.info('Sign in with passcode');
 
     emit(
       state.copyWith(
@@ -362,7 +362,7 @@ class SignInBloc extends Bloc<SignInEvent, SignInState> {
       return;
     }
 
-    Log.info('Validate reset password token: $email, $token');
+    Log.info('Validate reset password token');
 
     emit(
       state.copyWith(
@@ -379,7 +379,7 @@ class SignInBloc extends Bloc<SignInEvent, SignInState> {
 
     result?.fold(
       (authToken) {
-        Log.info('Validate reset password token success: $authToken');
+        Log.info('Validate reset password token success');
 
         passwordService?.authToken = authToken;
 

@@ -44,27 +44,24 @@ class AppFlowyCloudURLsBloc
               ),
             );
           } else {
-            bool isSuccess = false;
-
-            await validateUrl(state.updatedServerUrl).fold(
-              (url) async {
-                await useSelfHostedAppFlowyCloud(url);
-                isSuccess = true;
-              },
-              (err) async => emit(state.copyWith(urlError: err)),
-            );
-
-            await validateUrl(state.updatedBaseWebDomain).fold(
-              (url) async {
-                await useBaseWebDomain(url);
-                isSuccess = true;
-              },
-              (err) async => emit(state.copyWith(urlError: err)),
-            );
-
-            if (isSuccess) {
-              add(const AppFlowyCloudURLsEvent.didSaveConfig());
+            final server = validateUrl(state.updatedServerUrl);
+            final web = validateUrl(state.updatedBaseWebDomain);
+            final serverUrl = server.fold<String?>((url) => url, (_) => null);
+            final webUrl = web.fold<String?>((url) => url, (_) => null);
+            if (serverUrl == null || webUrl == null) {
+              final err = server.fold<String?>((_) => null, (error) => error) ??
+                  web.fold((_) => '', (error) => error);
+              emit(
+                state.copyWith(
+                  urlError: err,
+                  restartApp: false,
+                ),
+              );
+              return;
             }
+            await useSelfHostedAppFlowyCloud(serverUrl);
+            await useBaseWebDomain(webUrl);
+            add(const AppFlowyCloudURLsEvent.didSaveConfig());
           }
         },
         didSaveConfig: () {

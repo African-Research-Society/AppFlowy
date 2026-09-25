@@ -177,7 +177,17 @@ Future<List<FileSystemEntity>> dirContents(Directory dir) {
 
   dir.list(recursive: true).listen(
         files.add,
-        onDone: () => completer.complete(files),
+        onError: (error) {
+          if (!completer.isCompleted) {
+            completer.completeError(error);
+          }
+        },
+        onDone: () {
+          if (!completer.isCompleted) {
+            completer.complete(files);
+          }
+        },
+        cancelOnError: true,
       );
   return completer.future;
 }

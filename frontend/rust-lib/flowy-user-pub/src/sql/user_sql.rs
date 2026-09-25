@@ -88,7 +88,11 @@ pub fn update_user_profile(
   conn: &mut SqliteConnection,
   changeset: UserTableChangeset,
 ) -> Result<(), FlowyError> {
-  trace!("update user profile: {:?}", changeset);
+  trace!(
+    "update user profile id={} token_set={}",
+    changeset.id,
+    changeset.token.is_some()
+  );
   let user_id = changeset.id.clone();
   update(user_table::dsl::user_table.filter(user_table::id.eq(&user_id)))
     .set(changeset)

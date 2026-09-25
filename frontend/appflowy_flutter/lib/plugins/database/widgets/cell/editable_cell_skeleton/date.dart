@@ -115,7 +115,7 @@ String getDateCellStrFromCellData(FieldInfo field, DateCellData cellData) {
       ? DateFormat("${dateFormat.pattern} ${timeFormat.pattern}")
       : DateFormat(dateFormat.pattern);
 
-  if (cellData.isRange) {
+  if (cellData.isRange && cellData.endDateTime != null) {
     return "${format.format(cellData.dateTime!)} → ${format.format(cellData.endDateTime!)}";
   } else {
     return format.format(cellData.dateTime!);

@@ -44,6 +44,9 @@ class RootOverlayEntry {
     final lastEntry = _entries.values.last;
     _entries.remove(lastEntry.popoverState);
     lastEntry.animationController.reverse().then((_) {
+      if (lastEntry.popoverState.isDisposed) {
+        return;
+      }
       lastEntry.overlayEntry.remove();
       lastEntry.popoverState.widget.onClose?.call();
     });

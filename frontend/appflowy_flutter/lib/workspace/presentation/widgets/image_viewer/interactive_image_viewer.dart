@@ -46,8 +46,12 @@ class _InteractiveImageViewerState extends State<InteractiveImageViewer> {
     super.initState();
     controller.addListener(_onControllerChanged);
     currentImage = widget.imageProvider.getImage(currentIndex);
-    userProfile =
-        widget.userProfile ?? context.read<DocumentBloc>().state.userProfilePB;
+    userProfile = widget.userProfile;
+    if (userProfile == null) {
+      try {
+        userProfile = context.read<DocumentBloc>().state.userProfilePB;
+      } catch (_) {}
+    }
     focusNode.requestFocus();
   }
 
@@ -151,8 +155,12 @@ class _InteractiveImageViewerState extends State<InteractiveImageViewer> {
 
   void _move(int steps) {
     setState(() {
+      final count = widget.imageProvider.imageCount;
+      if (count <= 0) {
+        return;
+      }
       final index = currentIndex + steps;
-      currentIndex = index.clamp(0, widget.imageProvider.imageCount - 1);
+      currentIndex = index.clamp(0, count - 1);
       currentImage = widget.imageProvider.getImage(currentIndex);
     });
   }

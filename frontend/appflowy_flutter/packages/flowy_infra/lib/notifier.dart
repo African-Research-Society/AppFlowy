@@ -19,7 +19,7 @@ class PublishNotifier<T> extends ChangeNotifier {
 
   set value(T newValue) {
     if (comparable != null) {
-      if (comparable!.compare(_value, newValue)) {
+      if (!comparable!.compare(_value, newValue)) {
         _value = newValue;
         notifyListeners();
       }

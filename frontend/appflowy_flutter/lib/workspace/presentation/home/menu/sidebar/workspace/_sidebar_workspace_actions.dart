@@ -155,6 +155,7 @@ class _WorkspaceMoreActionWrapper extends CustomActionCell {
                 );
               },
             );
+            break;
           case WorkspaceMoreAction.rename:
             await showAFTextFieldDialog(
               context: context,
@@ -170,6 +171,7 @@ class _WorkspaceMoreActionWrapper extends CustomActionCell {
                 );
               },
             );
+            break;
           case WorkspaceMoreAction.leave:
             await showConfirmDialog(
               context: context,
@@ -185,6 +187,7 @@ class _WorkspaceMoreActionWrapper extends CustomActionCell {
                 );
               },
             );
+            break;
         }
       },
     );

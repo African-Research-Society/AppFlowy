@@ -26,7 +26,7 @@ public class FlowyInfraUIPlugin implements FlutterPlugin, ActivityAware, MethodC
 
   // Method Channel
   private MethodChannel methodChannel;
-  // Event Channel
+  private EventChannel keyboardEventChannel;
   private KeyboardEventHandler keyboardEventHandler = new KeyboardEventHandler();
 
   @Override
@@ -36,7 +36,7 @@ public class FlowyInfraUIPlugin implements FlutterPlugin, ActivityAware, MethodC
             INFRA_UI_METHOD_CHANNEL_NAME);
     methodChannel.setMethodCallHandler(this);
 
-    final EventChannel keyboardEventChannel = new EventChannel(
+    keyboardEventChannel = new EventChannel(
             flutterPluginBinding.getBinaryMessenger(),
             INFRA_UI_KEYBOARD_EVENT_CHANNEL_NAME);
     keyboardEventChannel.setStreamHandler(keyboardEventHandler);
@@ -45,6 +45,9 @@ public class FlowyInfraUIPlugin implements FlutterPlugin, ActivityAware, MethodC
   @Override
   public void onDetachedFromEngine(@NonNull FlutterPluginBinding binding) {
     methodChannel.setMethodCallHandler(null);
+    if (keyboardEventChannel != null) {
+      keyboardEventChannel.setStreamHandler(null);
+    }
     keyboardEventHandler.cancelObserveKeyboardAction();
   }
 

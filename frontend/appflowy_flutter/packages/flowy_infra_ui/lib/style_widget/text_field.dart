@@ -92,6 +92,20 @@ class FlowyTextFieldState extends State<FlowyTextField> {
   late FocusNode focusNode;
   late TextEditingController controller;
   Timer? _debounceOnChanged;
+  String? _pendingChangedText;
+
+  void _flushPendingChange({bool rebuild = true}) {
+    final pending = _pendingChangedText;
+    _debounceOnChanged?.cancel();
+    _debounceOnChanged = null;
+    _pendingChangedText = null;
+    if (pending != null) {
+      widget.onChanged?.call(pending);
+      if (rebuild && mounted) {
+        setState(() {});
+      }
+    }
+  }
 
   @override
   void initState() {
@@ -128,16 +142,14 @@ class FlowyTextFieldState extends State<FlowyTextField> {
       controller.dispose();
     }
     _debounceOnChanged?.cancel();
+    _flushPendingChange(rebuild: false);
     super.dispose();
   }
 
   void _debounceOnChangedText(Duration duration, String text) {
+    _pendingChangedText = text;
     _debounceOnChanged?.cancel();
-    _debounceOnChanged = Timer(duration, () async {
-      if (mounted) {
-        _onChanged(text);
-      }
-    });
+    _debounceOnChanged = Timer(duration, _flushPendingChange);
   }
 
   void _onChanged(String text) {
@@ -146,6 +158,7 @@ class FlowyTextFieldState extends State<FlowyTextField> {
   }
 
   void _onSubmitted(String text) {
+    _flushPendingChange();
     widget.onSubmitted?.call(text);
     if (widget.autoClearWhenDone) {
       controller.clear();

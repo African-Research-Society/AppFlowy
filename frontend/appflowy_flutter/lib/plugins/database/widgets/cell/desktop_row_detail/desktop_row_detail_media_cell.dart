@@ -86,7 +86,9 @@ class DekstopRowDetailMediaCellSkin extends IEditableMediaCellSkin {
             final filesToDisplay =
                 state.showAllFiles || itemsToShow >= state.files.length
                     ? state.files
-                    : state.files.take(itemsToShow - 1).toList();
+                    : state.files
+                        .take(itemsToShow <= 0 ? 0 : itemsToShow - 1)
+                        .toList();
             final extraCount = state.files.length - itemsToShow;
             final images = state.files
                 .where((f) => f.fileType == MediaFileTypePB.Image)

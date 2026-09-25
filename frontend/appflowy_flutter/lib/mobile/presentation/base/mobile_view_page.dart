@@ -245,7 +245,9 @@ class _MobileViewPageState extends State<MobileViewPage> {
         context.read<MobileViewPageBloc>().state.isImmersiveMode;
     final isLocked =
         context.read<PageAccessLevelBloc?>()?.state.isLocked ?? false;
-    final accessLevel = context.read<PageAccessLevelBloc>().state.accessLevel;
+    final accessLevel =
+        context.read<PageAccessLevelBloc?>()?.state.accessLevel ??
+            ShareAccessLevel.fullAccess;
     final actions = <Widget>[];
 
     if (FeatureFlag.syncDocument.isOn) {

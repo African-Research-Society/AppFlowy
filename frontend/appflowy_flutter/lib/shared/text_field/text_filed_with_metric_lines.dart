@@ -52,7 +52,7 @@ class _TextFieldWithMetricLinesState extends State<TextFieldWithMetricLines> {
     return TextField(
       key: key,
       enabled: widget.enabled,
-      controller: widget.controller,
+      controller: controller,
       focusNode: widget.focusNode,
       maxLines: widget.maxLines,
       style: widget.style,

@@ -43,21 +43,20 @@ List<CommandShortcutEvent> commandShortcutEvents = [
   insertInlineMathEquationCommand,
 
   // remove standard shortcuts for copy, cut, paste, todo
-  ...standardCommandShortcutEvents
-    ..removeWhere(
-      (shortcut) => [
-        copyCommand,
-        cutCommand,
-        pasteCommand,
-        pasteTextWithoutFormattingCommand,
-        toggleTodoListCommand,
-        undoCommand,
-        redoCommand,
-        exitEditingCommand,
-        ...tableCommands,
-        deleteCommand,
-      ].contains(shortcut),
-    ),
+  ...standardCommandShortcutEvents.where(
+    (shortcut) => ![
+      copyCommand,
+      cutCommand,
+      pasteCommand,
+      pasteTextWithoutFormattingCommand,
+      toggleTodoListCommand,
+      undoCommand,
+      redoCommand,
+      exitEditingCommand,
+      ...tableCommands,
+      deleteCommand,
+    ].contains(shortcut),
+  ),
 
   emojiShortcutEvent,
 ];

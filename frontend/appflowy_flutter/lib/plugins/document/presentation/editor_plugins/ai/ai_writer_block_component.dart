@@ -226,9 +226,10 @@ class _OverlayContentState extends State<OverlayContent> {
             state is ReadyAiWriterState && !state.isFirstRun;
         final isInitialReadyState =
             state is ReadyAiWriterState && state.isFirstRun;
-        final showSuggestedActionsPopup =
-            showSuggestedActions && markdownText.isEmpty ||
-                (markdownText.isNotEmpty && command != AiWriterCommand.explain);
+        final showSuggestedActionsPopup = showSuggestedActions &&
+            (markdownText.isEmpty ||
+                (markdownText.isNotEmpty &&
+                    command != AiWriterCommand.explain));
         final showSuggestedActionsWithin = showSuggestedActions &&
             markdownText.isNotEmpty &&
             command == AiWriterCommand.explain;

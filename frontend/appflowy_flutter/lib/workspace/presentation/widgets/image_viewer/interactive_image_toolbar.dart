@@ -234,6 +234,15 @@ class InteractiveImageToolbar extends StatelessWidget {
       }
 
       final uri = Uri.parse(currentImage.url);
+      if (uri.pathSegments.isEmpty) {
+        if (context.mounted) {
+          showSnapBar(
+            context,
+            LocaleKeys.document_plugins_image_imageDownloadFailed.tr(),
+          );
+        }
+        return;
+      }
       final imgFile = File(uri.pathSegments.last);
       final savePath = await FilePicker().saveFile(
         fileName: basename(imgFile.path),
@@ -242,7 +251,22 @@ class InteractiveImageToolbar extends StatelessWidget {
       if (savePath != null) {
         final uri = Uri.parse(currentImage.url);
 
-        final token = jsonDecode(userProfile!.token)['access_token'];
+        final String? token;
+      try {
+        final decoded = jsonDecode(userProfile!.token);
+        token = decoded is Map ? decoded['access_token'] as String? : null;
+      } catch (_) {
+        token = null;
+      }
+      if (token == null || token.isEmpty) {
+        if (context.mounted) {
+          showSnapBar(
+            context,
+            LocaleKeys.document_plugins_image_imageDownloadFailedToken.tr(),
+          );
+        }
+        return;
+      }
         final response = await http.get(
           uri,
           headers: {'Authorization': 'Bearer $token'},

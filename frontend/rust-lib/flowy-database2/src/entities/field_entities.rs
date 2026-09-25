@@ -173,6 +173,7 @@ pub struct CreateFieldPayloadPB {
 pub struct CreateFieldParams {
   pub view_id: String,
   pub field_name: Option<String>,
+  pub field_icon: Option<String>,
   pub field_type: FieldType,
   pub type_option_data: Option<Vec<u8>>,
   pub position: OrderObjectPosition,
@@ -198,6 +199,7 @@ impl TryInto<CreateFieldParams> for CreateFieldPayloadPB {
     Ok(CreateFieldParams {
       view_id: view_id.0,
       field_name,
+      field_icon: self.field_icon,
       field_type: self.field_type,
       type_option_data: self.type_option_data,
       position,

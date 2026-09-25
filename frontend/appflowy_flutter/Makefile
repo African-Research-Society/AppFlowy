@@ -1,4 +1,4 @@
-.PHONY: freeze_build, free_watch
+.PHONY: freeze_build watch
 
 freeze_build:
 	dart run build_runner build -d

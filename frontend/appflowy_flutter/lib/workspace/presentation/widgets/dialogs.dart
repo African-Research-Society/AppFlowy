@@ -281,7 +281,7 @@ ToastificationItem showToastNotification({
     builder: (_, item) {
       return UniversalPlatform.isMobile
           ? _MobileToast(
-              message: message,
+              message: message ?? richMessage?.toPlainText(),
               type: type,
               bottomPadding: bottomPadding,
               description: description,
@@ -430,7 +430,7 @@ class DesktopToast extends StatelessWidget {
                 ToastificationType.warning => FlowySvgs.toast_warning_filled_s,
                 ToastificationType.success => FlowySvgs.toast_checked_filled_s,
                 ToastificationType.error => FlowySvgs.toast_error_filled_s,
-                _ => throw UnimplementedError(),
+                _ => FlowySvgs.toast_warning_filled_s,
               },
               size: const Size.square(20.0),
               blendMode: null,

@@ -81,7 +81,7 @@ class FileStorageService {
 
   Future<void> dispose() async {
     // dispose all notifiers
-    for (final notifier in _notifierList.values) {
+    for (final notifier in List.of(_notifierList.values)) {
       notifier.dispose();
     }
 

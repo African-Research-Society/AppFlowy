@@ -38,11 +38,14 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
           email: widget.email,
           backToLogin: widget.backToLogin,
           baseUrl: widget.baseUrl,
-          onValidateResetPasswordToken: (isValid) {
-            setState(() {
-              state = ResetPasswordPageState.setNewPassword;
-            });
-          },
+onValidateResetPasswordToken: (isValid) {
+          if (!isValid) {
+            return;
+          }
+          setState(() {
+            state = ResetPasswordPageState.setNewPassword;
+          });
+        },
         ),
       ResetPasswordPageState.setNewPassword => SetNewPasswordWidget(
           backToLogin: widget.backToLogin,

@@ -275,7 +275,8 @@ class SettingsSitesBloc extends Bloc<SettingsSitesEvent, SettingsSitesState> {
 
     emit(
       state.copyWith(
-        homePageView: homePageView,
+        homePageView:
+            result.fold((_) => homePageView, (_) => state.homePageView),
         actionResult: SettingsSitesActionResult(
           actionType: SettingsSitesActionType.setHomePage,
           isLoading: false,

@@ -133,11 +133,11 @@ class _DocumentCoverWidgetState extends State<DocumentCoverWidget> {
 
     viewListener = ViewListener(viewId: widget.view.id)
       ..start(
-        onViewUpdated: (view) {
+        onViewUpdated: (updated) {
           setState(() {
-            viewIcon = EmojiIconData.fromViewIconPB(view.icon);
-            cover = view.cover;
-            view = view;
+            viewIcon = EmojiIconData.fromViewIconPB(updated.icon);
+            cover = updated.cover;
+            view = updated;
           });
         },
       );

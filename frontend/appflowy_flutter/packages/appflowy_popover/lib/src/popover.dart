@@ -263,7 +263,12 @@ class PopoverState extends State<Popover> with SingleTickerProviderStateMixin {
           widget.animationDuration == Duration.zero) {
         callback();
       } else {
-        animationController.reverse().then((_) => callback());
+        animationController.reverse().then((_) {
+          if (isDisposed) {
+            return;
+          }
+          callback();
+        });
       }
     }
   }

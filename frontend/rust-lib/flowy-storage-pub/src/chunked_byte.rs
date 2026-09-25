@@ -113,6 +113,12 @@ pub fn split_into_chunks(data: &Bytes, chunk_size: usize) -> Vec<(usize, usize)>
 
 pub fn calculate_offsets(data_len: usize, chunk_size: usize) -> Vec<(usize, usize)> {
   let mut offsets = Vec::new();
+  if chunk_size == 0 {
+    if data_len > 0 {
+      offsets.push((0, data_len));
+    }
+    return offsets;
+  }
   let mut start = 0;
 
   while start < data_len {

@@ -9,12 +9,13 @@ class MainFlutterWindow: NSWindow {
     cocoaWindowChannel.setMethodCallHandler({
       (call: FlutterMethodCall, result: FlutterResult) -> Void in
       if call.method == "setWindowPosition" {
-        guard let position = call.arguments as? NSArray else {
-          result(nil)
+        guard let position = call.arguments as? NSArray,
+              position.count >= 2,
+              let nX = position[0] as? NSNumber,
+              let nY = position[1] as? NSNumber else {
+          result(FlutterError(code: "bad_args", message: "setWindowPosition expects [x, y] numbers", details: nil))
           return
         }
-        let nX = position[0] as! NSNumber
-        let nY = position[1] as! NSNumber
         let x = nX.doubleValue
         let y = nY.doubleValue
 

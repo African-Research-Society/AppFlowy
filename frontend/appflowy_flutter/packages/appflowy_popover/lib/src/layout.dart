@@ -188,8 +188,11 @@ class PopoverLayoutDelegate extends SingleChildLayoutDelegate {
             anchorRect.bottom - childSize.height,
           );
           break;
+        case PopoverDirection.custom:
+          position = this.position ?? Offset.zero;
+          break;
         default:
-          throw UnimplementedError();
+          position = Offset.zero;
       }
     }
 

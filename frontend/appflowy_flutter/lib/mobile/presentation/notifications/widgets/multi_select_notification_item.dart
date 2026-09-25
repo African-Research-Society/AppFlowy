@@ -69,13 +69,13 @@ class MultiSelectNotificationItem extends StatelessWidget {
           return AnimatedGestureDetector(
             scaleFactor: 0.99,
             onTapUp: () {
-              if (mSelectedNotificationIds.value.contains(reminder.id)) {
-                mSelectedNotificationIds.value = mSelectedNotificationIds.value
-                  ..remove(reminder.id);
+              final next = List<String>.from(mSelectedNotificationIds.value);
+              if (next.contains(reminder.id)) {
+                next.remove(reminder.id);
               } else {
-                mSelectedNotificationIds.value = mSelectedNotificationIds.value
-                  ..add(reminder.id);
+                next.add(reminder.id);
               }
+              mSelectedNotificationIds.value = next;
             },
             child: child,
           );

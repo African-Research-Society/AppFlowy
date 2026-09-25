@@ -33,7 +33,10 @@ class WorkspaceMembersPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider<WorkspaceMemberBloc>(
-      create: (context) => WorkspaceMemberBloc(userProfile: userProfile)
+      create: (context) => WorkspaceMemberBloc(
+          userProfile: userProfile,
+          workspaceId: workspaceId,
+        )
         ..add(const WorkspaceMemberEvent.initial())
         ..add(const WorkspaceMemberEvent.getInviteCode()),
       child: BlocConsumer<WorkspaceMemberBloc, WorkspaceMemberState>(

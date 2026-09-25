@@ -249,8 +249,12 @@ class EmojiPickerState extends State<EmojiPicker> {
       }
     }
 
+    if (newMap == null) {
+      return <Emoji>[];
+    }
+
     // Map to Emoji Object
-    return newMap!.entries
+    return newMap.entries
         .map<Emoji>((entry) => Emoji(entry.key, entry.value))
         .toList();
   }

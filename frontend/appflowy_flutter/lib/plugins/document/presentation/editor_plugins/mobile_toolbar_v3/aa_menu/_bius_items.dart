@@ -34,7 +34,7 @@ class BIUSItems extends StatelessWidget {
                   e.$1,
                   e.$2,
                 ),
-                if (index != 0 || index != _bius.length - 1)
+                if (index != _bius.length - 1)
                   const ScaledVerticalDivider(),
               ],
             )

@@ -114,7 +114,7 @@ class _QuickEditFieldState extends State<QuickEditField> {
                     if (fieldVisibility.isVisibleState()) {
                       await service.hide();
                     } else {
-                      await service.hide();
+                      await service.show();
                     }
                   },
                 ),

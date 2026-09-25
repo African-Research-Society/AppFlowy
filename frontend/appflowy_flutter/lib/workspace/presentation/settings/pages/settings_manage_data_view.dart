@@ -464,7 +464,7 @@ class _DataPathActions extends StatelessWidget {
       text: LocaleKeys.settings_manageDataPage_dataStorage_actions_change.tr(),
       onTap: () async {
         final path = await getIt<FilePickerService>().getDirectoryPath();
-        if (!context.mounted || path == null || path == path) {
+        if (!context.mounted || path == null || path == this.path) {
           return;
         }
 

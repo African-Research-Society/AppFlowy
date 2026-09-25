@@ -736,19 +736,24 @@ class _SingleInnerViewItemState extends State<SingleInnerViewItem> {
     bool openAfterCreated,
     bool createNewView,
   ) {
+    if (!createNewView && name == null && initialDataBytes == null) {
+      return;
+    }
     final viewBloc = context.read<ViewBloc>();
 
     // the name of new document should be empty
-    final viewName = ![ViewLayoutPB.Document, ViewLayoutPB.Chat]
-            .contains(pluginBuilder.layoutType)
-        ? LocaleKeys.menuAppHeader_defaultNewPageName.tr()
-        : '';
+    final viewName = name ??
+        (![ViewLayoutPB.Document, ViewLayoutPB.Chat]
+                .contains(pluginBuilder.layoutType)
+            ? LocaleKeys.menuAppHeader_defaultNewPageName.tr()
+            : '');
     viewBloc.add(
       ViewEvent.createView(
         viewName,
         pluginBuilder.layoutType!,
         openAfterCreated: openAfterCreated,
         section: widget.spaceType.toViewSectionPB,
+        initialDataBytes: initialDataBytes,
       ),
     );
 
@@ -845,6 +850,7 @@ class _SingleInnerViewItemState extends State<SingleInnerViewItem> {
                 widget.view,
                 target.id,
               );
+              break;
             default:
               throw UnsupportedError('$action is not supported');
           }

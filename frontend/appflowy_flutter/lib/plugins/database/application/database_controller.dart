@@ -259,11 +259,13 @@ class DatabaseController {
     await _databaseViewBackendSvc.closeView();
     await fieldController.dispose();
     await _groupListener.stop();
+    await _layoutListener.stop();
     await _viewCache.dispose();
     _databaseCallbacks.clear();
     _groupCallbacks.clear();
     _layoutCallbacks.clear();
     _compactModeCallbacks.clear();
+    _compactMode.dispose();
     _isLoading.dispose();
   }
 

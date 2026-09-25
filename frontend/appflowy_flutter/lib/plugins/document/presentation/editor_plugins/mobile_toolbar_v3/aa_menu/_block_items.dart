@@ -99,7 +99,7 @@ class BlockItems extends StatelessWidget {
                   isSelected: currentIndex == index,
                   icon: e.$2,
                 ),
-                if (index != 0 || index != items.length - 1) const HSpace(12),
+                if (index != items.length - 1) const HSpace(12),
               ],
             )
             .flattened

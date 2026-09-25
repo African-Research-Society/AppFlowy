@@ -44,7 +44,6 @@ class RustStreamReceiver {
       Log.error(
           'RustStreamReceiver SubscribeObject deserialize error: ${e.runtimeType}');
       Log.error('Stack trace \n $s');
-      rethrow;
     }
   }
 

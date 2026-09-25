@@ -50,16 +50,15 @@ List<CharacterShortcutEvent> buildCharacterShortcutEvents(
     customFormatNumberToNumberedList,
     customFormatSignToHeading,
 
-    ...standardCharacterShortcutEvents
-      ..removeWhere(
-        (shortcut) => [
-          slashCommand, // Remove default slash command
-          formatGreaterEqual, // Overridden by customFormatGreaterEqual
-          formatNumberToNumberedList, // Overridden by customFormatNumberToNumberedList
-          formatSignToHeading, // Overridden by customFormatSignToHeading
-          formatDoubleHyphenEmDash, // Overridden by customFormatDoubleHyphenEmDash
-        ].contains(shortcut),
-      ),
+    ...standardCharacterShortcutEvents.where(
+      (shortcut) => ![
+        slashCommand, // Remove default slash command
+        formatGreaterEqual, // Overridden by customFormatGreaterEqual
+        formatNumberToNumberedList, // Overridden by customFormatNumberToNumberedList
+        formatSignToHeading, // Overridden by customFormatSignToHeading
+        formatDoubleHyphenEmDash, // Overridden by customFormatDoubleHyphenEmDash
+      ].contains(shortcut),
+    ),
 
     /// Inline Actions
     /// - Reminder

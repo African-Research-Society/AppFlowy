@@ -112,7 +112,7 @@ class MultiSelectNotificationTab extends StatelessWidget {
       builder: (context, state) {
         // find the reminders that are not archived or read.
         final reminders = state.reminders.reversed
-            .where((reminder) => !reminder.isArchived || !reminder.isRead)
+            .where((reminder) => !reminder.isArchived && !reminder.isRead)
             .toList();
 
         if (reminders.isEmpty) {

@@ -46,8 +46,11 @@ class ChildPageTransactionHandler extends MentionTransactionHandler {
     }
 
     for (final mention in removed) {
-      if (!context.mounted || moved.any((m) => m.$2 == mention.$2)) {
+      if (!context.mounted) {
         return;
+      }
+      if (moved.any((m) => m.$2 == mention.$2)) {
+        continue;
       }
 
       if (mention.$2[MentionBlockKeys.type] != MentionType.childPage.name) {
@@ -63,8 +66,11 @@ class ChildPageTransactionHandler extends MentionTransactionHandler {
       }
 
       for (final mention in added) {
-        if (!context.mounted || moved.any((m) => m.$2 == mention.$2)) {
+        if (!context.mounted) {
           return;
+        }
+        if (moved.any((m) => m.$2 == mention.$2)) {
+          continue;
         }
 
         if (mention.$2[MentionBlockKeys.type] != MentionType.childPage.name) {

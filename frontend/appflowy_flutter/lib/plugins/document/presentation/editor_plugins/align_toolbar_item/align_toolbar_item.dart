@@ -90,6 +90,7 @@ class _AlignmentButtonsState extends State<_AlignmentButtons> {
   @override
   Widget build(BuildContext context) {
     return AppFlowyPopover(
+      controller: controller,
       windowPadding: const EdgeInsets.all(0),
       margin: const EdgeInsets.symmetric(vertical: 2.0),
       direction: PopoverDirection.bottomWithCenterAligned,

@@ -6,7 +6,7 @@ import 'package:flowy_infra/file_picker/file_picker_service.dart';
 class FilePicker implements FilePickerService {
   @override
   Future<String?> getDirectoryPath({String? title}) {
-    return fp.FilePicker.platform.getDirectoryPath();
+    return fp.FilePicker.platform.getDirectoryPath(dialogTitle: title);
   }
 
   @override

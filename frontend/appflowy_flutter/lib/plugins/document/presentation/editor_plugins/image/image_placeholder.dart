@@ -163,8 +163,8 @@ class ImagePlaceholderState extends State<ImagePlaceholder> {
             final imageFiles = details.files
                 .where(
                   (file) =>
-                      file.mimeType?.startsWith('image/') ??
-                      false || imgExtensionRegex.hasMatch(file.name),
+                      (file.mimeType?.startsWith('image/') ?? false) ||
+                      imgExtensionRegex.hasMatch(file.name),
                 )
                 .toList();
             final paths = imageFiles.map((file) => file.path).toList();

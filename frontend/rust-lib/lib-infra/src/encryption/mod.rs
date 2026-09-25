@@ -44,7 +44,7 @@ pub fn encrypt_data<T: AsRef<[u8]>>(data: T, combined_passphrase_salt: &str) -> 
   let nonce: [u8; NONCE_LENGTH] = rand::thread_rng().gen();
   let ciphertext = cipher
     .encrypt(GenericArray::from_slice(&nonce), data.as_ref())
-    .unwrap();
+    .map_err(|_| anyhow::anyhow!("Failed to encrypt data"))?;
 
   let result = nonce
     .iter()

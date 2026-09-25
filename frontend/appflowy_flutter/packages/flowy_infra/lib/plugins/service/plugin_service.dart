@@ -6,6 +6,7 @@ import 'package:flowy_infra/file_picker/file_picker_impl.dart';
 import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
 import 'location_service.dart';
+import 'models/exceptions.dart';
 import 'models/flowy_dynamic_plugin.dart';
 
 /// A service to maintain the state of the plugins for AppFlowy.
@@ -23,6 +24,9 @@ class FlowyPluginService {
 
   Future<Iterable<Directory>> get _targets async {
     final location = await _locationService.location;
+    if (!location.existsSync()) {
+      return <Directory>[];
+    }
     final targets = location.listSync().where(FlowyDynamicPlugin.isPlugin);
     return targets.map<Directory>((entity) => entity as Directory).toList();
   }
@@ -31,8 +35,12 @@ class FlowyPluginService {
   Future<DynamicPluginLibrary> get plugins async {
     final List<FlowyDynamicPlugin> compiled = [];
     for (final src in await _targets) {
-      final plugin = await FlowyDynamicPlugin.decode(src: src);
-      compiled.add(plugin);
+      try {
+        final plugin = await FlowyDynamicPlugin.decode(src: src);
+        compiled.add(plugin);
+      } on PluginCompilationException {
+        continue;
+      }
     }
     return compiled;
   }
@@ -50,7 +58,11 @@ class FlowyPluginService {
     }
 
     final directory = Directory(result);
-    return FlowyDynamicPlugin.decode(src: directory);
+    try {
+      return await FlowyDynamicPlugin.decode(src: directory);
+    } on PluginCompilationException {
+      return null;
+    }
   }
 
   /// Searches the plugin registry for a plugin with the given name.
